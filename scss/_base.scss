@@ -1,0 +1,16 @@
+* {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1165px;
+    margin: 0 auto;
+    &-big {
+        max-width: 1280px;
+    }
+}
