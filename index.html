@@ -58,23 +58,60 @@
             </button>
             <div class="courses-dropdown-inner">
               <div class="header-tab">
-                <button class="header-tablinks" onclick="openTab(event, 'front')" id="defaultOpen">Front-end разработка</button>
+                <p class="courses-dropdown-heading">Направления</p>
+                <button class="header-tablinks" onclick="openTab(event, 'front')" id="defaultOpen">
+                  Front-end разработка
+                </button>
                 <button class="header-tablinks" onclick="openTab(event, 'php-java')">Программирование PHP/JAVA</button>
                 <button class="header-tablinks" onclick="openTab(event, 'python')">Программирование PYTHON</button>
               </div>
               <div id="front" class="header-tabcontent">
-                <h3>Front-end разработка</h3>
-                <p>London is the capital city of England.</p>
+                <div class="header-tabcontent-left">
+                  <p class="courses-tabcontent-heading">Онлайн</p>
+                  <ul class="courses-tabcontent-list">
+                    <li>
+                      <a href="">
+                        JavaScript (Front-end)
+                        <span class="courses-badge courses-badge-top">TOP</span>
+                      </a>
+                    </li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li>
+                      <a href="">
+                        JavaScript (Full-Stack)
+                        <span class="courses-badge courses-badge-sale">SALE</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        HTML&CSS (Вёрстка сайтов)
+                        <span class="courses-badge courses-badge-new">NEW</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="courses-tabcontent-heading">Офлайн</p>
+                  <ul class="courses-tabcontent-list">
+                    <li><a href="">JavaScript (Front-end)</a></li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li><a href="">JavaScript (Full-Stack)</a></li>
+                    <li><a href="">Менеджер по маркетплейсам: Ozon и Wildberries</a></li>
+                  </ul>
+                </div>
+                <div class="header-tabcontent-right">
+                  <p class="courses-tabcontent-heading-event">Ближайшие события:</p>
+                  <div class="courses-tabcontent-event">
+                    <div class="courses-tabcontent-event-item"></div>
+                    <div class="courses-tabcontent-event-item"></div>
+                  </div>
+                </div>
               </div>
 
               <div id="php-java" class="header-tabcontent">
                 <h3>Программирование PHP/JAVA</h3>
-                <p>Paris is the capital of France.</p>
               </div>
 
               <div id="python" class="header-tabcontent">
                 <h3>Программирование PYTHON</h3>
-                <p>Tokyo is the capital of Japan.</p>
               </div>
             </div>
           </div>

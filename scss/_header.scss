@@ -106,7 +106,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 1280px;
-      margin-top: 1.25rem;
+      margin-top: 1.5rem;
       border-radius: 10px;
       overflow: hidden;
 
@@ -130,6 +130,9 @@
 
     &-right {
       background-color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     &-trigger {
@@ -137,7 +140,7 @@
     }
 
     &-list {
-      padding: 0 0 0 3rem;
+      padding: 0 0 0 2.5rem;
       margin: 1rem 0 2rem;
       list-style: none;
 
@@ -171,6 +174,7 @@
       left: 50%;
       transform: translateX(-50%);
       width: 1280px;
+      margin-top: 1.5rem;
 
       &.active {
         display: flex;
@@ -180,6 +184,14 @@
     &-trigger {
       margin-left: 1rem;
       position: relative;
+    }
+
+    &-heading {
+      font-weight: 600;
+      font-size: 1.375rem;
+      color: $blue-color;
+      margin-bottom: 1rem;
+      padding-left: 4rem;
     }
   }
 }

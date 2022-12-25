@@ -1,5 +1,7 @@
 .header-tab {
-  width: 30%;
+  width: 32%;
+  background-color: white;
+  padding: 1.875rem 0;
 }
 
 .header-tab button {
@@ -9,17 +11,28 @@
   outline: none;
   cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  font-size: 0.9375rem;
+  text-align: left;
+  background-color: white;
+  padding: .625rem 0 .625rem 4rem;
 } 
 
 .header-tab button:hover {
-  background-color: #ddd;
+  background-color: $bg-color-2;
 }
 
 .header-tab button.active {
-  background-color: #ccc;
+  background-color: $bg-color-2;
+  font-weight: 700;
 }
 
 .header-tabcontent {
   background-color: $bg-color-2;
+  width: 100%;
+  padding: 1.875rem 4rem;
+}
+
+.courses-tabcontent-list {
+  padding: 0;
+  list-style: none;
 }
