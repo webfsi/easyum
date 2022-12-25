@@ -57,10 +57,25 @@
               <img src="img/icons/dropdown-dark.svg" class="btn-icon btn-icon-right" alt="" />
             </button>
             <div class="courses-dropdown-inner">
-              <div class="courses-dropdown-left">
-                
+              <div class="header-tab">
+                <button class="header-tablinks" onclick="openTab(event, 'front')" id="defaultOpen">Front-end разработка</button>
+                <button class="header-tablinks" onclick="openTab(event, 'php-java')">Программирование PHP/JAVA</button>
+                <button class="header-tablinks" onclick="openTab(event, 'python')">Программирование PYTHON</button>
               </div>
-              
+              <div id="front" class="header-tabcontent">
+                <h3>Front-end разработка</h3>
+                <p>London is the capital city of England.</p>
+              </div>
+
+              <div id="php-java" class="header-tabcontent">
+                <h3>Программирование PHP/JAVA</h3>
+                <p>Paris is the capital of France.</p>
+              </div>
+
+              <div id="python" class="header-tabcontent">
+                <h3>Программирование PYTHON</h3>
+                <p>Tokyo is the capital of Japan.</p>
+              </div>
             </div>
           </div>
         </div>

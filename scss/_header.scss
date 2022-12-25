@@ -168,6 +168,9 @@
     &-inner {
       display: none;
       position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 1280px;
 
       &.active {
         display: flex;

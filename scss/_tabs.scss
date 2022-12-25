@@ -1,0 +1,25 @@
+.header-tab {
+  width: 30%;
+}
+
+.header-tab button {
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 17px;
+} 
+
+.header-tab button:hover {
+  background-color: #ddd;
+}
+
+.header-tab button.active {
+  background-color: #ccc;
+}
+
+.header-tabcontent {
+  background-color: $bg-color-2;
+}
