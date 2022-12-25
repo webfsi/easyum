@@ -54,10 +54,20 @@
   border-radius: 3.125rem;
   cursor: pointer;
   text-decoration: none;
+  border: 1px solid $darkgrey-color;
+  background-color: transparent;
   &-red {
     &-fill {
         background-color: $red-color;
+        border-color: $red-color;
         color: white;
+    }
+  }
+  &-blue {
+    &-fill {
+      background-color: $blue-color;
+      border-color: $blue-color;
+      color: white;
     }
   }
 }
