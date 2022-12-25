@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.min.css" />
+    <link rel="stylesheet" href="css/style.min.css?2" />
     <title>Главная</title>
   </head>
-  <body>
+  <body class="offline">
     <header class="header">
       <div class="container header-container">
         <div class="header-left">
@@ -15,11 +15,12 @@
             <img src="img/logo.svg" alt="" />
           </a>
           <div class="academy-dropdown">
-            <a href="" class="academy-dropdown-item">
-              Offline
-              <br />
-              IT академия
-            </a>
+            <div class="academy-dropdown-inner">
+              <button class="academy-dropdown-item-chosen">Offline IT&nbsp;академия</button>
+              <button class="academy-dropdown-item academy-dropdown-item-offline active">Offline IT&nbsp;академия</button>
+              <button class="academy-dropdown-item academy-dropdown-item-online">Online IT&nbsp;академия</button>
+              <button class="academy-dropdown-item">Kids IT&nbsp;академия</button>
+            </div>
           </div>
           <div class="location-dropdown">
             <button class="btn btn-blue-fill location-dropdown-trigger">
@@ -27,6 +28,9 @@
               <img src="img/icons/dropdown-white.svg" class="btn-icon btn-icon-right" alt="" />
             </button>
             <div class="location-dropdown-inner">
+              <button class="dropdown-close location-dropdown-close">
+                <img src="img/icons/header-close.svg" class="" alt="" />
+              </button>
               <div class="location-dropdown-left">
                 <h2 class="location-dropdown-heading">Очное обучение</h2>
                 <p class="text">Мы активно развиваемся, теперь наши аудитории в 6 городах!</p>
@@ -39,7 +43,7 @@
                   <li>Нижний Новгород</li>
                 </ul>
                 <p class="text">Готовятся к открытию:</p>
-                <ul class="location-dropdown-list">
+                <ul class="location-dropdown-list location-dropdown-future-list">
                   <li>Самара</li>
                   <li>Саратов</li>
                   <li>Воронеж</li>
@@ -57,6 +61,9 @@
               <img src="img/icons/dropdown-dark.svg" class="btn-icon btn-icon-right" alt="" />
             </button>
             <div class="courses-dropdown-inner">
+              <button class="dropdown-close courses-dropdown-close">
+                <img src="img/icons/header-close.svg" class="" alt="" />
+              </button>
               <div class="header-tab">
                 <h2 class="courses-dropdown-heading">Направления</h2>
                 <button class="header-tablinks" onclick="openTab(event, 'front')" id="defaultOpen">
@@ -110,7 +117,7 @@
                   <div class="courses-tabcontent-event">
                     <div class="courses-tabcontent-event-item">
                       <div class="courses-tabcontent-event-img">
-                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
                       </div>
                       <div class="courses-tabcontent-event-desc">
                         <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
@@ -121,7 +128,7 @@
                     </div>
                     <div class="courses-tabcontent-event-item">
                       <div class="courses-tabcontent-event-img">
-                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
                       </div>
                       <div class="courses-tabcontent-event-desc">
                         <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
@@ -130,6 +137,9 @@
                         <a href="" class="btn btn-red-fill">Подробнее</a>
                       </div>
                     </div>
+                  </div>
+                  <div class="center">
+                    <a href="" class="btn">Все события</a>
                   </div>
                 </div>
               </div>

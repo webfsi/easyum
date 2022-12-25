@@ -46,11 +46,30 @@
   }
 }
 
+.dropdown-close {
+  position: absolute;
+  right: 60px;
+  top: 20px;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
 .academy-dropdown {
-  padding-left: 0.5rem;
+  padding: 0 1.5rem 0 0.5rem;
   margin: 0 1.875rem 0 0.4rem;
   border-left: 2px solid $blue-color;
-  &-item {
+  height: 55px;
+  width: 130px;
+  position: relative;
+  cursor: pointer;
+  &.is-open {
+    .academy-dropdown-item {
+      display: block;
+    }
+  }
+  &-item,
+  .academy-dropdown-item-chosen {
     display: inline-block;
     color: $blue-color;
     font-weight: 700;
@@ -58,7 +77,43 @@
     font-family: $heading-font;
     padding: 0.5rem 0;
     text-decoration: none;
+    display: none;
+    text-align: left;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    max-width: 100px;
   }
+  .academy-dropdown-item-chosen {
+    display: block;
+  }
+  &-item {
+    &:not(:first-of-type) {
+      font-size: 0.75rem;
+      font-weight: 700;
+      font-family: $heading-font;
+    }
+    &.active {
+      display: none;
+    }
+  }
+  &:after {
+    content: "";
+    background-image: url(../img/icons/dropdown-blue.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 0.875rem;
+    height: 0.5rem;
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+}
+.academy-dropdown.is-open .academy-dropdown-item.active {
+  display: none;
 }
 
 .dropdown {
@@ -174,6 +229,16 @@
         }
       }
     }
+    &-future {
+      &-list {
+        li {
+          color: $grey-color;
+          &:before {
+            background-image: url(../img/icons/location-grey.svg);
+          }
+        }
+      }
+    }
   }
 }
 
@@ -222,6 +287,7 @@
     font-weight: 600;
     font-size: 0.75rem;
     border-radius: 1rem;
+    margin-left: 0.25rem;
 
     &-top {
       background-color: $red-color;
@@ -275,6 +341,7 @@
     }
   }
   &-event {
+    margin-bottom: 1.75rem;
     &-heading {
       font-weight: 600;
       font-size: 1.375rem;
@@ -299,7 +366,7 @@
       border-radius: 0 50% 50% 0;
       background: $lightblue-color;
       overflow: hidden;
-      
+
       &-person {
         position: absolute;
         bottom: 0;
@@ -313,7 +380,7 @@
       align-items: flex-start;
 
       &-date {
-        margin: .5rem 0 1.2rem;
+        margin: 0.5rem 0 1.2rem;
         font-weight: 700;
         font-size: 0.75rem;
         text-align: center;
@@ -328,7 +395,7 @@
       }
 
       &-text {
-        margin: .5rem 0;
+        margin: 0.5rem 0;
         font-size: 0.75rem;
         max-width: 150px;
       }
