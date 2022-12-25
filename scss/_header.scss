@@ -113,10 +113,14 @@
       &.active {
         display: flex;
       }
+
+      @media (max-width: 1280px) {
+        max-width: 100%;
+      }
     }
 
     &-heading {
-      font-family: "Golos", sans-serif;
+      font-family: $heading-font;
       font-size: 1.75rem;
       font-weight: 600;
       margin: 0 0 1rem;
@@ -159,7 +163,7 @@
           margin-right: 0.3125rem;
         }
         + li {
-          margin-top: 1rem;
+          margin-top: 1.25rem;
         }
       }
     }
@@ -179,6 +183,10 @@
       &.active {
         display: flex;
       }
+
+      @media (max-width: 1280px) {
+        max-width: 100%;
+      }
     }
 
     &-trigger {
@@ -190,8 +198,69 @@
       font-weight: 600;
       font-size: 1.375rem;
       color: $blue-color;
-      margin-bottom: 1rem;
+      margin-bottom: 1.25rem;
       padding-left: 4rem;
+    }
+  }
+  &-badge {
+    padding: 0.1875rem 0.5rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    font-size: 0.75rem;
+    border-radius: 1rem;
+
+    &-top {
+      background-color: $red-color;
+    }
+
+    &-sale {
+      background-color: $lightblue-color;
+    }
+
+    &-new {
+      background-color: $blue-color;
+    }
+  }
+  &-social {
+    display: flex;
+
+    &-links {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-left: 1rem;
+    }
+  }
+}
+
+.courses-tabcontent {
+  &-heading {
+    font-family: $heading-font;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  &-list {
+    padding: 0;
+    list-style: none;
+    margin: 1.25rem 0 1.875rem;
+
+    li {
+      margin-bottom: 1rem;
+
+      a {
+        text-decoration: none;
+        color: $darkgrey-color;
+        font-size: 0.9375rem;
+        font-family: $heading-font;
+      }
+    }
+  }
+  &-event {
+    &-heading {
+      font-weight: 600;
+      font-size: 1.375rem;
+      color: $blue-color;
     }
   }
 }

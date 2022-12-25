@@ -14,8 +14,9 @@
   font-size: 0.9375rem;
   text-align: left;
   background-color: white;
-  padding: .625rem 0 .625rem 4rem;
-} 
+  padding: 0.625rem 0 0.625rem 4rem;
+  font-family: $heading-font;
+}
 
 .header-tab button:hover {
   background-color: $bg-color-2;
@@ -30,9 +31,13 @@
   background-color: $bg-color-2;
   width: 100%;
   padding: 1.875rem 4rem;
-}
+  display: none;
 
-.courses-tabcontent-list {
-  padding: 0;
-  list-style: none;
+  &.active {
+    display: flex;
+  }
+
+  &-left {
+    min-width: 420px
+  }
 }
