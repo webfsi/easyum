@@ -115,6 +115,14 @@
       }
     }
 
+    &-heading {
+      font-family: "Golos", sans-serif;
+      font-size: 1.75rem;
+      font-weight: 600;
+      margin: 0 0 1rem;
+      color: $darkgrey-color;
+    }
+
     &-left {
       background-color: $bg-color-2;
       padding: 1.875rem 4rem;
@@ -130,12 +138,13 @@
 
     &-list {
       padding: 0 0 0 3rem;
-      margin: 0;
+      margin: 1rem 0 2rem;
       list-style: none;
 
       li {
         display: flex;
         align-items: center;
+        color: $darkgrey-color;
         &:before {
           content: "";
           display: inline-block;
@@ -144,6 +153,7 @@
           background-repeat: no-repeat;
           width: 0.875rem;
           height: 1.0625rem;
+          margin-right: 0.3125rem;
         }
         + li {
           margin-top: 1rem;
