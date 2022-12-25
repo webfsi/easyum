@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     display: flex;
+    align-items: center;
     &-item {
       position: relative;
       &:hover {
@@ -266,6 +267,7 @@
       font-weight: 600;
       font-size: 1.375rem;
       color: $blue-color;
+      font-family: $heading-font;
     }
     &-item {
       background-color: white;
