@@ -30,7 +30,7 @@
 .header-tabcontent {
   background-color: $bg-color-2;
   width: 100%;
-  padding: 1.875rem 4rem;
+  padding: 1.875rem 4rem 4rem;
   display: none;
 
   &.active {
@@ -38,7 +38,9 @@
   }
 
   &-left {
-    min-width: 420px
+    min-width: 420px;
+    display: flex;
+    flex-direction: column;
   }
 
   &-right {

@@ -30,6 +30,7 @@
       font-size: 0.9375rem;
       padding: 0.75rem 0.9375rem;
       transition: 0.3s;
+      cursor: pointer;
     }
   }
 }
@@ -265,6 +266,13 @@
       margin-left: 1rem;
       position: relative;
 
+      &:hover {
+        background-color: transparent;
+        font-weight: 400;
+        border-color: $darkgrey-color;
+        color: $darkgrey-color;
+      }
+
       &.active {
         .btn-icon-right {
           transform: rotate(180deg);
@@ -303,7 +311,7 @@
   }
   &-social {
     display: flex;
-    margin-top: 4rem;
+    margin-top: auto;
 
     &-sign {
       font-weight: 600;
@@ -337,6 +345,11 @@
         color: $darkgrey-color;
         font-size: 0.9375rem;
         font-family: $heading-font;
+        transition: .3s;
+
+        &:hover {
+          font-weight: 700;
+        }
       }
     }
   }
@@ -369,8 +382,9 @@
 
       &-person {
         position: absolute;
-        bottom: 0;
-        left: 20px;
+        bottom: -5px;
+        left: 0px;
+        width: 140px;    
       }
     }
     &-desc {

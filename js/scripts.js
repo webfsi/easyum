@@ -12,8 +12,8 @@ locationTrigger.addEventListener("click", function () {
   locationContainer.classList.toggle("active");
 });
 locationClose.addEventListener("click", function () {
-  this.classList.toggle("active");
-  locationContainer.classList.toggle("active");
+  locationTrigger.classList.toggle("active");
+  locationContainer.classList.remove("active");
 });
 window.addEventListener("mouseup", function (e) {
   if (locationContainer !== e.target && !locationContainer.contains(e.target)) {
@@ -28,10 +28,10 @@ coursesTrigger.addEventListener("click", function () {
   coursesContainer.classList.toggle("active");
 });
 coursesClose.addEventListener("click", function () {
+  coursesTrigger.classList.toggle("active");
   coursesContainer.classList.remove("active");
 });
 window.addEventListener("mouseup", function (e) {
-  console.log(e.target);
   if (coursesContainer !== e.target && !coursesContainer.contains(e.target)) {
     coursesTrigger.classList.remove("active");
     coursesContainer.classList.remove("active");
