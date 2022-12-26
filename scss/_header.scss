@@ -239,6 +239,11 @@
         a {
           text-decoration: none;
           color: $darkgrey-color;
+          transition: .3s;
+
+          &:hover {
+            font-weight: 700;
+          }
         }
       }
     }
