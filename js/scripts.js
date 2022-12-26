@@ -60,6 +60,22 @@ academyItems.forEach((academyItem) => {
     academyItemChosen.textContent = academyItemText;
   });
 });
+// adding choice to body
+document.querySelector(".academy-dropdown-item-offline").addEventListener("click", function () {
+  document.body.classList.add("offline");
+  document.body.classList.remove("online");
+  document.body.classList.remove("kids");
+});
+document.querySelector(".academy-dropdown-item-online").addEventListener("click", function () {
+  document.body.classList.add("online");
+  document.body.classList.remove("offline");
+  document.body.classList.remove("kids");
+});
+document.querySelector(".academy-dropdown-item-kids").addEventListener("click", function () {
+  document.body.classList.add("kids");
+  document.body.classList.remove("online");
+  document.body.classList.remove("offline");
+});
 
 // header tabs
 function openTab(event, tabName) {
