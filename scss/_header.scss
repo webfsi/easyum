@@ -187,6 +187,7 @@
     &-left {
       background-color: $bg-color-2;
       padding: 1.875rem 4rem;
+      border-radius: 0.625rem 0 0 0.625rem;
     }
 
     &-right {
@@ -194,10 +195,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      border-radius: 0 0.625rem 0.625rem 0;
     }
 
     &-trigger {
       position: relative;
+
+      &:hover {
+        font-weight: 400;
+      }
 
       &.active {
         .btn-icon-right {
@@ -215,6 +221,7 @@
         display: flex;
         align-items: center;
         color: $darkgrey-color;
+        font-size: 0.9375rem;
         &:before {
           content: "";
           display: inline-block;
@@ -227,6 +234,11 @@
         }
         + li {
           margin-top: 1.25rem;
+        }
+
+        a {
+          text-decoration: none;
+          color: $darkgrey-color;
         }
       }
     }
