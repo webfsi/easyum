@@ -158,7 +158,8 @@
 .location {
   &-dropdown {
     &-inner {
-      display: none;
+      // display: none;
+      display: flex;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -166,9 +167,10 @@
       margin-top: 1.5rem;
       border-radius: 10px;
       overflow: hidden;
+      @include fadeOut;
 
       &.active {
-        display: flex;
+        @include fadeIn;
       }
 
       @media (max-width: 1280px) {
@@ -239,7 +241,7 @@
         a {
           text-decoration: none;
           color: $darkgrey-color;
-          transition: .3s;
+          transition: 0.3s;
 
           &:hover {
             font-weight: 700;
@@ -263,15 +265,18 @@
 .courses {
   &-dropdown {
     &-inner {
-      display: none;
+      // display: none;
+      display: flex;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       width: 1280px;
       margin-top: 1.5rem;
+      @include fadeOut;
 
       &.active {
-        display: flex;
+        // display: flex;
+        @include fadeIn;
       }
 
       @media (max-width: 1280px) {
@@ -334,11 +339,20 @@
       font-weight: 600;
     }
 
-    &-links {
-      display: flex;
-      align-items: center;
-      gap: 0.5rem;
-      margin-left: 1rem;
+    &-link {
+      &-list {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-left: 1rem;
+
+        a {
+          transition: .3s;
+          &:hover {
+            transform: scale(1.05);
+          }
+        }
+      }
     }
   }
 }
@@ -362,7 +376,7 @@
         color: $darkgrey-color;
         font-size: 0.9375rem;
         font-family: $heading-font;
-        transition: .3s;
+        transition: 0.3s;
 
         &:hover {
           font-weight: 700;
@@ -401,7 +415,7 @@
         position: absolute;
         bottom: -5px;
         left: 0px;
-        width: 140px;    
+        width: 140px;
       }
     }
     &-desc {

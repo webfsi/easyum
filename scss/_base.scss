@@ -1,36 +1,71 @@
 * {
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
 
-    @media (max-width: 1280px) {
-        font-size: 14px;
-    }
+  @media (max-width: 1280px) {
+    font-size: 14px;
+  }
 }
 
 body {
-    background-color: $bg-color-1;
+  background-color: $bg-color-1;
 }
 
 .container {
-    max-width: 1280px;
-    margin: 0 auto;
-    
-    @media (max-width: 1439px) {
-        max-width: 1165px;
-    }
+  max-width: 1280px;
+  margin: 0 auto;
+
+  @media (max-width: 1439px) {
+    max-width: 1165px;
+  }
 }
 
 .center {
-    text-align: center;
+  text-align: center;
 }
 
 .online {
-    .location-dropdown {
-        display: none;
-    }
+  .location-dropdown {
+    display: none;
+  }
+}
+
+// fade animations
+@mixin fadeIn {
+  animation: fadeIn 0.3s ease-in 1 forwards;
+}
+@mixin fadeOut {
+  opacity: 1;
+  animation: fadeOut 0.3s ease-out 1 forwards;
+}
+.fadeIn {
+  @include fadeIn;
+}
+.fadeOut {
+  @include fadeOut;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    opacity: 1;
+    z-index: 1;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+    z-index: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
 }

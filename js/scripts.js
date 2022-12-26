@@ -1,3 +1,17 @@
+// fade animation
+// var text = document.getElementById("fade-text"),
+//   fadeBtn = document.getElementById("fade");
+
+// fadeBtn.onclick = function () {
+//   if (!text.hasAttribute("class") || text.classList.contains("fadeOut")) {
+//     text.removeAttribute("class", "fadeOut");
+//     text.setAttribute("class", "fadeIn");
+//   } else if (text.classList.contains("fadeIn")) {
+//     text.classList.remove("fadeIn");
+//     text.classList.add("fadeOut");
+//   }
+// };
+
 // header location and courses
 const locationTrigger = document.querySelector(".location-dropdown-trigger");
 const locationContainer = document.querySelector(".location-dropdown-inner");
@@ -17,6 +31,7 @@ locationClose.addEventListener("click", function () {
 });
 window.addEventListener("mouseup", function (e) {
   if (locationContainer !== e.target && !locationContainer.contains(e.target)) {
+    console.log(e.target)
     locationTrigger.classList.remove("active");
     locationContainer.classList.remove("active");
   }
@@ -51,7 +66,7 @@ window.addEventListener("click", function (e) {
 });
 academyItems.forEach((academyItem) => {
   academyItem.addEventListener("click", () => {
-    academyContainer.classList.add("is-open")
+    academyContainer.classList.add("is-open");
     academyItems.forEach(function (el) {
       el.classList.remove("active");
     });
