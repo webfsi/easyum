@@ -26,7 +26,7 @@
     &-link {
       font-family: $heading-font;
       text-decoration: none;
-      color: $darkgrey-color;
+      color: $darkgrey-color-1;
       font-size: 0.9375rem;
       padding: 0.75rem 0.9375rem;
       transition: 0.3s;
@@ -134,7 +134,7 @@
     }
     &-link {
       font-family: $heading-font, sans-serif;
-      color: $darkgrey-color;
+      color: $darkgrey-color-1;
       font-size: 0.9375rem;
       margin: 0;
       text-decoration: none;
@@ -183,7 +183,7 @@
       font-size: 1.75rem;
       font-weight: 600;
       margin: 0 0 1rem;
-      color: $darkgrey-color;
+      color: $darkgrey-color-1;
     }
 
     &-left {
@@ -222,7 +222,7 @@
       li {
         display: flex;
         align-items: center;
-        color: $darkgrey-color;
+        color: $darkgrey-color-1;
         font-size: 0.9375rem;
         &:before {
           content: "";
@@ -240,7 +240,7 @@
 
         a {
           text-decoration: none;
-          color: $darkgrey-color;
+          color: $darkgrey-color-1;
           transition: 0.3s;
 
           &:hover {
@@ -291,8 +291,8 @@
       &:hover {
         background-color: transparent;
         font-weight: 400;
-        border-color: $darkgrey-color;
-        color: $darkgrey-color;
+        border-color: $darkgrey-color-1;
+        color: $darkgrey-color-1;
       }
 
       &.active {
@@ -373,7 +373,7 @@
 
       a {
         text-decoration: none;
-        color: $darkgrey-color;
+        color: $darkgrey-color-1;
         font-size: 0.9375rem;
         font-family: $heading-font;
         transition: 0.3s;
