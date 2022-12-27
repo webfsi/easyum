@@ -35,6 +35,24 @@ body {
   }
 }
 
+.row {
+    display: flex;
+}
+
+.wrapper {
+    padding: 1.875rem 0 3.75rem;
+}
+
+.blue {
+    color: $blue-color;
+}
+
+.regular-sect {
+    + .regular-sect {
+        padding-top: 7.5rem;
+    }
+}
+
 // fade animations
 @mixin fadeIn {
   animation: fadeIn 0.3s ease-in 1 forwards;

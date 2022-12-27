@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="14.11347px" height="14.09597px" viewBox="0 0 14.11347 14.09597" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <path d="M0 0L14 0L14 14L0 14L0 0Z" id="path_1" />
+    <clipPath id="mask_1">
+      <use xlink:href="#path_1" />
+    </clipPath>
+  </defs>
+  <g id="play">
+    <path d="M0 0L14 0L14 14L0 14L0 0Z" id="Background" fill="#FFFFFF" fill-opacity="0" fill-rule="evenodd" stroke="none" />
+    <path d="M0.05513 7.0668C0.05513 3.1847 3.2022 0.0376301 7.0843 0.0376301C10.9664 0.0376301 14.1135 3.1847 14.1135 7.0668C14.1135 10.9489 10.9664 14.096 7.0843 14.096C3.2022 14.096 0.05513 10.9489 0.05513 7.0668Z" id="Circle" fill="#F52525" fill-rule="evenodd" stroke="none" />
+    <path d="M6.5333 8.6947C6.4341 8.7592 6.3337 8.7628 6.2319 8.7057C6.1304 8.6488 6.0796 8.5608 6.0796 8.4418L6.0796 5.3624C6.0796 5.2433 6.1304 5.1553 6.2319 5.0982C6.3337 5.0412 6.4341 5.045 6.5333 5.1095L8.9582 6.6492C9.0475 6.7087 9.0921 6.793 9.0921 6.9021C9.0921 7.0112 9.0475 7.0955 8.9582 7.155L6.5333 8.6947L6.5333 8.6947Z" id="Shape" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>

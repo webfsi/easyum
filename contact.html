@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon.png" />
     <link rel="stylesheet" href="css/style.min.css?2" />
     <title>Контакты</title>
   </head>
@@ -36,13 +37,13 @@
               <div class="location-dropdown-left">
                 <h2 class="location-dropdown-heading">Очное обучение</h2>
                 <p class="text">Мы активно развиваемся, теперь наши аудитории в 6 городах!</p>
-                <ul class="location-dropdown-list">
-                  <li>Москва</li>
-                  <li>Санкт-Петербург</li>
-                  <li>Краснодар</li>
-                  <li>Казань</li>
-                  <li>Ижевск</li>
-                  <li>Нижний Новгород</li>
+                <ul class="location-dropdown-list location-dropdown-current-list">
+                  <li><a href="">Москва</a></li>
+                  <li><a href="">Санкт-Петербург</a></li>
+                  <li><a href="">Краснодар</a></li>
+                  <li><a href="">Казань</a></li>
+                  <li><a href="">Ижевск</a></li>
+                  <li><a href="">Нижний Новгород</a></li>
                 </ul>
                 <p class="text">Готовятся к открытию:</p>
                 <ul class="location-dropdown-list location-dropdown-future-list">
@@ -68,13 +69,15 @@
               </button>
               <div class="header-tab">
                 <h2 class="courses-dropdown-heading">Направления</h2>
-                <button class="header-tablinks" onclick="openTab(event, 'front')" id="defaultOpen">
+                <button class="header-tablinks active" onmouseover="openTab(event, 'front')" id="defaultOpen">
                   Front-end разработка
                 </button>
-                <button class="header-tablinks" onclick="openTab(event, 'php-java')">Программирование PHP/JAVA</button>
-                <button class="header-tablinks" onclick="openTab(event, 'python')">Программирование PYTHON</button>
+                <button class="header-tablinks" onmouseover="openTab(event, 'php-java')">
+                  Программирование PHP/JAVA
+                </button>
+                <button class="header-tablinks" onmouseover="openTab(event, 'python')">Программирование PYTHON</button>
               </div>
-              <div id="front" class="header-tabcontent">
+              <div id="front" class="header-tabcontent active">
                 <div class="header-tabcontent-left">
                   <h3 class="courses-tabcontent-heading">Онлайн</h3>
                   <ul class="courses-tabcontent-list">
@@ -107,7 +110,7 @@
                   </ul>
                   <div class="courses-social">
                     <b class="courses-social-sign">Мы в социальных сетях:</b>
-                    <div class="courses-social-links">
+                    <div class="courses-social-link-list">
                       <a href=""><img src="img/social/instagram.svg" alt="" /></a>
                       <a href=""><img src="img/social/vk.svg" alt="" /></a>
                       <a href=""><img src="img/social/telegram.svg" alt="" /></a>
@@ -125,7 +128,7 @@
                         <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
                         <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
                         <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
-                        <a href="" class="btn btn-red-fill">Подробнее</a>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
                       </div>
                     </div>
                     <div class="courses-tabcontent-event-item">
@@ -136,22 +139,158 @@
                         <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
                         <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
                         <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
-                        <a href="" class="btn btn-red-fill">Подробнее</a>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
                       </div>
                     </div>
                   </div>
                   <div class="center">
-                    <a href="" class="btn">Все события</a>
+                    <a href="" class="btn" data-text="Все события">Все события</a>
                   </div>
                 </div>
               </div>
 
               <div id="php-java" class="header-tabcontent">
-                <h3>Программирование PHP/JAVA</h3>
+                <div class="header-tabcontent-left">
+                  <h3 class="courses-tabcontent-heading">Онлайн Java & PHP</h3>
+                  <ul class="courses-tabcontent-list">
+                    <li>
+                      <a href="">
+                        JavaScript (Front-end)
+                        <span class="courses-badge courses-badge-top">TOP</span>
+                      </a>
+                    </li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li>
+                      <a href="">
+                        JavaScript (Full-Stack)
+                        <span class="courses-badge courses-badge-sale">SALE</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        HTML&CSS (Вёрстка сайтов)
+                        <span class="courses-badge courses-badge-new">NEW</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="courses-tabcontent-heading">Офлайн</p>
+                  <ul class="courses-tabcontent-list">
+                    <li><a href="">JavaScript (Front-end)</a></li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li><a href="">JavaScript (Full-Stack)</a></li>
+                    <li><a href="">Менеджер по маркетплейсам: Ozon и Wildberries</a></li>
+                  </ul>
+                  <div class="courses-social">
+                    <b class="courses-social-sign">Мы в социальных сетях:</b>
+                    <div class="courses-social-link-list">
+                      <a href=""><img src="img/social/instagram.svg" alt="" /></a>
+                      <a href=""><img src="img/social/vk.svg" alt="" /></a>
+                      <a href=""><img src="img/social/telegram.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-tabcontent-right">
+                  <h2 class="courses-tabcontent-event-heading">Ближайшие события:</h2>
+                  <div class="courses-tabcontent-event">
+                    <div class="courses-tabcontent-event-item">
+                      <div class="courses-tabcontent-event-img">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
+                      </div>
+                      <div class="courses-tabcontent-event-desc">
+                        <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
+                        <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
+                        <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="courses-tabcontent-event-item">
+                      <div class="courses-tabcontent-event-img">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
+                      </div>
+                      <div class="courses-tabcontent-event-desc">
+                        <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
+                        <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
+                        <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center">
+                    <a href="" class="btn" data-text="Все события">Все события</a>
+                  </div>
+                </div>
               </div>
 
               <div id="python" class="header-tabcontent">
-                <h3>Программирование PYTHON</h3>
+                <div class="header-tabcontent-left">
+                  <h3 class="courses-tabcontent-heading">Онлайн Python</h3>
+                  <ul class="courses-tabcontent-list">
+                    <li>
+                      <a href="">
+                        JavaScript (Front-end)
+                        <span class="courses-badge courses-badge-top">TOP</span>
+                      </a>
+                    </li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li>
+                      <a href="">
+                        JavaScript (Full-Stack)
+                        <span class="courses-badge courses-badge-sale">SALE</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        HTML&CSS (Вёрстка сайтов)
+                        <span class="courses-badge courses-badge-new">NEW</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <p class="courses-tabcontent-heading">Офлайн</p>
+                  <ul class="courses-tabcontent-list">
+                    <li><a href="">JavaScript (Front-end)</a></li>
+                    <li><a href="">JavaScript (Без вёрстки)</a></li>
+                    <li><a href="">JavaScript (Full-Stack)</a></li>
+                    <li><a href="">Менеджер по маркетплейсам: Ozon и Wildberries</a></li>
+                  </ul>
+                  <div class="courses-social">
+                    <b class="courses-social-sign">Мы в социальных сетях:</b>
+                    <div class="courses-social-link-list">
+                      <a href=""><img src="img/social/instagram.svg" alt="" /></a>
+                      <a href=""><img src="img/social/vk.svg" alt="" /></a>
+                      <a href=""><img src="img/social/telegram.svg" alt="" /></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="header-tabcontent-right">
+                  <h2 class="courses-tabcontent-event-heading">Ближайшие события:</h2>
+                  <div class="courses-tabcontent-event">
+                    <div class="courses-tabcontent-event-item">
+                      <div class="courses-tabcontent-event-img">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
+                      </div>
+                      <div class="courses-tabcontent-event-desc">
+                        <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
+                        <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
+                        <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
+                      </div>
+                    </div>
+                    <div class="courses-tabcontent-event-item">
+                      <div class="courses-tabcontent-event-img">
+                        <img src="img/other/image25.png" class="courses-tabcontent-event-img-person" alt="" />
+                      </div>
+                      <div class="courses-tabcontent-event-desc">
+                        <h3 class="courses-tabcontent-event-desc-heading">Пробный урок</h3>
+                        <p class="courses-tabcontent-event-desc-text">По курсу Front-end разработчик в Москве</p>
+                        <time class="courses-tabcontent-event-desc-date">16 декабря 19:30</time>
+                        <a href="" class="btn btn-red-fill" data-text="Подробнее">Подробнее</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="center">
+                    <a href="" class="btn" data-text="Все события">Все события</a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -159,7 +298,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li class="nav-list-item">
-              <span class="nav-list-link dropdown-link">О нас</span>
+              <span class="nav-list-link dropdown-link" data-text="О нас">О нас</span>
               <div class="dropdown-content">
                 <div class="dropdown-content-inner">
                   <a href="" class="dropdown-content-link">Кто мы?</a>
@@ -174,7 +313,7 @@
               </div>
             </li>
             <li class="nav-list-item">
-              <span class="nav-list-link dropdown-link">Бонусы</span>
+              <span class="nav-list-link dropdown-link" data-text="Бонусы">Бонусы</span>
               <div class="dropdown-content">
                 <div class="dropdown-content-inner">
                   <a href="" class="dropdown-content-link">Пробные уроки</a>
@@ -189,7 +328,7 @@
               </div>
             </li>
             <li class="nav-list-item">
-              <span class="nav-list-link dropdown-link">Компаниям</span>
+              <span class="nav-list-link dropdown-link" data-text="Компаниям">Компаниям</span>
               <div class="dropdown-content">
                 <div class="dropdown-content-inner">
                   <a href="" class="dropdown-content-link">Корпоративное обучение</a>
@@ -198,20 +337,71 @@
                 </div>
               </div>
             </li>
-            <li class="nav-list-item"><a href="tel:+74954774305" class="btn btn-red-fill">+7 (495) 477 43 05</a></li>
+            <li class="nav-list-item">
+              <a href="tel:+74954774305" data-text="+7 (495) 477 43 05" class="btn btn-red-fill">+7 (495) 477 43 05</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
+    <main class="wrapper">
+      <section class="regular-sect">
+        <div class="container">
+          <h1 class="h1-heading main-heading main-heading-contact">Контакты</h1>
+          <h2 class="h2-heading blue">Москва</h2>
+          <div class="contact-address"></div>
+        </div>
+      </section>
+      <section class="regular-sect">
+        <div class="container">
+          <h2 class="h2-heading center">Как к нам дойти?</h2>
+          <div class="contact-direction"></div>
+          <div class="contact-direction"></div>
+        </div>
+      </section>
+      <section class="regular-sect">
+        <div class="container">
+          <div class="row">
+            <div class="section-desc">
+              <h2 class="h2-heading">
+                <span class="blue">Подпишитесь</span>
+                на нас в соц.сетях
+              </h2>
+              <p class="text">
+                Подпишитесь на нас в социальных сетях, и всегда смотрите самое свежее и актуальное: видео-отзывы,
+                истории успеха, старты курсов и пр.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <footer class="footer">
+      <img src="img/other/footer-bg.svg" class="footer-bg" alt="" />
       <div class="container">
         <div class="row">
           <div class="footer-col">
             <div class="footer-social">
-              <p><a href="tel:+74954774305">+7 (495) 477 43 05</a></p>
-              <p>Контактный центр</p>
-              <p>Москва, Шлюзовая набережная 6 стр.4, 3й-этаж, офис 303</p>
-              <p>2017-2022 Все права защищены</p>
+              <a href=""><img src="img/social/instagram-white.svg" alt="" /></a>
+              <a href=""><img src="img/social/vk-white.svg" alt="" /></a>
+              <a href=""><img src="img/social/youtube-white.svg" alt="" /></a>
+              <a href=""><img src="img/social/telegram-white.svg" alt="" /></a>
+            </div>
+            <div class="footer-contact-center">
+              <a href="tel:+74954774305" class="footer-contact-center-tel">+7 (495) 477 43 05</a>
+              <p class="footer-contact-center-text">Контактный центр</p>
+            </div>
+            <p class="footer-contact-address">Москва, Шлюзовая набережная 6 стр.4, 3й-этаж, офис 303</p>
+            <div class="footer-copyright">
+              <p>
+                <b>
+                  2017-
+                  <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                  </script>
+                  Все права защищены
+                </b>
+              </p>
               <p><a href="">Политика конфиденциальности</a></p>
               <p><a href="">Публичный договор (оферта)</a></p>
             </div>
@@ -231,20 +421,36 @@
           <div class="footer-col">
             <h4 class="h4-heading">О нас</h4>
             <ul class="footer-link-container">
-              <li class="footer-link-item"><a href="">Java разработчик</a></li>
-              <li class="footer-link-item"><a href="">Тестирование ПО</a></li>
-              <li class="footer-link-item"><a href="">Python разработчик</a></li>
-              <li class="footer-link-item"><a href="">C++ разработчик</a></li>
-              <li class="footer-link-item"><a href="">Android Разработчик</a></li>
-              <li class="footer-link-item"><a href="">Веб-дизайнер</a></li>
-              <li class="footer-link-item"><a href="">Графический дизайнер</a></li>
+              <li class="footer-link-item"><a href="">Кто мы?</a></li>
+              <li class="footer-link-item"><a href="">История успеха</a></li>
+              <li class="footer-link-item"><a href="">Трудоустройство</a></li>
+              <li class="footer-link-item"><a href="">Отзывы</a></li>
+              <li class="footer-link-item"><a href="">Вакансии</a></li>
+              <li class="footer-link-item"><a href="">Оплата и возврат</a></li>
+              <li class="footer-link-item"><a href="">Юридические документы</a></li>
+              <li class="footer-link-item"><a href="">Контакты</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h4 class="h4-heading">Бонусы</h4>
+            <ul class="footer-link-container">
+              <li class="footer-link-item"><a href="">Пробные уроки</a></li>
+              <li class="footer-link-item"><a href="">Вебинары</a></li>
+              <li class="footer-link-item"><a href="">Тесты</a></li>
+              <li class="footer-link-item"><a href="">Комьюнити EasyUM</a></li>
+              <li class="footer-link-item"><a href="">Коворкинг EasyUM</a></li>
+              <li class="footer-link-item"><a href="">Скидки</a></li>
+              <li class="footer-link-item"><a href="">Подарочные сертификаты</a></li>
+              <li class="footer-link-item"><a href="">Бонусы от партнеров</a></li>
+            </ul>
           </div>
           <div class="footer-col">
             <h4 class="h4-heading">Компаниям</h4>
+            <ul class="footer-link-container">
+              <li class="footer-link-item"><a href="">Корпоративное обучение</a></li>
+              <li class="footer-link-item"><a href="">Заявка на выпускников</a></li>
+              <li class="footer-link-item"><a href="">Проекты от студентов</a></li>
+            </ul>
           </div>
         </div>
       </div>

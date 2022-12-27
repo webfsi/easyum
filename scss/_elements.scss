@@ -1,0 +1,23 @@
+.contact {
+
+}
+
+.success {
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+    }
+    &-item {
+        &-img {
+            position: relative;
+            width: 340px;
+            height: 340px;
+            &-bg {
+                position: absolute;
+            }
+            &-photo {
+                position: absolute;
+            }
+        }
+    }
+}
