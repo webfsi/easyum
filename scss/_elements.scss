@@ -20,7 +20,7 @@
     }
   }
   &-main {
-    gap: 3.75rem;
+    gap: 8.125rem;
 
     .col {
       display: flex;
@@ -33,6 +33,17 @@
       &:last-of-type {
         width: 60%;
       }
+    }
+
+    + .contact-main {
+        margin-top: 3.75rem;
+    }
+
+    &-hours {
+        font-size: 1.25rem;
+        &-sign {
+            font-weight: 500;
+        }
     }
   }
   &-direction {
