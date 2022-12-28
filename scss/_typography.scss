@@ -61,6 +61,10 @@ h6 {
 
 .h2 {
   font-size: 2.625rem;
+
+  + * {
+    margin-top: 3.75rem;
+  }
 }
 
 .h3 {
@@ -88,13 +92,17 @@ h6 {
 }
 
 .text {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   line-height: 156%;
   color: $darkgrey-color-1;
+
+  &-big {
+    font-size: 1.25rem;
+  }
 }
 
 // hover font-weight fix - https://css-tricks.com/bold-on-hover-without-the-layout-shift/
-[data-text] {
+[data-text], .btn[data-text] {
   display: inline-flex;
   flex-direction: column;
   align-items: center;
@@ -204,9 +212,4 @@ h6 {
       border-color: $darkgrey-color-1;
     }
   }
-}
-
-.text {
-  color: $darkgrey-color-1;
-  font-size: 1.125rem;
 }

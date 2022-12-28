@@ -47,6 +47,12 @@ body {
   padding: 1.875rem 0 3.75rem;
 }
 
+.bg-top {
+    background-image: url(../img/other/top-bg.svg);
+    background-size: contain;
+    background-position: -200px 10%;
+}
+
 .d-block {
   display: block !important;
 }
@@ -67,13 +73,18 @@ body {
   }
 }
 
+.section-desc {
+  max-width: 45rem;
+  margin: auto;
+}
+
 // fade animations
 @mixin fadeIn {
-  animation: fadeIn 0.3s ease-in 1 forwards;
+  animation: fadeIn 0.4s linear 1 forwards;
 }
 @mixin fadeOut {
   opacity: 1;
-  animation: fadeOut 0.3s ease-out 1 forwards;
+  animation: fadeOut 0.4s linear 1 forwards;
 }
 .fadeIn {
   @include fadeIn;
@@ -84,20 +95,21 @@ body {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    z-index: -1;
+    transform: translate(-50%, -100px);
   }
   to {
+    display: block;
     opacity: 1;
-    z-index: 1;
+    transform: translateY(-50%, 0);
   }
 }
 @keyframes fadeOut {
   from {
     opacity: 1;
-    z-index: 1;
+    transform: translateY(-50%, 0);
   }
   to {
     opacity: 0;
-    z-index: -1;
+    transform: translateY(-50%, -100px);
   }
 }

@@ -31,7 +31,6 @@ locationClose.addEventListener("click", function () {
 });
 window.addEventListener("mouseup", function (e) {
   if (locationContainer !== e.target && !locationContainer.contains(e.target)) {
-    console.log(e.target);
     locationTrigger.classList.remove("active");
     locationContainer.classList.remove("active");
   }
@@ -111,14 +110,12 @@ function openTab(event, tabName) {
 document.getElementById("defaultOpen").click();
 
 // show more success items
-let showMoreBtn = document.querySelector(".btn-load-more-success");
+const showMoreBtn = document.querySelector(".btn-load-more-success");
 
-showMoreBtn.addEventListener("click", () => {
+showMoreBtn?.addEventListener("click", () => {
   let hiddenElements = document.querySelectorAll(".success-item.d-none");
-
-  let commentsList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
-
-  commentsList.forEach((item, index) => {
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
     item.className = "success-item";
     if (index === 0) {
       item.scrollIntoView({
@@ -126,8 +123,7 @@ showMoreBtn.addEventListener("click", () => {
       });
     }
   });
-
-  if (hiddenElements.length === 0) {
+  if (hiddenElements.length === successList.length) {
     showMoreBtn.className = "d-none";
   }
 });

@@ -1,4 +1,12 @@
 .contact {
+    &-page {
+        background-image: url(../img/contact/bg.svg);
+        background-size: cover;
+        background-position: center;
+    }
+  &-address {
+    margin-top: auto;
+  }
   &-note {
     border-radius: 50px;
     &-important {
@@ -17,6 +25,7 @@
       background-position: center;
       border-radius: 200px;
       margin-top: auto;
+      color: $darkgrey-color-2;
     }
   }
   &-main {
@@ -36,14 +45,26 @@
     }
 
     + .contact-main {
-        margin-top: 3.75rem;
+      margin-top: 3.75rem;
     }
 
     &-hours {
-        font-size: 1.25rem;
-        &-sign {
-            font-weight: 500;
+      font-size: 1.25rem;
+      &-part {
+        margin-top: 1.875rem;
+        color: $darkgrey-color-2;
+        &:first-of-type {
+          margin-top: 2rem;
         }
+        &:last-of-type {
+          margin-bottom: 2rem;
+        }
+      }
+      &-bold {
+        font-weight: 500;
+        font-family: $heading-font;
+        margin-top: 0.75rem;
+      }
     }
   }
   &-direction {
@@ -85,6 +106,7 @@
     }
   }
   &-info {
+    margin-top: 2.25rem;
     &-link {
       display: flex;
       align-items: center;
@@ -104,9 +126,63 @@
         display: flex;
         align-items: center;
         font-size: 1.25rem;
+        color: $darkgrey-color-2;
         .contact-info-link {
           margin-right: 0.5rem;
           color: $blue-color;
+        }
+        + .contact-info-link-text {
+          margin-top: 1.5rem;
+        }
+      }
+    }
+  }
+  &-social {
+    justify-content: space-between;
+    margin-top: 3.75rem;
+    &-item {
+      background: #ffffff;
+      box-shadow: 0px 69.9464px 28.1394px rgba(130, 130, 130, 0.01), 0px 39.3951px 23.3155px rgba(130, 130, 130, 0.05),
+        0px 17.6876px 17.6876px rgba(130, 130, 130, 0.09), 0px 4.01991px 9.64778px rgba(130, 130, 130, 0.1),
+        0px 0px 0px rgba(130, 130, 130, 0.1);
+      border-radius: 1rem;
+      min-width: 16.6rem;
+      max-width: 16.625rem;
+      &-photo {
+        position: relative;
+        overflow: hidden;
+        height: 10rem;
+        img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+      }
+      &-top {
+        display: flex;
+        align-items: center;
+        padding: 0.9375rem 1.125rem;
+      }
+      &-company {
+        color: #554f4f;
+        font-size: 11px;
+        margin-left: 0.5rem;
+      }
+      &-content {
+        padding: 0.5rem 1.25rem 1rem;
+        p {
+            margin: 0.3125rem 0;
+            font-size: 0.5rem;
+            color: #554F4F;
+        }
+        &-company {
+            font-size: 0.625rem;
+        }
+        &-link {
+            color: $blue-color;
+            text-decoration: none;
+            font-weight: 700;
         }
       }
     }
@@ -125,7 +201,7 @@
   }
   &-item {
     background-color: white;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     &-img {

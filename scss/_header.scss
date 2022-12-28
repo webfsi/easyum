@@ -158,19 +158,21 @@
 .location {
   &-dropdown {
     &-inner {
-      // display: none;
-      display: flex;
+      display: none;
+      // display: flex;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
       width: 1280px;
       margin-top: 1.5rem;
-      border-radius: 10px;
+      border-radius: 1rem;
       overflow: hidden;
       @include fadeOut;
 
       &.active {
         @include fadeIn;
+        z-index: 1;
+        display: flex;
       }
 
       @media (max-width: 1280px) {
@@ -189,7 +191,7 @@
     &-left {
       background-color: $bg-color-2;
       padding: 1.875rem 4rem;
-      border-radius: 0.625rem 0 0 0.625rem;
+      border-radius: 1rem 0 0 1rem;
     }
 
     &-right {
@@ -197,7 +199,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      border-radius: 0 0.625rem 0.625rem 0;
+      border-radius: 0 1rem 1rem 0;
     }
 
     &-trigger {
@@ -265,8 +267,8 @@
 .courses {
   &-dropdown {
     &-inner {
-      // display: none;
-      display: flex;
+      display: none;
+      // display: flex;
       position: absolute;
       left: 50%;
       transform: translateX(-50%);
@@ -277,6 +279,8 @@
       &.active {
         // display: flex;
         @include fadeIn;
+        z-index: 1;
+        display: flex;
       }
 
       @media (max-width: 1280px) {
@@ -395,7 +399,7 @@
     }
     &-item {
       background-color: white;
-      border-radius: 0.625rem;
+      border-radius: 1rem;
       display: flex;
       position: relative;
       overflow: hidden;
