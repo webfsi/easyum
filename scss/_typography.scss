@@ -65,6 +65,7 @@ h6 {
 
 .h3 {
   font-size: 1.5625rem;
+  font-weight: 500;
 }
 
 .h4 {
@@ -90,6 +91,32 @@ h6 {
   font-size: 1.25rem;
   line-height: 156%;
   color: $darkgrey-color-1;
+}
+
+// hover font-weight fix - https://css-tricks.com/bold-on-hover-without-the-layout-shift/
+[data-text] {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  &:hover {
+    font-weight: 700;
+  }
+}
+[data-text]:after {
+  content: attr(data-text);
+  content: attr(data-text) / "";
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  user-select: none;
+  pointer-events: none;
+  font-weight: 700;
+
+  @media speech {
+    display: none;
+  }
 }
 
 .btn {
@@ -140,36 +167,46 @@ h6 {
     &-right {
       margin-left: 0.25rem;
     }
+    &-left {
+      margin-right: 0.25rem;
+    }
+  }
+  &-success {
+    background-color: $bg-color-1;
+    border-color: $bg-color-1;
+    color: $blue-color;
+
+    &:hover {
+      background-color: $bg-color-1;
+      border-color: $bg-color-1;
+      color: $blue-color;
+    }
+
+    .btn-icon {
+      width: 0.875rem;
+      max-height: 0.875rem;
+    }
+
+    &-video {
+      color: $red-color;
+    }
+  }
+  &-load-more {
+    font-size: 1.5625rem;
+    padding: 1.5rem 1.875rem;
+    .btn-icon {
+      width: 1.5rem;
+      margin-top: -0.3125rem;
+    }
+    &:hover {
+      background-color: transparent;
+      color: $darkgrey-color-1;
+      border-color: $darkgrey-color-1;
+    }
   }
 }
 
 .text {
   color: $darkgrey-color-1;
   font-size: 1.125rem;
-}
-
-// hover font-weight fix - https://css-tricks.com/bold-on-hover-without-the-layout-shift/
-[data-text] {
-  display: inline-flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-  &:hover {
-    font-weight: 700;
-  }
-}
-[data-text]:after {
-  content: attr(data-text);
-  content: attr(data-text) / "";
-  height: 0;
-  visibility: hidden;
-  overflow: hidden;
-  user-select: none;
-  pointer-events: none;
-  font-weight: 700;
-
-  @media speech {
-    display: none;
-  }
 }

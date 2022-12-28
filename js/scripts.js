@@ -31,7 +31,7 @@ locationClose.addEventListener("click", function () {
 });
 window.addEventListener("mouseup", function (e) {
   if (locationContainer !== e.target && !locationContainer.contains(e.target)) {
-    console.log(e.target)
+    console.log(e.target);
     locationTrigger.classList.remove("active");
     locationContainer.classList.remove("active");
   }
@@ -75,6 +75,7 @@ academyItems.forEach((academyItem) => {
     academyItemChosen.textContent = academyItemText;
   });
 });
+
 // adding choice to body
 document.querySelector(".academy-dropdown-item-offline").addEventListener("click", function () {
   document.body.classList.add("offline");
@@ -108,3 +109,25 @@ function openTab(event, tabName) {
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+// show more success items
+let showMoreBtn = document.querySelector(".btn-load-more-success");
+
+showMoreBtn.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".success-item.d-none");
+
+  let commentsList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+
+  commentsList.forEach((item, index) => {
+    item.className = "success-item";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+
+  if (hiddenElements.length === 0) {
+    showMoreBtn.className = "d-none";
+  }
+});

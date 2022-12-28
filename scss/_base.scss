@@ -36,21 +36,35 @@ body {
 }
 
 .row {
-    display: flex;
+  display: flex;
+}
+
+.col {
+  width: 50%;
 }
 
 .wrapper {
-    padding: 1.875rem 0 3.75rem;
+  padding: 1.875rem 0 3.75rem;
+}
+
+.d-block {
+  display: block !important;
+}
+.d-flex {
+  display: flex !important;
+}
+.d-none {
+  display: none !important;
 }
 
 .blue {
-    color: $blue-color;
+  color: $blue-color;
 }
 
 .regular-sect {
-    + .regular-sect {
-        padding-top: 7.5rem;
-    }
+  + .regular-sect {
+    padding-top: 7.5rem;
+  }
 }
 
 // fade animations
