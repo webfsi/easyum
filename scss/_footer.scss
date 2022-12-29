@@ -4,6 +4,16 @@
   padding: 0 0 7rem;
   margin-top: 10rem;
 
+  .container {
+    transform: translateY(-2vw);
+  }
+
+  &-logo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
   &:before {
     content: "";
     position: absolute;
@@ -95,6 +105,40 @@
 
     a {
       text-decoration: none;
+    }
+  }
+
+  .academy-dropdown {
+    border-left: 2px solid white;
+    &-item,
+    .academy-dropdown-item-chosen {
+      color: white;
+      cursor: default;
+      font-size: .9375rem;
+    }
+  }
+}
+
+body.offline {
+  .footer {
+    .academy-dropdown-item-offline {
+      display: inline-block;
+    }
+  }
+}
+
+body.online {
+  .footer {
+    .academy-dropdown-item-online {
+      display: inline-block;
+    }
+  }
+}
+
+body.kids {
+  .footer {
+    .academy-dropdown-item-kids {
+      display: inline-block;
     }
   }
 }
