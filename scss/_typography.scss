@@ -205,11 +205,14 @@ h6 {
     .btn-icon {
       width: 1.5rem;
       margin-top: -0.3125rem;
+      transition: .3s;
     }
     &:hover {
-      // background-color: transparent;
-      // color: $darkgrey-color-1;
-      // border-color: $darkgrey-color-1;
+      .btn-icon {
+        path {
+          fill: white;
+        }
+      }
     }
   }
 }

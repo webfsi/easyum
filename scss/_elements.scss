@@ -286,6 +286,9 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 2.125rem 1.25rem;
     max-width: 40rem;
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
     &-item {
       background-color: white;
       border-radius: 1rem;
@@ -315,23 +318,23 @@
     display: flex;
     margin-left: 4rem;
     &-decor {
-        position: relative;
+      position: relative;
     }
     &-star {
-        background-image: url(../img/reviews/star.svg);
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-        width: 18.125rem;
-        height: 17.5rem;
-        color: white;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 5rem;
-        font-family: $heading-font;
-        font-weight: 700;
-        margin-left: -4rem;
+      background-image: url(../img/reviews/star.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      width: 18.125rem;
+      height: 17.5rem;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 5rem;
+      font-family: $heading-font;
+      font-weight: 700;
+      margin-left: -4rem;
     }
   }
 }

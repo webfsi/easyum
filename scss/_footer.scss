@@ -1,11 +1,32 @@
 .footer {
   position: relative;
-  background-color: $blue-color;
-  padding: 0 0 7rem;
-  margin-top: 10rem;
+  overflow-x: hidden;
+
+  &-inner {
+    padding: 0 0 7rem;
+    background-color: $blue-color;
+    position: relative;
+    margin-top: 12vw;
+
+    @media (max-width: 1920px) {
+      margin-top: 15rem;
+    }
+  }
+
+  &-bg {
+    position: absolute;
+    width: 100vw;
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: calc(100% - 1px);
+
+    @media (max-width: 1920px) {
+      width: 120rem;
+    }
+  }
 
   .container {
-    transform: translateY(-2vw);
+    transform: translateY(-7rem);
   }
 
   &-logo {
@@ -35,12 +56,6 @@
     display: flex;
     flex-direction: column;
     flex-basis: 20%;
-  }
-
-  &-bg {
-    position: absolute;
-    width: 100vw;
-    bottom: calc(100% - 1px);
   }
 
   .row {
@@ -114,7 +129,7 @@
     .academy-dropdown-item-chosen {
       color: white;
       cursor: default;
-      font-size: .9375rem;
+      font-size: 0.9375rem;
     }
   }
 }
