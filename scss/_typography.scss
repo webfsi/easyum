@@ -183,11 +183,14 @@ h6 {
     background-color: $bg-color-1;
     border-color: $bg-color-1;
     color: $blue-color;
+    display: flex;
+    align-items: center;
 
     &:hover {
       background-color: $bg-color-1;
       border-color: $bg-color-1;
       color: $blue-color;
+      font-weight: 400;
     }
 
     .btn-icon {

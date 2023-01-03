@@ -1,17 +1,3 @@
-// fade animation
-// var text = document.getElementById("fade-text"),
-//   fadeBtn = document.getElementById("fade");
-
-// fadeBtn.onclick = function () {
-//   if (!text.hasAttribute("class") || text.classList.contains("fadeOut")) {
-//     text.removeAttribute("class", "fadeOut");
-//     text.setAttribute("class", "fadeIn");
-//   } else if (text.classList.contains("fadeIn")) {
-//     text.classList.remove("fadeIn");
-//     text.classList.add("fadeOut");
-//   }
-// };
-
 // header location and courses
 const locationTrigger = document.querySelector(".location-dropdown-trigger");
 const locationContainer = document.querySelector(".location-dropdown-inner");
@@ -22,15 +8,20 @@ const coursesClose = document.querySelector(".courses-dropdown-close");
 
 // header location active
 locationTrigger.addEventListener("click", function () {
-  this.classList.toggle("active");
-  locationContainer.classList.toggle("active");
+  if (locationTrigger.classList.contains("active")) {
+    this.classList.remove("active");
+    locationContainer.classList.remove("active");
+  } else {
+    this.classList.add("active");
+    locationContainer.classList.add("active");
+  }
 });
 locationClose.addEventListener("click", function () {
-  locationTrigger.classList.toggle("active");
+  locationTrigger.classList.remove("active");
   locationContainer.classList.remove("active");
 });
 window.addEventListener("mouseup", function (e) {
-  if (locationContainer !== e.target && !locationContainer.contains(e.target)) {
+  if (locationTrigger !== e.target && locationContainer !== e.target && !locationContainer.contains(e.target)) {
     locationTrigger.classList.remove("active");
     locationContainer.classList.remove("active");
   }
@@ -38,15 +29,20 @@ window.addEventListener("mouseup", function (e) {
 
 // header courses active
 coursesTrigger.addEventListener("click", function () {
-  this.classList.toggle("active");
-  coursesContainer.classList.toggle("active");
+  if (coursesTrigger.classList.contains("active")) {
+    this.classList.remove("active");
+    coursesContainer.classList.remove("active");
+  } else {
+    this.classList.add("active");
+    coursesContainer.classList.add("active");
+  }
 });
 coursesClose.addEventListener("click", function () {
-  coursesTrigger.classList.toggle("active");
+  coursesTrigger.classList.remove("active");
   coursesContainer.classList.remove("active");
 });
 window.addEventListener("mouseup", function (e) {
-  if (coursesContainer !== e.target && !coursesContainer.contains(e.target)) {
+  if (coursesTrigger !== e.target && coursesContainer !== e.target && !coursesContainer.contains(e.target)) {
     coursesTrigger.classList.remove("active");
     coursesContainer.classList.remove("active");
   }
