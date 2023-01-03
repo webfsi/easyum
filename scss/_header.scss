@@ -68,6 +68,10 @@
     .academy-dropdown-item {
       display: block;
     }
+
+    &:after {
+      transform: translateY(-50%) rotate(180deg);
+    }
   }
   &-item,
   .academy-dropdown-item-chosen {
@@ -110,6 +114,7 @@
     top: 50%;
     right: 0;
     transform: translateY(-50%);
+    transition: .3s;
   }
 }
 .academy-dropdown.is-open .academy-dropdown-item.active {

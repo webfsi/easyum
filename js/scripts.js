@@ -106,9 +106,8 @@ function openTab(event, tabName) {
 document.getElementById("defaultOpen").click();
 
 // show more success items
-const showMoreBtn = document.querySelector(".btn-load-more-success");
-
-showMoreBtn?.addEventListener("click", () => {
+const showMoreSuccessBtn = document.querySelector(".btn-load-more-success");
+showMoreSuccessBtn?.addEventListener("click", () => {
   let hiddenElements = document.querySelectorAll(".success-item.d-none");
   let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
   successList.forEach((item, index) => {
@@ -120,7 +119,25 @@ showMoreBtn?.addEventListener("click", () => {
     }
   });
   if (hiddenElements.length === successList.length) {
-    showMoreBtn.className = "d-none";
+    showMoreSuccessBtn.className = "d-none";
+  }
+});
+
+// show more review videos
+const showMoreReviewBtn = document.querySelector(".btn-load-more-review");
+showMoreReviewBtn?.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".review-video-item.d-none");
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
+    item.className = "review-video-item";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+  if (hiddenElements.length === successList.length) {
+    showMoreReviewBtn.className = "d-none";
   }
 });
 
