@@ -782,5 +782,34 @@
     <script src="js/simple-lightbox.min.js"></script>
     <script src="js/macy.js"></script>
     <script src="js/scripts.js?2"></script>
+    <script>
+      let macy1 = Macy({
+        container: ".swiper-review-slide-inner-1",
+        trueOrder: false,
+        waitForImages: true,
+        margin: 16,
+        columns: 3,
+        breakAt: {
+          1200: 2,
+          520: 2,
+          400: 1,
+        },
+      });
+      let macy2 = Macy({
+        container: ".swiper-review-slide-inner-2",
+        trueOrder: false,
+        waitForImages: true,
+        margin: 16,
+        columns: 3,
+        breakAt: {
+          1200: 2,
+          520: 2,
+          400: 1,
+        },
+      });
+      macyInstance.runOnImageLoad(function () {
+        macyInstance.recalculate(true);
+      }, true);
+    </script>
   </body>
 </html>

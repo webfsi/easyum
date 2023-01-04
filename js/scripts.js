@@ -155,30 +155,3 @@ const swiperReviews = new Swiper(".swiper-review", {
 
 // review masonry
 new SimpleLightbox('.swiper-review-slide-img-link', { /* options */ });
-let macy1 = Macy({
-  container: '.swiper-review-slide-inner-1',
-  trueOrder: false,
-  waitForImages: true,
-  margin: 16,
-  columns: 3,
-  breakAt: {
-      1200: 2,
-      520: 2,
-      400: 1
-  }
-});
-let macy2 = Macy({
-  container: '.swiper-review-slide-inner-2',
-  trueOrder: false,
-  waitForImages: true,
-  margin: 16,
-  columns: 3,
-  breakAt: {
-      1200: 2,
-      520: 2,
-      400: 1
-  }
-});
-macyInstance.runOnImageLoad(function () {
-  macyInstance.recalculate(true);
-}, true)
