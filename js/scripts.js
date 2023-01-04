@@ -142,26 +142,43 @@ showMoreReviewBtn?.addEventListener("click", () => {
 });
 
 // slider, reviews
-const swiperReviews = new Swiper('.swiper-reviews', {
-  // Default parameters
+const swiperReviews = new Swiper(".swiper-review", {
   slidesPerView: 1,
-  spaceBetween: 10,
-  // Responsive breakpoints
-  breakpoints: {
-    // when window width is >= 320px
-    320: {
-      slidesPerView: 2,
-      spaceBetween: 20
-    },
-    // when window width is >= 480px
-    480: {
-      slidesPerView: 3,
-      spaceBetween: 30
-    },
-    // when window width is >= 640px
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 40
-    }
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-review-next",
+    prevEl: ".swiper-button-review-prev",
+  },
+});
+
+// review masonry
+new SimpleLightbox('.swiper-review-slide-img-link', { /* options */ });
+let macy1 = Macy({
+  container: '.swiper-review-slide-inner-1',
+  trueOrder: false,
+  waitForImages: true,
+  margin: 16,
+  columns: 3,
+  breakAt: {
+      1200: 2,
+      520: 2,
+      400: 1
   }
-})
+});
+let macy2 = Macy({
+  container: '.swiper-review-slide-inner-2',
+  trueOrder: false,
+  waitForImages: true,
+  margin: 16,
+  columns: 3,
+  breakAt: {
+      1200: 2,
+      520: 2,
+      400: 1
+  }
+});
+macyInstance.runOnImageLoad(function () {
+  macyInstance.recalculate(true);
+}, true)
