@@ -155,3 +155,30 @@ const swiperReviews = new Swiper(".swiper-review", {
 
 // review masonry
 new SimpleLightbox('.swiper-review-slide-img-link', { /* options */ });
+
+// modal
+document.addEventListener("click", function (e) {
+  let $target = e.target;
+  if ($target.closest('[data-toggle="modal"]')) {
+    e.preventDefault();
+    $target = $target.closest('[data-toggle="modal"]');
+    document.querySelector($target.dataset.target).classList.add("modal-show");
+    document.body.classList.toggle("no-scroll");
+  } else if ($target.dataset.close === "modal") {
+    e.preventDefault();
+    $target.closest(".modal").classList.remove("modal-show");
+    document.body.classList.remove("no-scroll");
+  } else {
+    if (e.target.classList.contains("modal")) {
+      $target.closest(".modal").classList.remove("modal-show");
+      document.body.classList.remove("no-scroll");
+    }
+  }
+});
+// modal auto open
+// setTimeout(function () {
+//   document.querySelector(".modal")?.classList.add("modal-show");
+//   if (document.body.contains(document.querySelector(".modal"))) {
+//     document.body.classList.add("no-scroll");
+//   }
+// }, 5000);
