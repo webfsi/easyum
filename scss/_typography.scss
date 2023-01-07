@@ -88,6 +88,10 @@ h6 {
   font-size: 0.75rem;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .main-heading {
   margin-bottom: 1.25rem;
   &-contact {
@@ -172,6 +176,10 @@ h6 {
       color: white;
     }
   }
+  &-big {
+    font-size: 1.5rem;
+    padding: 1.5rem 2rem;
+  }
   &-icon {
     width: 0.5rem;
     display: inline-block;
@@ -222,5 +230,11 @@ h6 {
         }
       }
     }
+  }
+}
+
+.btn[type="submit"] {
+  &:hover {
+    font-weight: 400;
   }
 }

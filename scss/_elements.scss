@@ -443,4 +443,22 @@
       }
     }
   }
+  &-form {
+    &-sect {
+        margin: 7.5rem 0 3.75rem;
+    }
+    &-row {
+      display: flex;
+      position: relative;
+    }
+    &-col {
+      width: 36rem;
+      position: relative;
+    }
+    &-decor {
+        position: absolute;
+        left: calc(100% - 4px);
+        bottom: -14px;
+    }
+  }
 }

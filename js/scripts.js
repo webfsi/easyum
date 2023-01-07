@@ -182,3 +182,11 @@ document.addEventListener("click", function (e) {
 //     document.body.classList.add("no-scroll");
 //   }
 // }, 5000);
+
+// file upload
+const uploadBtn = document.getElementById('upload-btn');
+const fileChosen = document.getElementById('file-chosen');
+uploadBtn.addEventListener('change', function(){
+  fileChosen.classList.add("form-upload-msg-filled");
+  fileChosen.textContent = this.files[0].name;
+})
