@@ -154,7 +154,9 @@ const swiperReviews = new Swiper(".swiper-review", {
 });
 
 // review masonry
-new SimpleLightbox('.swiper-review-slide-img-link', { /* options */ });
+new SimpleLightbox(".swiper-review-slide-img-link", {
+  /* options */
+});
 
 // modal
 document.addEventListener("click", function (e) {
@@ -183,36 +185,48 @@ document.addEventListener("click", function (e) {
 //   }
 // }, 5000);
 
+// modal thanks
+const quickModalBtn = document.querySelectorAll(".btn-quick-send");
+quickModalBtn.forEach((btn) => {
+  btn.addEventListener("click", function (e) {
+    e.preventDefault();
+    btn.closest(".modal-content-form").classList.add("sent");
+  });
+});
+
 // file upload
-const uploadBtn = document.getElementById('upload-btn');
-const fileChosen = document.getElementById('file-chosen');
-uploadBtn.addEventListener('change', function(){
-  fileChosen.classList.add("form-upload-msg-filled");
-  fileChosen.textContent = this.files[0].name;
-})
+const uploadBtn = document.querySelectorAll(".upload-btn");
+uploadBtn.forEach((upload) => {
+  upload.addEventListener("change", function () {
+    let fileChosen = upload.closest(":has(.form-upload-msg)").lastElementChild;
+    console.log(fileChosen)
+    fileChosen.classList.add("form-upload-msg-filled");
+    fileChosen.textContent = this.files[0].name;
+  });
+});
 
 // job filers
-const jobFilters = document.querySelectorAll('.job-filter');
+const jobFilters = document.querySelectorAll(".job-filter");
 
-jobFilters.forEach(filter => { 
-  filter.addEventListener('click', function() {
-    let selectedFilter = filter.getAttribute('data-filter');
+jobFilters.forEach((filter) => {
+  filter.addEventListener("click", function () {
+    let selectedFilter = filter.getAttribute("data-filter");
     let itemsToHide = document.querySelectorAll(`.job-list .job-list-item:not([data-filter='${selectedFilter}'])`);
     let itemsToShow = document.querySelectorAll(`.job-list [data-filter='${selectedFilter}']`);
 
-    if (selectedFilter == 'all') {
+    if (selectedFilter == "all") {
       itemsToHide = [];
-      itemsToShow = document.querySelectorAll('.job-list [data-filter]');
+      itemsToShow = document.querySelectorAll(".job-list [data-filter]");
     }
 
-    itemsToHide.forEach(el => {
-      el.classList.add('hide');
-      el.classList.remove('show');
+    itemsToHide.forEach((el) => {
+      el.classList.add("hide");
+      el.classList.remove("show");
     });
 
-    itemsToShow.forEach(el => {
-      el.classList.remove('hide');
-      el.classList.add('show'); 
+    itemsToShow.forEach((el) => {
+      el.classList.remove("hide");
+      el.classList.add("show");
     });
   });
 });

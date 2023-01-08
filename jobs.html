@@ -463,7 +463,7 @@
                 </div>
                 <label class="form-label">
                   <span class="form-input form-upload">
-                    <input type="file" id="upload-btn" hidden />
+                    <input type="file" class="upload-btn" id="upload-btn" hidden />
                     <!-- our custom upload button -->
                     <label for="upload-btn">Резюме</label>
                     <!-- name of file chosen -->
@@ -674,8 +674,8 @@
     <div class="modal modal-job-quick" id="quick">
       <div class="modal-wrap modal-wrap-small">
         <span class="modal-close" data-close="modal"></span>
-        <div class="modal-content">
-          <h3 class="h3 blue">Присылайте нам свое резюме, и мы свяжемся с вами!</h3>
+        <div class="modal-content modal-content-form">
+          <h3 class="h3 blue bold">Присылайте нам свое резюме, и&nbsp;мы свяжемся с вами!</h3>
           <form action="" class="form">
             <label class="form-label">
               <input type="text" class="form-input form-input-text" placeholder="ФИО" />
@@ -690,7 +690,7 @@
             </div>
             <label class="form-label">
               <span class="form-input form-upload">
-                <input type="file" id="upload-btn" hidden />
+                <input type="file" class="upload-btn" id="upload-btn" hidden />
                 <!-- our custom upload button -->
                 <label for="upload-btn">Резюме</label>
                 <!-- name of file chosen -->
@@ -702,9 +702,16 @@
                 Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования
                 Платформой
               </span>
-              <input type="submit" value="Отправить" data-text="Отправить" class="btn btn-red-fill btn-big" />
+              <input type="submit" value="Отправить" data-text="Отправить" class="btn btn-red-fill btn-big btn-quick-send" />
             </div>
           </form>
+        </div>
+        <div class="modal-content modal-content-thanks">
+          <p class="modal-content-thanks-heading">СПАСИБО!</p>
+          <p class="text">Мы свяжемся с Вами в ближайшее время</p>
+          <p class="text">Хотите ускорить процесс? Остался один шаг напишите нам в телеграм и HR с радостью ответит Вам!</p>
+          <a href="" class="btn btn-red-fill btn-big"><img src="img/social/telegram-white.svg" class="btn-icon" alt=""> Написать</a>
+          <img src="img/other/girl-thanks.png" class="modal-content-thanks-decor" alt="">
         </div>
       </div>
     </div>
