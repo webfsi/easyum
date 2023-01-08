@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css?3" />
     <title>Вакансии</title>
   </head>
-  <body class="offline reviews-page bg-top">
+  <body class="offline reviews-page">
     <header class="header">
       <div class="container header-container">
         <div class="header-left">
@@ -357,8 +357,15 @@
             Мы ищем талантливых специалистов, увлечённых своим делом. Присоединяйтесь, если вам интересен EdTech, и
             стройте карьеру вместе с нами!
           </p>
+          <div class="job-filters">
+            <span class="job-filter job-filter-all active" data-text="Все вакансии" data-filter="all">Все вакансии</span>
+            <span class="job-filter" data-text="В офисе" data-filter="office">В офисе</span>
+            <span class="job-filter" data-text="Можно удалённо" data-filter="remote">Можно удалённо</span>
+            <span class="job-filter" data-text="Начало карьеры, студенты" data-filter="start">Начало карьеры, студенты</span>
+            <span class="job-filter" data-text="Экспертам" data-filter="expert">Экспертам</span>
+          </div>
           <div class="job-list">
-            <div class="job-list-item">
+            <div class="job-list-item" data-filter="start">
               <div class="job-list-item-name">
                 <div class="job-list-item-type">
                   <span class="job-list-item-type-badge">Краснодар</span>
@@ -368,10 +375,12 @@
               </div>
               <div class="job-list-item-more">
                 <a href="#form" class="btn" data-toggle="modal" data-target="#job-1" data-text="Подробнее">Подробнее</a>
-                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">Быстрый отклик</a>
+                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">
+                  Быстрый отклик
+                </a>
               </div>
             </div>
-            <div class="job-list-item">
+            <div class="job-list-item" data-filter="remote">
               <div class="job-list-item-name">
                 <div class="job-list-item-type">
                   <span class="job-list-item-type-badge">Краснодар</span>
@@ -381,10 +390,12 @@
               </div>
               <div class="job-list-item-more">
                 <a href="#form" class="btn" data-toggle="modal" data-target="#job-1" data-text="Подробнее">Подробнее</a>
-                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">Быстрый отклик</a>
+                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">
+                  Быстрый отклик
+                </a>
               </div>
             </div>
-            <div class="job-list-item">
+            <div class="job-list-item" data-filter="expert">
               <div class="job-list-item-name">
                 <div class="job-list-item-type">
                   <span class="job-list-item-type-badge">Краснодар</span>
@@ -394,10 +405,12 @@
               </div>
               <div class="job-list-item-more">
                 <a href="#form" class="btn" data-toggle="modal" data-target="#job-1" data-text="Подробнее">Подробнее</a>
-                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">Быстрый отклик</a>
+                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">
+                  Быстрый отклик
+                </a>
               </div>
             </div>
-            <div class="job-list-item">
+            <div class="job-list-item" data-filter="office">
               <div class="job-list-item-name">
                 <div class="job-list-item-type">
                   <span class="job-list-item-type-badge">Санкт - Петербург</span>
@@ -407,10 +420,12 @@
               </div>
               <div class="job-list-item-more">
                 <a href="#form" class="btn" data-toggle="modal" data-target="#job-1" data-text="Подробнее">Подробнее</a>
-                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">Быстрый отклик</a>
+                <a href="" class="btn btn-red-fill" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик">
+                  Быстрый отклик
+                </a>
               </div>
             </div>
-            <div class="job-list-item">
+            <div class="job-list-item" data-filter="office">
               <div class="job-list-item-name">
                 <div class="job-list-item-type">
                   <span class="job-list-item-type-badge">Ижевск</span>
@@ -420,7 +435,9 @@
               </div>
               <div class="job-list-item-more">
                 <a href="#form" class="btn" data-toggle="modal" data-target="#job-1" data-text="Подробнее">Подробнее</a>
-                <a href="" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик" class="btn btn-red-fill">Быстрый отклик</a>
+                <a href="" data-toggle="modal" data-target="#quick" data-text="Быстрый отклик" class="btn btn-red-fill">
+                  Быстрый отклик
+                </a>
               </div>
             </div>
           </div>
@@ -560,7 +577,7 @@
         </div>
       </div>
     </footer>
-    <div class="modal" id="job-1">
+    <div class="modal modal-job" id="job-1">
       <div class="modal-wrap">
         <span class="modal-close" data-close="modal"></span>
         <div class="modal-content">
@@ -651,6 +668,43 @@
               <a href="" class="btn btn-red-fill btn-big" data-text="Откликнуться">Откликнуться</a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal modal-job-quick" id="quick">
+      <div class="modal-wrap modal-wrap-small">
+        <span class="modal-close" data-close="modal"></span>
+        <div class="modal-content">
+          <h3 class="h3 blue">Присылайте нам свое резюме, и мы свяжемся с вами!</h3>
+          <form action="" class="form">
+            <label class="form-label">
+              <input type="text" class="form-input form-input-text" placeholder="ФИО" />
+            </label>
+            <div class="form-row">
+              <label class="form-label">
+                <input type="text" class="form-input form-input-text" placeholder="Телефон" />
+              </label>
+              <label class="form-label">
+                <input type="text" class="form-input form-input-text" placeholder="E-mail" />
+              </label>
+            </div>
+            <label class="form-label">
+              <span class="form-input form-upload">
+                <input type="file" id="upload-btn" hidden />
+                <!-- our custom upload button -->
+                <label for="upload-btn">Резюме</label>
+                <!-- name of file chosen -->
+                <span id="file-chosen" class="form-upload-msg">Файл не выбран</span>
+              </span>
+            </label>
+            <div class="form-row form-row-submit">
+              <span class="form-policy">
+                Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования
+                Платформой
+              </span>
+              <input type="submit" value="Отправить" data-text="Отправить" class="btn btn-red-fill btn-big" />
+            </div>
+          </form>
         </div>
       </div>
     </div>

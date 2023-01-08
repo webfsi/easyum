@@ -190,3 +190,37 @@ uploadBtn.addEventListener('change', function(){
   fileChosen.classList.add("form-upload-msg-filled");
   fileChosen.textContent = this.files[0].name;
 })
+
+// job filers
+const jobFilters = document.querySelectorAll('.job-filter');
+
+jobFilters.forEach(filter => { 
+  filter.addEventListener('click', function() {
+    let selectedFilter = filter.getAttribute('data-filter');
+    let itemsToHide = document.querySelectorAll(`.job-list .job-list-item:not([data-filter='${selectedFilter}'])`);
+    let itemsToShow = document.querySelectorAll(`.job-list [data-filter='${selectedFilter}']`);
+
+    if (selectedFilter == 'all') {
+      itemsToHide = [];
+      itemsToShow = document.querySelectorAll('.job-list [data-filter]');
+    }
+
+    itemsToHide.forEach(el => {
+      el.classList.add('hide');
+      el.classList.remove('show');
+    });
+
+    itemsToShow.forEach(el => {
+      el.classList.remove('hide');
+      el.classList.add('show'); 
+    });
+  });
+});
+jobFilters.forEach((filter) => {
+  filter.addEventListener("click", function () {
+    jobFilters.forEach(function (element) {
+      element.classList.remove("active");
+    });
+    filter.classList.add("active");
+  });
+});
