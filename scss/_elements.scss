@@ -157,6 +157,7 @@
           top: 50%;
           left: 50%;
           transform: translate(-50%, -50%);
+          height: 100%;
         }
       }
       &-top {
@@ -212,13 +213,10 @@
       overflow: hidden;
       &-bg {
         position: absolute;
-        height: 100%;
         width: 100%;
-        height: 100%;
-        bottom: -40px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-        border-radius: 50%;
       }
       &-photo {
         position: absolute;
@@ -300,6 +298,8 @@
         justify-content: center;
         height: 2.5rem;
         img {
+            max-width: 4.5rem;
+            max-height: 2.5rem;
         }
       }
       &-rate {
@@ -319,6 +319,7 @@
     margin-left: 4rem;
     &-decor {
       position: relative;
+      max-height: 340px;
     }
     &-star {
       background-image: url(../img/review/star.svg);
@@ -393,11 +394,116 @@
     margin-bottom: 7.5rem;
     &-slide {
       &-inner {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        min-height: 500px;
+        &-1 {
+            .swiper-review-slide-img-link:nth-of-type(2) {
+                top: 136px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(3) {
+                top: 245px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(4) {
+                top: 378px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(5) {
+                top: 0;
+                left: 511px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(6) {
+                top: 245px;
+                left: 489px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(7) {
+                top: 378px;
+                left: 489px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(8) {
+                top: 0;
+                left: 875px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(9) {
+                top: 138px;
+                left: 867px;
+            }
+        }
+        &-2 {
+            .swiper-review-slide-img-link:nth-of-type(2) {
+                top: 306px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(3) {
+                top: 306px;
+                left: 205px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(4) {
+                top: 378px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(5) {
+                top: 0;
+                left: 641px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(6) {
+                top: 198px;
+                left: 641px;
+            }
+            .swiper-review-slide-img-link:nth-of-type(7) {
+                top: 317px;
+                left: 454px;
+            }
+        }
+      }
+      &-img-link {
+        position: absolute;
       }
       &-img {
         width: 100%;
-        display: flex;
-        position: relative;
+      }
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    background-color: $bg-color-3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 3.125rem;
+    height: 3.125rem;
+    border-radius: 50%;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: $lightblue-color-3;
+
+      &:after {
+        background-image: url(../img/icons/swiper-left-hover.svg);
+      }
+    }
+
+    &:after {
+      background-image: url(../img/icons/swiper-left.svg);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 9px;
+      height: 16px;
+      display: inline-block;
+      font-size: 0;
+    }
+  }
+
+  .swiper-button-next {
+    &:after {
+      background-image: url(../img/icons/swiper-right.svg);
+    }
+
+    &:hover {
+      background-color: $lightblue-color-3;
+
+      &:after {
+        background-image: url(../img/icons/swiper-right-hover.svg);
       }
     }
   }
@@ -478,11 +584,11 @@
     color: $darkgrey-color-1;
     font-family: $heading-font;
     cursor: pointer;
-    transition: .3s;
+    transition: 0.3s;
     &.active {
-        background-color: $blue-color;
-        color: white;
-        font-weight: 700;
+      background-color: $blue-color;
+      color: white;
+      font-weight: 700;
     }
   }
 }

@@ -462,7 +462,7 @@
               </div>
             </div>
             <div class="review-average">
-              <img src="img/review/girl.png" class="review-average-decor" alt="" />
+              <img src="img/review/review-girl.png" class="review-average-decor" alt="" />
               <div class="review-average-star">4,5</div>
             </div>
           </div>
@@ -505,9 +505,6 @@
               </div>
               <div class="swiper-slide">
                 <div class="swiper-review-slide-inner swiper-review-slide-inner-2">
-                  <a href="img/review/content/10.png" class="swiper-review-slide-img-link">
-                    <img src="img/review/content/10.png" class="swiper-review-slide-img" alt="" />
-                  </a>
                   <a href="img/review/content/11.png" class="swiper-review-slide-img-link">
                     <img src="img/review/content/11.png" class="swiper-review-slide-img" alt="" />
                   </a>
@@ -516,6 +513,9 @@
                   </a>
                   <a href="img/review/content/13.png" class="swiper-review-slide-img-link">
                     <img src="img/review/content/13.png" class="swiper-review-slide-img" alt="" />
+                  </a>
+                  <a href="img/review/content/10.png" class="swiper-review-slide-img-link">
+                    <img src="img/review/content/10.png" class="swiper-review-slide-img" alt="" />
                   </a>
                   <a href="img/review/content/14.png" class="swiper-review-slide-img-link">
                     <img src="img/review/content/14.png" class="swiper-review-slide-img" alt="" />
@@ -780,36 +780,6 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/simple-lightbox.min.js"></script>
-    <script src="js/macy.js"></script>
     <script src="js/scripts.js?2"></script>
-    <script>
-      let macy1 = Macy({
-        container: ".swiper-review-slide-inner-1",
-        trueOrder: false,
-        waitForImages: true,
-        margin: 16,
-        columns: 3,
-        breakAt: {
-          1200: 2,
-          520: 2,
-          400: 1,
-        },
-      });
-      let macy2 = Macy({
-        container: ".swiper-review-slide-inner-2",
-        trueOrder: false,
-        waitForImages: true,
-        margin: 16,
-        columns: 3,
-        breakAt: {
-          1200: 2,
-          520: 2,
-          400: 1,
-        },
-      });
-      macyInstance.runOnImageLoad(function () {
-        macyInstance.recalculate(true);
-      }, true);
-    </script>
   </body>
 </html>
