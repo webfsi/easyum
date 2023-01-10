@@ -153,9 +153,11 @@ const swiperReviews = new Swiper(".swiper-review", {
   },
 });
 
-// review masonry
-new SimpleLightbox(".swiper-review-slide-img-link", {
-  /* options */
+// reviews
+document.addEventListener("DOMContentLoaded", function (event) {
+  new VenoBox({
+    selector: ".swiper-review-slide-img-link",
+  });
 });
 
 // modal
@@ -199,7 +201,7 @@ const uploadBtn = document.querySelectorAll(".upload-btn");
 uploadBtn.forEach((upload) => {
   upload.addEventListener("change", function () {
     let fileChosen = upload.closest(":has(.form-upload-msg)").lastElementChild;
-    console.log(fileChosen)
+    console.log(fileChosen);
     fileChosen.classList.add("form-upload-msg-filled");
     fileChosen.textContent = this.files[0].name;
   });
