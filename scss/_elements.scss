@@ -651,14 +651,14 @@
 /*  Needed for filters */
 .hide {
   /* You can play with the seconds to change the "animation" */
-  animation: hide 0.3s ease 0s 1 normal forwards;
-  transform-origin: center;
+//   animation: hide 0.3s ease 0s 1 normal forwards;
+//   transform-origin: center;
   display: none;
 }
 .show {
   /* You can play with the seconds to change the "animation" */
-  animation: show 0.3s ease 0s 1 normal forwards;
-  transform-origin: center;
+//   animation: show 0.3s ease 0s 1 normal forwards;
+//   transform-origin: center;
   display: flex;
 }
 
