@@ -158,8 +158,8 @@ h6 {
   }
   &-red {
     &-fill {
-      background-color: $red-color;
-      border-color: $red-color;
+      background-color: $red-color-1;
+      border-color: $red-color-1;
       color: white;
 
       &:hover {
@@ -215,7 +215,7 @@ h6 {
     }
 
     &-video {
-      color: $red-color;
+      color: $red-color-1;
     }
   }
   &-load-more {
