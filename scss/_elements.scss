@@ -300,8 +300,8 @@
         justify-content: center;
         height: 2.5rem;
         img {
-            max-width: 4.5rem;
-            max-height: 2.5rem;
+          max-width: 4.5rem;
+          max-height: 2.5rem;
         }
       }
       &-rate {
@@ -401,59 +401,111 @@
         gap: 1rem;
         min-height: 500px;
         &-1 {
-            .swiper-review-slide-img-link:nth-of-type(2) {
-                top: 136px;
+          .swiper-review-slide-img-link:nth-of-type(1) {
+            img {
+              width: 501px;
             }
-            .swiper-review-slide-img-link:nth-of-type(3) {
-                top: 245px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(2) {
+            top: 136px;
+            img {
+              width: 501px;
             }
-            .swiper-review-slide-img-link:nth-of-type(4) {
-                top: 378px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(3) {
+            top: 245px;
+            img {
+              width: 479px;
             }
-            .swiper-review-slide-img-link:nth-of-type(5) {
-                top: 0;
-                left: 511px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(4) {
+            top: 378px;
+            img {
+              width: 479px;
             }
-            .swiper-review-slide-img-link:nth-of-type(6) {
-                top: 245px;
-                left: 489px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(5) {
+            top: 0;
+            left: 511px;
+            img {
+              width: 355px;
             }
-            .swiper-review-slide-img-link:nth-of-type(7) {
-                top: 378px;
-                left: 489px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(6) {
+            top: 245px;
+            left: 489px;
+            img {
+              width: 380px;
             }
-            .swiper-review-slide-img-link:nth-of-type(8) {
-                top: 0;
-                left: 875px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(7) {
+            top: 378px;
+            left: 489px;
+            img {
+              width: 569px;
             }
-            .swiper-review-slide-img-link:nth-of-type(9) {
-                top: 138px;
-                left: 867px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(8) {
+            top: 0;
+            left: 875px;
+            img {
+              width: 282px;
             }
+          }
+          .swiper-review-slide-img-link:nth-of-type(9) {
+            top: 138px;
+            left: 867px;
+            img {
+              width: 273px;
+            }
+          }
         }
         &-2 {
-            .swiper-review-slide-img-link:nth-of-type(2) {
-                top: 306px;
+          .swiper-review-slide-img-link:nth-of-type(1) {
+            img {
+              width: 626px;
             }
-            .swiper-review-slide-img-link:nth-of-type(3) {
-                top: 306px;
-                left: 205px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(2) {
+            top: 306px;
+            img {
+              width: 190px;
             }
-            .swiper-review-slide-img-link:nth-of-type(4) {
-                top: 378px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(3) {
+            top: 306px;
+            left: 205px;
+            img {
+              width: 223px;
             }
-            .swiper-review-slide-img-link:nth-of-type(5) {
-                top: 0;
-                left: 641px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(4) {
+            top: 378px;
+            img {
+              width: 443px;
             }
-            .swiper-review-slide-img-link:nth-of-type(6) {
-                top: 198px;
-                left: 641px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(5) {
+            top: 0;
+            left: 641px;
+            img {
+              width: 519px;
             }
-            .swiper-review-slide-img-link:nth-of-type(7) {
-                top: 317px;
-                left: 454px;
+          }
+          .swiper-review-slide-img-link:nth-of-type(6) {
+            top: 198px;
+            left: 641px;
+            img {
+              width: 519px;
             }
+          }
+          .swiper-review-slide-img-link:nth-of-type(7) {
+            top: 317px;
+            left: 454px;
+            img {
+              width: 703px;
+            }
+          }
         }
       }
       &-img-link {
