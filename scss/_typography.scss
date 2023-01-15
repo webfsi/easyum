@@ -107,6 +107,10 @@ h6 {
   &-big {
     font-size: 1.25rem;
   }
+
+  &-small {
+    font-size: 0.9375rem;
+  }
 }
 
 // hover font-weight fix - https://css-tricks.com/bold-on-hover-without-the-layout-shift/
@@ -157,6 +161,8 @@ h6 {
     font-weight: 700;
   }
   &-red {
+    border-color: $red-color-1;
+    color: $red-color-1;
     &-fill {
       background-color: $red-color-1;
       border-color: $red-color-1;
@@ -168,13 +174,36 @@ h6 {
         color: white;
       }
     }
+    &:hover {
+      background-color: transparent;
+      border-color: $darkred-color;
+      color: $darkred-color;
+    }
   }
   &-blue {
+    border-color: $blue-color;
+    color: $blue-color;
     &-fill {
       background-color: $blue-color;
       border-color: $blue-color;
       color: white;
     }
+    &:hover {
+      background-color: transparent;
+      border-color: $blue-color;
+      color: $blue-color;
+    }
+  }
+  &-white {
+    color: white;
+    border-color: white;
+    &:hover {
+      border-color: white;
+    }
+  }
+  &-medium {
+    font-size: 1.25rem;
+    padding: 1.5rem 2.5rem;
   }
   &-big {
     font-size: 1.5rem;
