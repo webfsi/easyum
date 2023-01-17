@@ -153,10 +153,10 @@ const swiperReviews = new Swiper(".swiper-review", {
   },
 });
 
-// reviews
+// lightbox opener
 document.addEventListener("DOMContentLoaded", function (event) {
   new VenoBox({
-    selector: ".swiper-review-slide-img-link",
+    selector: ".vbox-link",
   });
 });
 

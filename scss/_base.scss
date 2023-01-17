@@ -60,6 +60,11 @@ body {
     background-image: url(../img/other/top-bg.svg);
     background-size: contain;
     background-position: -200px 10%;
+
+    &-down {
+      background-position: -200px 1000px;
+      background-repeat: no-repeat;
+    }
 }
 
 .d-block {

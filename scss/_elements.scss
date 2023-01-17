@@ -59,11 +59,11 @@
         &:last-of-type {
           margin-bottom: 2rem;
         }
-      }
-      &-bold {
-        font-weight: 500;
-        font-family: $heading-font;
-        margin-top: 0.75rem;
+        p:not(:first-of-type) {
+          font-weight: 500;
+          font-family: $heading-font;
+          margin-top: 0.75rem;
+        }
       }
     }
   }
@@ -218,6 +218,41 @@
   &-right {
     &-img {
       max-width: 800px;
+    }
+  }
+  &-wave {
+    &-sect {
+      position: relative;
+      // padding-bottom: 11rem;
+      background-image: url(../img/other/header-wave-decor.svg);
+      background-size: cover;
+      background-position: top;
+
+      &:after {
+        content: "";
+        background-image: url(../img/other/header-wave.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 11rem;
+        position: absolute;
+        bottom: 0;
+      }
+    }
+  }
+  &-coworking {
+    &-sect {
+      padding: 3.75rem 0;
+      .intro-row {
+        align-items: flex-start;
+      }
+      .intro-right {
+        margin-right: 10rem;
+        margin: 0 10rem 0 auto;
+        &-img {
+          max-width: 400px;
+        }
+      }
     }
   }
 }
@@ -739,6 +774,46 @@
       margin-left: 10rem;
     }
   }
+  &-step {
+    &-sect {
+      margin-top: 7.5rem;
+    }
+    &-row {
+      display: flex;
+    }
+    &-item {
+      flex-grow: 1;
+      flex-basis: 33%;
+      position: relative;
+      &-number {
+        font-family: $heading-font;
+        font-weight: 700;
+        font-size: 13rem;
+        color: #9cc0ff;
+        opacity: 0.25;
+        line-height: 0.5;
+      }
+      &-text {
+        position: absolute;
+        bottom: 0;
+        left: 3.75rem;
+        max-width: 18.75rem;
+      }
+      &-heading,
+      &-desc {
+        font-family: $heading-font;
+        color: $darkgrey-color-1;
+      }
+      &-heading {
+        font-weight: 700;
+        font-size: 1.5625rem;
+      }
+      &-desc {
+        font-size: 1.25rem;
+        line-height: 1.4;
+      }
+    }
+  }
 }
 
 .coworking {
@@ -748,11 +823,12 @@
   }
   &-plan {
     &-container {
-      margin: 7.5rem 0;
+      margin: 5.625rem 0 7.5rem;
     }
     &-row {
       display: flex;
       align-items: flex-end;
+      justify-content: space-between;
     }
     &-item {
       background-color: white;
@@ -761,14 +837,22 @@
     }
     &-girl {
       max-width: 200px;
+      margin: 0 1rem;
     }
     &-name {
+      font-weight: 700;
+      margin-bottom: 0.75rem;
     }
     &-price {
+      font-family: $heading-font;
+      font-size: 2.625rem;
+      font-weight: 500;
+      margin: 1rem 0;
     }
     &-action {
       display: flex;
       flex-direction: column;
+      gap: 1rem;
     }
     &-list {
       display: flex;
@@ -783,13 +867,14 @@
         padding: 15px 0;
         border-bottom: 1px solid #999;
         &:last-of-type {
-            border-bottom: 0;
+          border-bottom: 0;
         }
       }
     }
     &-note {
       color: #999;
       margin-top: 2.25rem;
+      font-size: 0.75rem;
     }
   }
 }
@@ -819,6 +904,14 @@
 // lightbox
 .vbox-backdrop {
   background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.vbox-link {
+  outline: none;
+}
+
+.vbox-container img {
+  max-height: 85vh;
 }
 
 .vbox-next,

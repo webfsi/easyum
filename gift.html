@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.min.css?3" />
     <title>Подарочные сертификаты</title>
   </head>
-  <body class="offline reviews-page bg-top">
+  <body class="offline reviews-page bg-top bg-top-down">
     <header class="header">
       <div class="container header-container">
         <div class="header-left">
@@ -633,7 +633,7 @@
       </div>
     </header>
     <main class="wrapper">
-      <section class="intro-sect intro-gift-sect">
+      <section class="intro-sect intro-wave-sect intro-gift-sect">
         <div class="container">
           <div class="intro-row">
             <div class="intro-left">
@@ -679,6 +679,7 @@
       </section>
       <section class="gift-step-sect">
         <div class="container">
+          <h2 class="h2"><span class="blue">Как</span> получить сертификат?</h2>
           <div class="gift-step-row">
             <div class="gift-step-item">
               <span class="gift-step-item-number">01</span>
@@ -692,18 +693,18 @@
             <div class="gift-step-item">
               <span class="gift-step-item-number">02</span>
               <div class="gift-step-item-text">
-                <p class="gift-step-item-heading">Оставьте заявку</p>
+                <p class="gift-step-item-heading">Оплатите сертификат</p>
                 <p class="gift-step-item-desc">
-                  С вами свяжется менеджер — проконсультирует по выбору сертификата или курса
+                  Мы отправим вам на почту ссылку для оплаты банковской картой
                 </p>
               </div>
             </div>
             <div class="gift-step-item">
               <span class="gift-step-item-number">03</span>
               <div class="gift-step-item-text">
-                <p class="gift-step-item-heading">Оставьте заявку</p>
+                <p class="gift-step-item-heading">Подарите знания</p>
                 <p class="gift-step-item-desc">
-                  С вами свяжется менеджер — проконсультирует по выбору сертификата или курса
+                  Мы пришлём файл сертификата на почту или выдадим в офисе EasyUM
                 </p>
               </div>
             </div>
@@ -728,18 +729,11 @@
                   </label>
                 </div>
                 <label class="form-label">
-                  <span class="form-input form-upload">
-                    <input type="file" class="upload-btn" id="upload-btn" hidden />
-                    <!-- our custom upload button -->
-                    <label for="upload-btn">Резюме</label>
-                    <!-- name of file chosen -->
-                    <span id="file-chosen" class="form-upload-msg">Файл не выбран</span>
-                  </span>
+                  <input type="text" class="form-input form-input-text" placeholder="Сумма" />
                 </label>
                 <div class="form-row form-row-submit">
                   <span class="form-policy">
-                    Нажимая на кнопку, я соглашаюсь на обработку персональных данных и с правилами пользования
-                    Платформой
+                    Нажимая кнопку, принимаю условия политики, пользовательского соглашения и правил использования подарочных сертификатов
                   </span>
                   <input type="submit" value="Отправить" data-text="Отправить" class="btn btn-red-fill btn-big" />
                 </div>
