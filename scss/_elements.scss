@@ -204,6 +204,10 @@
     .text {
       color: white;
     }
+
+    .btn-medium {
+      padding: 1.5rem;
+    }
   }
   &-row {
     display: flex;
@@ -226,7 +230,7 @@
       // padding-bottom: 11rem;
       background-image: url(../img/other/header-wave-decor.svg);
       background-size: cover;
-      background-position: top;
+      background-position: -500px -70px;
 
       &:after {
         content: "";
@@ -240,7 +244,8 @@
       }
     }
   }
-  &-coworking {
+  &-coworking,
+  &-rent {
     &-sect {
       padding: 3.75rem 0;
       .intro-row {
@@ -250,7 +255,19 @@
         margin-right: 10rem;
         margin: 0 10rem 0 auto;
         &-img {
-          max-width: 400px;
+          max-width: 420px;
+        }
+      }
+    }
+  }
+  &-rent {
+    &-sect {
+      .main-heading {
+        max-width: 25rem;
+      }
+      .intro-right {
+        &-img {
+          max-width: 500px;
         }
       }
     }
@@ -817,10 +834,6 @@
 }
 
 .coworking {
-  &-services {
-  }
-  &-sect {
-  }
   &-plan {
     &-container {
       margin: 5.625rem 0 7.5rem;
@@ -829,6 +842,19 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+    }
+    &-col {
+      flex-grow: 1;
+      &-inner {
+        display: flex;
+        gap: 1.625rem;
+      }
+      &:first-of-type {
+        margin-right: 0.8125rem;
+      }
+      &:not(:first-of-type) {
+        margin-left: 0.8125rem;
+      }
     }
     &-item {
       background-color: white;
@@ -875,6 +901,48 @@
       color: #999;
       margin-top: 2.25rem;
       font-size: 0.75rem;
+    }
+  }
+}
+
+.rent {
+  &-plan {
+    &-row {
+      .coworking-plan-item {
+        padding: 1.25rem 1.875rem;
+        flex-grow: 1;
+        flex-basis: 50%;
+      }
+      .coworking-plan-name {
+        font-size: 15px;
+      }
+      .coworking-plan-price {
+        font-size: 1.5625rem;
+        margin: 0.5rem 0 1rem;
+      }
+      .coworking-plan-note {
+        margin-top: 0.25rem;
+        font-size: 0.625rem;
+      }
+      .coworking-plan-action {
+        gap: 0.5rem;
+      }
+    }
+  }
+  &-desc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 51.875rem;
+    gap: 3rem;
+    margin: 1.5rem auto 0;
+    &-img {
+      max-width: 10rem;
+    }
+    &-text {
+      font-weight: 700;
+      font-size: 1.5625rem;
+      line-height: 1.3;
     }
   }
 }

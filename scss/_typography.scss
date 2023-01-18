@@ -113,6 +113,14 @@ h6 {
   }
 }
 
+.blue {
+  color: $blue-color;
+}
+
+.red {
+  color: $red-color-1;
+}
+
 // hover font-weight fix - https://css-tricks.com/bold-on-hover-without-the-layout-shift/
 [data-text],
 .btn[data-text] {

@@ -642,7 +642,7 @@
                 Офисное пространство с рабочими местами, где вас окружают люди, по-настоящему увлеченные своей работой.
                 Окунитесь в мир IT работая с людьми из Вашей сферы.
               </p>
-              <a href="" class="btn btn-white btn-medium" data-text="Записаться на просмотр">Записаться на просмотр</a>
+              <a href="#" data-target="#look" class="btn btn-white btn-medium" data-text="Записаться на просмотр" data-toggle="modal">Записаться на просмотр</a>
             </div>
             <div class="intro-right">
               <img src="img/other/girl-work-top.png" class="intro-right-img" alt="" />
@@ -749,7 +749,7 @@
                 <div class="feature-item-text">
                   <p class="feature-item-heading">Время</p>
                   <p class="text text-small">
-                    Время работы коворкинга с 08:00 до 19:00 и вы можете сидеть в нем неограничено.
+                    Время работы коворкинга с 08:00 до 19:00 и вы можете сидеть в нем неограниченно.
                   </p>
                 </div>
               </div>
@@ -895,6 +895,49 @@
         </div>
       </div>
     </footer>
+
+    <div class="modal modal-form modal-coworking-look" id="look">
+      <div class="modal-wrap modal-wrap-small">
+        <span class="modal-close" data-close="modal"></span>
+        <div class="modal-content modal-content-form">
+          <h3 class="h3 blue bold">Хотите записаться на прсмотр коворкинга? Выберите дату и время для посещения.</h3>
+          <form action="" class="form">
+            <label class="form-label">
+              <input type="text" class="form-input form-input-text" placeholder="ФИО" />
+            </label>
+            <div class="form-row">
+              <label class="form-label">
+                <input type="text" class="form-input form-input-text" placeholder="Телефон" />
+              </label>
+              <label class="form-label">
+                <input type="text" class="form-input form-input-text" placeholder="E-mail" />
+              </label>
+            </div>
+            <div class="form-row">
+              <label class="form-label">
+                <input type="date" class="form-input form-input-text" placeholder="Выберите день" />
+              </label>
+              <label class="form-label">
+                <input type="time" class="form-input form-input-text" placeholder="Выберите время" />
+              </label>
+            </div>
+            <div class="form-row form-row-submit">
+              <span class="form-policy">
+                Нажимая на кнопку, я соглашаюсь на 
+обработку персональных данных и 
+с правилами пользования Платформой
+              </span>
+              <input type="submit" value="Отправить" data-text="Отправить" class="btn btn-red-fill btn-big btn-quick-send" />
+            </div>
+          </form>
+        </div>
+        <div class="modal-content modal-content-thanks">
+          <p class="modal-content-thanks-heading">СПАСИБО!</p>
+          <p class="text text-wide">За заявку, мы свяжемся с Вами в ближайшее время</p>
+          <img src="img/other/thank-you.png" class="modal-content-thanks-thumb" alt="">
+        </div>
+      </div>
+    </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/venobox.min.js"></script>
     <script src="js/scripts.js?2"></script>

@@ -45,6 +45,20 @@
     }
   }
 
+  &-form {
+    .modal-content {
+      padding: 6.5625rem;
+      @media (max-width: 1440px) {
+        padding: 5rem;
+      }
+    }
+
+    .h3 {
+      font-size: 2.1875rem;
+      margin-bottom: 2rem;
+    }
+  }
+
   &-content {
     position: relative;
 
@@ -191,14 +205,17 @@
         }
       }
     }
-    &-quick {
-      .modal-content {
-        padding: 6.5625rem;
-      }
+  }
 
-      .h3 {
-        font-size: 2.1875rem;
-        margin-bottom: 2rem;
+  &-coworking {
+    &-look {
+      .modal-content-thanks .text {
+        max-width: 100%;
+      }
+      .modal-content-thanks-thumb {
+        max-width: 22.5rem;
+        margin: 2rem auto 0;
+        display: block;
       }
     }
   }
