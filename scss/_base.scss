@@ -16,6 +16,10 @@ body {
   background-color: $bg-color-1;
 }
 
+a {
+  transition: .3s;
+}
+
 .no-scroll {
     overflow: hidden;
 }
@@ -70,9 +74,11 @@ body {
 .d-block {
   display: block !important;
 }
+
 .d-flex {
   display: flex !important;
 }
+
 .d-none {
   display: none !important;
 }

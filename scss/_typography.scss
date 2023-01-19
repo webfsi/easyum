@@ -130,7 +130,7 @@ h6 {
   justify-content: space-between;
 
   &:hover {
-    font-weight: 700;
+    // font-weight: 700;
   }
 }
 [data-text]:after {
@@ -141,7 +141,7 @@ h6 {
   overflow: hidden;
   user-select: none;
   pointer-events: none;
-  font-weight: 700;
+  // font-weight: 700;
 
   @media speech {
     display: none;
@@ -166,7 +166,7 @@ h6 {
     background-color: $blue-color;
     border-color: $blue-color;
     color: white;
-    font-weight: 700;
+    // font-weight: 700;
   }
   &-red {
     border-color: $red-color-1;
@@ -195,6 +195,10 @@ h6 {
       background-color: $blue-color;
       border-color: $blue-color;
       color: white;
+      &:hover {
+        border-color: $lightblue-color-1;
+        background-color: $lightblue-color-1;
+      }
     }
     &:hover {
       background-color: transparent;

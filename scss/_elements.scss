@@ -388,6 +388,10 @@
       background-color: white;
       border-radius: 1rem;
       padding: 0.5rem 1rem 1rem 1rem;
+      transition: .3s;
+      &:hover {
+        transform: translateY(-.5rem);
+      }
       &-logo {
         position: relative;
         display: flex;
@@ -675,6 +679,10 @@
     align-items: center;
     gap: 1.5rem;
     flex: 1 1 100%;
+    transition: .3s;
+    &:hover {
+      transform: translateY(-.5rem);
+    }
     &-icon {
       max-width: 5rem;
       &-container {
@@ -1018,6 +1026,10 @@
       justify-content: center;
       align-items: center;
       padding: 1.875rem 1.375rem 2.25rem;
+      transition: .3s;
+      &:hover {
+        transform: translateY(-.5rem);
+      }
       &-img {
         max-width: 12.5rem;
         margin-bottom: 1.5625rem;
