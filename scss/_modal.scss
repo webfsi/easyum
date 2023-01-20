@@ -64,7 +64,7 @@
 
     &-thanks {
       display: none;
-      background-color: $blue-color;
+      background-color: $blue-color-1;
       position: relative;
 
       &-heading,
@@ -170,7 +170,7 @@
           font-family: $heading-font;
           font-weight: 500;
           font-size: 0.9375rem;
-          color: $blue-color;
+          color: $blue-color-1;
           margin: 0 0 0.5rem 1rem;
         }
         &-badge {

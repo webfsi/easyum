@@ -36,9 +36,14 @@
     padding: 1.5rem 2.75rem;
     font-size: 1.25rem;
     outline: none;
+    transition: .3s;
 
     &::placeholder {
       color: $grey-color-2;
+    }
+
+    &:hover, &:focus {
+      border-color: $lightblue-color-1;
     }
   }
 

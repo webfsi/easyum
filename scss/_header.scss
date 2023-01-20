@@ -75,7 +75,7 @@
 
 .academy-dropdown {
   margin: 0 1.875rem 0 0.4rem;
-  border-left: 2px solid $blue-color;
+  border-left: 2px solid $blue-color-1;
   height: 55px;
   width: 140px;
   position: relative;
@@ -101,7 +101,7 @@
   }
   &-item,
   .academy-dropdown-item-chosen {
-    color: $blue-color;
+    color: $blue-color-1;
     font-weight: 700;
     font-size: 0.9375rem;
     font-family: $heading-font;
@@ -331,8 +331,8 @@
       &:hover {
         background-color: transparent;
         font-weight: 400;
-        border-color: $blue-color;
-        color: $blue-color;
+        border-color: $blue-color-1;
+        color: $blue-color-1;
       }
 
       &.active {
@@ -345,7 +345,7 @@
     &-heading {
       font-weight: 600;
       font-size: 1.375rem;
-      color: $blue-color;
+      color: $blue-color-1;
       margin-bottom: 1.25rem;
       padding-left: 4rem;
     }
@@ -368,7 +368,7 @@
     }
 
     &-new {
-      background-color: $blue-color;
+      background-color: $blue-color-1;
     }
   }
   &-social {
@@ -429,7 +429,7 @@
     &-heading {
       font-weight: 600;
       font-size: 1.375rem;
-      color: $blue-color;
+      color: $blue-color-1;
       font-family: $heading-font;
       margin-bottom: 1.25rem;
     }
@@ -469,7 +469,7 @@
         font-weight: 700;
         font-size: 0.75rem;
         text-align: center;
-        color: $blue-color;
+        color: $blue-color-1;
       }
 
       &-heading {
@@ -494,7 +494,7 @@
 
 /* ----- Map ------------------- */
 .main-map-modal path {
-  fill: $blue-color;
+  fill: $blue-color-1;
   stroke-width: 2px;
   stroke: white;
 }

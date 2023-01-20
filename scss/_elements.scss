@@ -129,7 +129,7 @@
         color: $darkgrey-color-2;
         .contact-info-link {
           margin-right: 0.5rem;
-          color: $blue-color;
+          color: $blue-color-1;
         }
         + .contact-info-link-text {
           margin-top: 1.5rem;
@@ -183,7 +183,7 @@
           font-size: 0.625rem;
         }
         &-link {
-          color: $blue-color;
+          color: $blue-color-1;
           text-decoration: none;
           font-weight: 700;
         }
@@ -194,7 +194,7 @@
 
 .intro {
   &-sect {
-    background-color: $blue-color;
+    background-color: $blue-color-1;
     padding: 0;
     &:first-of-type {
       margin-top: -1.875rem;
@@ -302,6 +302,14 @@
     border-radius: 1rem;
     display: flex;
     flex-direction: column;
+    transition: .3s;
+    &:hover {
+      transform: translateY(-.5rem);
+
+      .success-item-img-photo {
+        transform: translateX(-50%) scale(1.1);
+      }
+    }
     &-img {
       position: relative;
       width: 340px;
@@ -321,6 +329,7 @@
         transform: translateX(-50%);
         bottom: 0;
         max-width: 240px;
+        transition: .3s;
       }
     }
     &-info {
@@ -777,10 +786,12 @@
     font-family: $heading-font;
     cursor: pointer;
     transition: 0.3s;
-    &.active {
-      background-color: $blue-color;
+    &:hover, &.active {
+      background-color: $blue-color-1;
       color: white;
-      font-weight: 700;
+    }
+    &:active {
+      background-color: $blue-color-2;
     }
   }
 }
@@ -832,6 +843,11 @@
       flex-grow: 1;
       flex-basis: 33%;
       position: relative;
+      &:hover {
+        .gift-step-item-number {
+          opacity: .15;
+        }
+      }
       &-number {
         font-family: $heading-font;
         font-weight: 700;
@@ -839,6 +855,7 @@
         color: #9cc0ff;
         opacity: 0.25;
         line-height: 0.5;
+        transition: .3s;
       }
       &-text {
         position: absolute;
@@ -1089,6 +1106,15 @@
   }
 }
 
+/*  Needed for filters */
+.hide {
+  display: none;
+}
+.show {
+
+  display: flex;
+}
+
 // lightbox
 .vbox-backdrop {
   background-color: rgba(0, 0, 0, 0.3) !important;
@@ -1096,6 +1122,11 @@
 
 .vbox-link {
   outline: none;
+  transition: .3s;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
 .vbox-container img {

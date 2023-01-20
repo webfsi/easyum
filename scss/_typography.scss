@@ -114,7 +114,7 @@ h6 {
 }
 
 .blue {
-  color: $blue-color;
+  color: $blue-color-1;
 }
 
 .red {
@@ -163,8 +163,8 @@ h6 {
   transition: 0.3s;
 
   &:hover {
-    background-color: $blue-color;
-    border-color: $blue-color;
+    background-color: $blue-color-1;
+    border-color: $blue-color-1;
     color: white;
     // font-weight: 700;
   }
@@ -189,11 +189,11 @@ h6 {
     }
   }
   &-blue {
-    border-color: $blue-color;
-    color: $blue-color;
+    border-color: $blue-color-1;
+    color: $blue-color-1;
     &-fill {
-      background-color: $blue-color;
-      border-color: $blue-color;
+      background-color: $blue-color-1;
+      border-color: $blue-color-1;
       color: white;
       &:hover {
         border-color: $blue-color-2;
@@ -202,8 +202,8 @@ h6 {
     }
     &:hover {
       background-color: transparent;
-      border-color: $blue-color;
-      color: $blue-color;
+      border-color: $blue-color-1;
+      color: $blue-color-1;
     }
   }
   &-white {
@@ -211,6 +211,8 @@ h6 {
     border-color: white;
     &:hover {
       border-color: white;
+      background-color: white;
+      color: $blue-color-1;
     }
   }
   &-medium {
@@ -240,14 +242,14 @@ h6 {
   &-success {
     background-color: $bg-color-1;
     border-color: $bg-color-1;
-    color: $blue-color;
+    color: $blue-color-1;
     display: flex;
     align-items: center;
 
     &:hover {
       background-color: $bg-color-1;
       border-color: $bg-color-1;
-      color: $blue-color;
+      color: $blue-color-1;
       font-weight: 400;
     }
 
