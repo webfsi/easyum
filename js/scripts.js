@@ -188,6 +188,21 @@ fadeInLeft.forEach(element => {
 });
 }, false);
 
+// style first word in headings
+function firstWordFromId(selectId, addClass) {
+  var jsIntro = document.getElementById(selectId);
+  var originalString = jsIntro.innerHTML;
+  var splitWords = originalString.split(" ");
+
+  jsIntro.innerHTML =
+    "<span class=" + addClass + ">"
+    .concat(splitWords[0], "</span>") + "&#32;" + originalString
+    .substr(originalString.indexOf(" ") + 1);
+}
+
+firstWordFromId("js-intro", "first-word");
+
+
 // modal
 document.addEventListener("click", function (e) {
   let $target = e.target;
