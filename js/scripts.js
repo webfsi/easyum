@@ -160,6 +160,34 @@ document.addEventListener("DOMContentLoaded", function (event) {
   });
 });
 
+// animations on scroll
+let isInViewport = function(elem) {
+  let distance = elem.getBoundingClientRect();
+  return (
+    distance.top >= 0 &&
+    distance.left >= 0 &&
+    distance.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    distance.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+};
+let fadeInUp = document.querySelectorAll('.fadeInUpAnim');
+let fadeInLeft = document.querySelectorAll('.fadeInLeftAnim');
+window.addEventListener('scroll', function(event) {
+// add event on scroll
+fadeInUp.forEach(element => {
+    if (isInViewport(element)) {
+      //if in Viewport
+      element.classList.add("animate__fadeInUp");
+    }
+});
+fadeInLeft.forEach(element => {
+    if (isInViewport(element)) {
+      //if in Viewport
+      element.classList.add("animate__fadeInLeft");
+    }
+});
+}, false);
+
 // modal
 document.addEventListener("click", function (e) {
   let $target = e.target;

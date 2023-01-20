@@ -430,6 +430,7 @@
     &-decor {
       position: relative;
       max-height: 340px;
+      z-index: 1;
     }
     &-star {
       background-image: url(../img/review/star.svg);
