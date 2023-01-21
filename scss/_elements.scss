@@ -775,11 +775,13 @@
   }
 }
 
+// all filters
 .filters {
   display: flex;
   margin: 2.75rem 0 3rem;
   gap: 10px;
 }
+
 .filter {
   background-color: #ffffff;
   border-radius: 40px;
@@ -999,7 +1001,7 @@
       overflow: hidden;
       width: 10rem;
       height: 10rem;
-      transition: .3s;
+      transition: 0.3s;
 
       &:hover {
         .coworking-list-item-city {
@@ -1021,7 +1023,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
-        transition: .3s;
+        transition: 0.3s;
       }
 
       &-msk {
@@ -1053,7 +1055,7 @@
       &-nn {
         .coworking-list-item-city {
           width: 4rem;
-          right: .5rem;
+          right: 0.5rem;
         }
       }
     }
@@ -1210,6 +1212,49 @@
       display: flex;
       flex-direction: column;
       gap: 0.625rem;
+    }
+  }
+}
+
+.bonus {
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.0625rem 2.5rem;
+    &-item {
+      background: #ffffff;
+      border-radius: 1.5rem;
+      padding: 1.25rem 1.375rem 3rem;
+      &-img {
+        width: 100%;
+
+        &-container {
+          height: 80px;
+          max-width: 170px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 0.75rem auto;
+        }
+      }
+      &-name {
+        text-align: center;
+        margin: 0 0 1.5rem;
+      }
+      &-badge {
+        &-row {
+          span {
+            font-family: $heading-font;
+            font-weight: 500;
+            font-size: 0.875rem;
+            color: $darkgrey-color-3;
+            background: $bg-color-1;
+            border-radius: 1.625rem;
+            display: inline-block;
+            padding: .5rem 1.25rem;
+          }
+        }
+      }
     }
   }
 }
