@@ -773,28 +773,29 @@
       }
     }
   }
-  &-filters {
-    display: flex;
-    margin: 2.75rem 0 3rem;
-    gap: 10px;
+}
+
+.filters {
+  display: flex;
+  margin: 2.75rem 0 3rem;
+  gap: 10px;
+}
+.filter {
+  background-color: #ffffff;
+  border-radius: 40px;
+  font-size: 0.8125rem;
+  padding: 0.625rem 1rem;
+  color: $darkgrey-color-1;
+  font-family: $heading-font;
+  cursor: pointer;
+  transition: 0.3s;
+  &:hover,
+  &.active {
+    background-color: $blue-color-1;
+    color: white;
   }
-  &-filter {
-    background-color: #ffffff;
-    border-radius: 40px;
-    font-size: 0.8125rem;
-    padding: 0.625rem 1rem;
-    color: $darkgrey-color-1;
-    font-family: $heading-font;
-    cursor: pointer;
-    transition: 0.3s;
-    &:hover,
-    &.active {
-      background-color: $blue-color-1;
-      color: white;
-    }
-    &:active {
-      background-color: $blue-color-2;
-    }
+  &:active {
+    background-color: $blue-color-2;
   }
 }
 
@@ -1001,7 +1002,9 @@
       transition: .3s;
 
       &:hover {
-        transform: translateY(-.5rem);
+        .coworking-list-item-city {
+          transform: scale(1.15);
+        }
       }
 
       &-name {
@@ -1018,6 +1021,7 @@
         position: absolute;
         width: 100%;
         bottom: 0;
+        transition: .3s;
       }
 
       &-msk {

@@ -189,18 +189,6 @@ fadeInLeft.forEach(element => {
 }, false);
 
 // style first word in headings
-// function firstWordFromId(selectId, addClass) {
-//   var jsIntro = document.getElementById(selectId);
-//   var originalString = jsIntro.innerHTML;
-//   var splitWords = originalString.split(" ");
-
-//   jsIntro.innerHTML =
-//     "<span class=" + addClass + ">"
-//     .concat(splitWords[0], "</span>") + "&#32;" + originalString
-//     .substr(originalString.indexOf(" ") + 1);
-// }
-// firstWordFromId("js-intro", "first-word");
-
 var domReady = function(callback) {
   document.readyState === "interactive" || 
   document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
@@ -296,17 +284,17 @@ uploadBtn.forEach((upload) => {
 });
 
 // job filers
-const jobFilters = document.querySelectorAll(".job-filter");
+const jobFilters = document.querySelectorAll(".filter");
 
 jobFilters.forEach((filter) => {
   filter.addEventListener("click", function () {
     let selectedFilter = filter.getAttribute("data-filter");
-    let itemsToHide = document.querySelectorAll(`.job-list .job-list-item:not([data-filter='${selectedFilter}'])`);
-    let itemsToShow = document.querySelectorAll(`.job-list [data-filter='${selectedFilter}']`);
+    let itemsToHide = document.querySelectorAll(`.filter-list .filter-list-item:not([data-filter='${selectedFilter}'])`);
+    let itemsToShow = document.querySelectorAll(`.filter-list [data-filter='${selectedFilter}']`);
 
     if (selectedFilter == "all") {
       itemsToHide = [];
-      itemsToShow = document.querySelectorAll(".job-list [data-filter]");
+      itemsToShow = document.querySelectorAll(".filter-list [data-filter]");
     }
 
     itemsToHide.forEach((el) => {
