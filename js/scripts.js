@@ -189,18 +189,63 @@ fadeInLeft.forEach(element => {
 }, false);
 
 // style first word in headings
-function firstWordFromId(selectId, addClass) {
-  var jsIntro = document.getElementById(selectId);
-  var originalString = jsIntro.innerHTML;
-  var splitWords = originalString.split(" ");
+// function firstWordFromId(selectId, addClass) {
+//   var jsIntro = document.getElementById(selectId);
+//   var originalString = jsIntro.innerHTML;
+//   var splitWords = originalString.split(" ");
 
-  jsIntro.innerHTML =
-    "<span class=" + addClass + ">"
-    .concat(splitWords[0], "</span>") + "&#32;" + originalString
-    .substr(originalString.indexOf(" ") + 1);
+//   jsIntro.innerHTML =
+//     "<span class=" + addClass + ">"
+//     .concat(splitWords[0], "</span>") + "&#32;" + originalString
+//     .substr(originalString.indexOf(" ") + 1);
+// }
+// firstWordFromId("js-intro", "first-word");
+
+var domReady = function(callback) {
+  document.readyState === "interactive" || 
+  document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+};
+
+// on document ready https://codepen.io/NickMcBurney/pen/wGgqNY
+domReady(function() {
+	// run firstWord function	
+	firstWord()
+});
+
+// function to wrap first word of heading in <span> tags
+function firstWord(){
+	// get heading elements
+   var $headings = document.querySelectorAll(".js-first-word");
+	// run through each heading tag and insert spans
+	for (var i = 0, len = $headings.length; i < len; i++) {
+		console.log($headings[i].children.length)
+		// if has child or has class X
+		if ($headings[i].children.length < 1 && !$headings[i].classList.contains("no-first-word")) {
+			// set new text variable
+			var niceText = $headings[i].textContent;	
+			// set opening / closing spans
+			var openSpan = '<span class="first-word">', 
+				 closeSpan = '</span>';
+
+			// make the sentence into an array
+			niceText = niceText.split(' ');
+
+			// add open span to the beginning of the array
+			niceText.unshift( openSpan );
+
+			// add closing span as the 3rd value in the array
+			niceText.splice( 2, 0, closeSpan );					
+
+			// turn it back into a string 
+			niceText = niceText.join(' ');				
+
+			// append the new HTML to the header
+			$headings[i].innerHTML = niceText;
+		}
+	}
 }
 
-firstWordFromId("js-intro", "first-word");
+
 
 
 // modal

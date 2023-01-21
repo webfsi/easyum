@@ -981,6 +981,79 @@
       font-size: 0.75rem;
     }
   }
+  &-list {
+    &-container {
+      margin: 2.5rem 0 7.5rem;
+    }
+    &-row {
+      display: flex;
+      gap: 2.625rem;
+      margin: 6.25rem 0 0;
+    }
+    &-item {
+      background-color: white;
+      border-radius: 1.875rem;
+      text-decoration: none;
+      position: relative;
+      overflow: hidden;
+      width: 10rem;
+      height: 10rem;
+      transition: .3s;
+
+      &:hover {
+        transform: translateY(-.5rem);
+      }
+
+      &-name {
+        font-family: $heading-font;
+        font-weight: 600;
+        font-size: 1.25rem;
+        color: $darkgrey-color-1;
+        margin: 1.25rem;
+        position: relative;
+        z-index: 1;
+      }
+
+      &-city {
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+      }
+
+      &-msk {
+        .coworking-list-item-city {
+          width: 7rem;
+          right: 0;
+        }
+      }
+
+      &-spb {
+        .coworking-list-item-city {
+          width: 6rem;
+          right: 0;
+        }
+      }
+
+      &-kazan {
+        .coworking-list-item-name {
+          text-align: center;
+        }
+      }
+
+      &-izhevsk {
+        .coworking-list-item-name {
+          text-align: center;
+        }
+      }
+
+      &-nn {
+        .coworking-list-item-city {
+          width: 4rem;
+          right: .5rem;
+        }
+      }
+    }
+  }
 }
 
 .rent {
