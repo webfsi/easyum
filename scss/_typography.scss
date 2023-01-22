@@ -165,12 +165,13 @@ h6 {
   background-color: transparent;
   display: inline-block;
   transition: 0.3s;
+  position: relative;
+  text-align: center;
 
   &:hover {
     background-color: $blue-color-1;
     border-color: $blue-color-1;
     color: white;
-    // font-weight: 700;
   }
   &-red {
     border-color: $red-color-1;
