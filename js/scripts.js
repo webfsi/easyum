@@ -141,6 +141,43 @@ showMoreReviewBtn?.addEventListener("click", () => {
   }
 });
 
+// show more webinar videos
+const webinarVideo = document.querySelectorAll(".webinar-video-item")
+const showMoreWebinarBtn = document.querySelector(".btn-load-more-webinar");
+showMoreWebinarBtn?.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".webinar-video-item.d-none");
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
+    item.className = "webinar-video-item";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+  if (hiddenElements.length === successList.length) {
+    showMoreWebinarBtn.className = "d-none";
+  }
+});
+
+// show more lesson videos
+const showMoreLessonBtn = document.querySelector(".btn-load-more-lesson");
+showMoreLessonBtn?.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".lesson-row.d-none");
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
+    item.className = "lesson-row";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+  if (hiddenElements.length === successList.length) {
+    showMoreLessonBtn.className = "d-none";
+  }
+});
+
 // slider, reviews
 const swiperReviews = new Swiper(".swiper-review", {
   slidesPerView: 1,
@@ -284,9 +321,9 @@ uploadBtn.forEach((upload) => {
 });
 
 // job filers
-const jobFilters = document.querySelectorAll(".filter");
+const filters = document.querySelectorAll(".filter");
 
-jobFilters.forEach((filter) => {
+filters.forEach((filter) => {
   filter.addEventListener("click", function () {
     let selectedFilter = filter.getAttribute("data-filter");
     let itemsToHide = document.querySelectorAll(`.filter-list .filter-list-item:not([data-filter='${selectedFilter}'])`);
@@ -306,11 +343,16 @@ jobFilters.forEach((filter) => {
       el.classList.remove("hide");
       el.classList.add("show");
     });
+    
+    webinarVideo.forEach((el) => {
+      el.classList.remove("d-none");
+      document.querySelector(".btn-load-more-webinar").classList.add("d-none");
+    });
   });
 });
-jobFilters.forEach((filter) => {
+filters.forEach((filter) => {
   filter.addEventListener("click", function () {
-    jobFilters.forEach(function (element) {
+    filters.forEach(function (element) {
       element.classList.remove("active");
     });
     filter.classList.add("active");
