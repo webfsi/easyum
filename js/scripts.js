@@ -142,7 +142,7 @@ showMoreReviewBtn?.addEventListener("click", () => {
 });
 
 // show more webinar videos
-const webinarVideo = document.querySelectorAll(".webinar-video-item")
+const webinarVideo = document.querySelectorAll(".webinar-video-item");
 const showMoreWebinarBtn = document.querySelector(".btn-load-more-webinar");
 showMoreWebinarBtn?.addEventListener("click", () => {
   let hiddenElements = document.querySelectorAll(".webinar-video-item.d-none");
@@ -198,7 +198,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
 });
 
 // animations on scroll
-let isInViewport = function(elem) {
+let isInViewport = function (elem) {
   let distance = elem.getBoundingClientRect();
   return (
     distance.top >= 0 &&
@@ -207,71 +207,73 @@ let isInViewport = function(elem) {
     distance.right <= (window.innerWidth || document.documentElement.clientWidth)
   );
 };
-let fadeInUp = document.querySelectorAll('.fadeInUpAnim');
-let fadeInLeft = document.querySelectorAll('.fadeInLeftAnim');
-window.addEventListener('scroll', function(event) {
-// add event on scroll
-fadeInUp.forEach(element => {
-    if (isInViewport(element)) {
-      //if in Viewport
-      element.classList.add("animate__fadeInUp");
-    }
-});
-fadeInLeft.forEach(element => {
-    if (isInViewport(element)) {
-      //if in Viewport
-      element.classList.add("animate__fadeInLeft");
-    }
-});
-}, false);
+let fadeInUp = document.querySelectorAll(".fadeInUpAnim");
+let fadeInLeft = document.querySelectorAll(".fadeInLeftAnim");
+window.addEventListener(
+  "scroll",
+  function (event) {
+    // add event on scroll
+    fadeInUp.forEach((element) => {
+      if (isInViewport(element)) {
+        //if in Viewport
+        element.classList.add("animate__fadeInUp");
+      }
+    });
+    fadeInLeft.forEach((element) => {
+      if (isInViewport(element)) {
+        //if in Viewport
+        element.classList.add("animate__fadeInLeft");
+      }
+    });
+  },
+  false
+);
 
 // style first word in headings
-var domReady = function(callback) {
-  document.readyState === "interactive" || 
-  document.readyState === "complete" ? callback() : document.addEventListener("DOMContentLoaded", callback);
+var domReady = function (callback) {
+  document.readyState === "interactive" || document.readyState === "complete"
+    ? callback()
+    : document.addEventListener("DOMContentLoaded", callback);
 };
 
 // on document ready https://codepen.io/NickMcBurney/pen/wGgqNY
-domReady(function() {
-	// run firstWord function	
-	firstWord()
+domReady(function () {
+  // run firstWord function
+  firstWord();
 });
 
 // function to wrap first word of heading in <span> tags
-function firstWord(){
-	// get heading elements
-   var $headings = document.querySelectorAll(".js-first-word");
-	// run through each heading tag and insert spans
-	for (var i = 0, len = $headings.length; i < len; i++) {
-		console.log($headings[i].children.length)
-		// if has child or has class X
-		if ($headings[i].children.length < 1 && !$headings[i].classList.contains("no-first-word")) {
-			// set new text variable
-			var niceText = $headings[i].textContent;	
-			// set opening / closing spans
-			var openSpan = '<span class="first-word">', 
-				 closeSpan = '</span>';
+function firstWord() {
+  // get heading elements
+  var $headings = document.querySelectorAll(".js-first-word");
+  // run through each heading tag and insert spans
+  for (var i = 0, len = $headings.length; i < len; i++) {
+    console.log($headings[i].children.length);
+    // if has child or has class X
+    if ($headings[i].children.length < 1 && !$headings[i].classList.contains("no-first-word")) {
+      // set new text variable
+      var niceText = $headings[i].textContent;
+      // set opening / closing spans
+      var openSpan = '<span class="first-word">',
+        closeSpan = "</span>";
 
-			// make the sentence into an array
-			niceText = niceText.split(' ');
+      // make the sentence into an array
+      niceText = niceText.split(" ");
 
-			// add open span to the beginning of the array
-			niceText.unshift( openSpan );
+      // add open span to the beginning of the array
+      niceText.unshift(openSpan);
 
-			// add closing span as the 3rd value in the array
-			niceText.splice( 2, 0, closeSpan );					
+      // add closing span as the 3rd value in the array
+      niceText.splice(2, 0, closeSpan);
 
-			// turn it back into a string 
-			niceText = niceText.join(' ');				
+      // turn it back into a string
+      niceText = niceText.join(" ");
 
-			// append the new HTML to the header
-			$headings[i].innerHTML = niceText;
-		}
-	}
+      // append the new HTML to the header
+      $headings[i].innerHTML = niceText;
+    }
+  }
 }
-
-
-
 
 // modal
 document.addEventListener("click", function (e) {
@@ -320,13 +322,35 @@ uploadBtn.forEach((upload) => {
   });
 });
 
-// job filers
+// select
+const select = document.querySelectorAll(".select-btn");
+const option = document.querySelectorAll(".select-option");
+let index = 1;
+select.forEach((a) => {
+  a.addEventListener("click", (b) => {
+    const next = b.target.nextElementSibling;
+    next.classList.toggle("toggle");
+    next.style.zIndex = index++;
+  });
+});
+option.forEach((a) => {
+  a.addEventListener("click", (b) => {
+    b.target.parentElement.classList.remove("toggle");
+    const parent = b.target.closest(".select").children[0];
+    parent.setAttribute("data-type", b.target.getAttribute("data-type"));
+    parent.innerText = b.target.getAttribute("data-type");
+  });
+});
+
+// filers
 const filters = document.querySelectorAll(".filter");
 
 filters.forEach((filter) => {
   filter.addEventListener("click", function () {
     let selectedFilter = filter.getAttribute("data-filter");
-    let itemsToHide = document.querySelectorAll(`.filter-list .filter-list-item:not([data-filter='${selectedFilter}'])`);
+    let itemsToHide = document.querySelectorAll(
+      `.filter-list .filter-list-item:not([data-filter='${selectedFilter}'])`
+    );
     let itemsToShow = document.querySelectorAll(`.filter-list [data-filter='${selectedFilter}']`);
 
     if (selectedFilter == "all") {
@@ -343,7 +367,7 @@ filters.forEach((filter) => {
       el.classList.remove("hide");
       el.classList.add("show");
     });
-    
+
     webinarVideo.forEach((el) => {
       el.classList.remove("d-none");
       document.querySelector(".btn-load-more-webinar").classList.add("d-none");

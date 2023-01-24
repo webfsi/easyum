@@ -215,6 +215,7 @@
 
     .btn-medium {
       padding: 1.5rem;
+      min-width: 17.5rem;
     }
   }
   &-row {
@@ -224,6 +225,7 @@
   &-left {
     position: relative;
     z-index: 1;
+    margin-top: -6vw;
     .text {
       margin-bottom: 1.5rem;
       max-width: 28.125rem;
@@ -863,7 +865,7 @@
       }
       &-number {
         font-family: $heading-font;
-        font-weight: 700;
+        font-weight: 900;
         font-size: 13rem;
         color: #9cc0ff;
         opacity: 0.25;
@@ -1756,23 +1758,48 @@
       &-views {
         font-family: $heading-font;
         font-size: 0.75rem;
-        color: $grey-color-2;
+        color: $grey-color-3;
         &:before {
           content: "";
           display: inline-block;
           background-image: url(../img/icons/views.svg);
           background-repeat: no-repeat;
           background-size: contain;
-          margin: 0 .25rem 0 .75rem;
+          margin: 0 0.25rem 0 0.75rem;
           width: 0.75rem;
           height: 0.5rem;
         }
+      }
+      &-badge {
+        display: flex;
+        margin-top: 1rem;
+        gap: .5rem;
+        flex-wrap: wrap;
+        span {
+          background-color: white;
+          padding: 0.4375rem 0.625rem;
+          border-radius: 1rem;
+          font-size: 0.75rem;
+          color: $grey-color-3;
+          cursor: default;
+        }
+      }
+    }
+    &-sort {
+      margin-bottom: 1.875rem;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      &-count {
+        font-size: 1.25rem;
+        font-weight: 600;
+        font-family: $heading-font;
       }
     }
   }
   &-filters {
     display: flex;
-    margin-bottom: 7.5rem;    
+    margin-bottom: 7rem;
     align-items: center;
     .filters {
       margin: 0;
@@ -1788,6 +1815,85 @@
       max-width: 23.5rem;
       margin-right: 2.5rem;
     }
+  }
+}
+
+// select 
+.select {
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid $blue-color-1;
+  min-width: 180px;
+
+  .select-btn {
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 14px 36px 14px 32px;
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    user-select: none;
+    color: $blue-color-1;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 45%;
+      right: 32px;
+      width: 6px;
+      height: 6px;
+      transform: translateY(-50%) rotate(45deg);
+      border-right: 2px solid $blue-color-1;
+      border-bottom: 2px solid $blue-color-1;
+      transition: 0.3s;
+    }
+  }
+
+  .select-btn.toggle {
+    border-radius: 3px 3px 0 0;
+  }
+
+  .select-btn.toggle:after {
+    transform: translateY(-50%) rotate(-135deg);
+  }
+
+  .select-dropdown {
+    position: absolute;
+    top: 100%;
+    min-width: 110px;
+    right: 0;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    z-index: 1;
+    background: #fff;
+    transform: scale(1, 0);
+    transform-origin: top center;
+    visibility: hidden;
+    transition: 0.3s;
+    box-shadow: 0px 0px 16px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+  }
+
+  .select-dropdown-full {
+    min-width: 100%;
+  }
+
+  .select-dropdown .select-option {
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: $darkgrey-color-1;
+    position: relative;
+  }
+
+  .select-dropdown .select-option:hover {
+    background: #f8f8f8;
+  }
+
+  .select-dropdown.toggle {
+    visibility: visible;
+    transform: scale(1, 1);
   }
 }
 
