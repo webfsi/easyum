@@ -178,6 +178,24 @@ showMoreLessonBtn?.addEventListener("click", () => {
   }
 });
 
+// show more lesson videos
+const showMoreProjectBtn = document.querySelector(".btn-load-more-project");
+showMoreProjectBtn?.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".company-project-item.d-none");
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
+    item.className = "company-project-item";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+  if (hiddenElements.length === successList.length) {
+    showMoreProjectBtn.className = "d-none";
+  }
+});
+
 // slider, reviews
 const swiperReviews = new Swiper(".swiper-review", {
   slidesPerView: 1,
@@ -209,6 +227,7 @@ let isInViewport = function (elem) {
 };
 let fadeInUp = document.querySelectorAll(".fadeInUpAnim");
 let fadeInLeft = document.querySelectorAll(".fadeInLeftAnim");
+let fadeInRight = document.querySelectorAll(".fadeInRightAnim");
 window.addEventListener(
   "scroll",
   function (event) {
@@ -223,6 +242,12 @@ window.addEventListener(
       if (isInViewport(element)) {
         //if in Viewport
         element.classList.add("animate__fadeInLeft");
+      }
+    });
+    fadeInRight.forEach((element) => {
+      if (isInViewport(element)) {
+        //if in Viewport
+        element.classList.add("animate__fadeInRight");
       }
     });
   },
