@@ -367,7 +367,7 @@ option.forEach((a) => {
   });
 });
 
-// filers
+// filters
 const filters = document.querySelectorAll(".filter");
 
 filters.forEach((filter) => {

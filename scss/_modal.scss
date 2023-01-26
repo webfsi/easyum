@@ -76,7 +76,7 @@
         font-weight: 700;
         font-size: 6.875rem;
         font-family: $heading-font;
-        margin-bottom: .5rem;
+        margin-bottom: 0.5rem;
       }
 
       .text {
@@ -90,7 +90,7 @@
         position: absolute;
         right: 6rem;
         bottom: 2rem;
-        max-height: 330px
+        max-height: 330px;
       }
 
       .btn {
@@ -100,13 +100,13 @@
     }
 
     &-form {
-        &.sent {
-            display: none;
+      &.sent {
+        display: none;
 
-            + .modal-content-thanks {
-                display: block;
-            }
+        + .modal-content-thanks {
+          display: block;
         }
+      }
     }
   }
 
@@ -149,8 +149,13 @@
         }
       }
 
-      .h2 {
+      .h2,
+      .h3 {
         color: white;
+      }
+
+      .h2 + .h3 {
+        margin-top: 1rem;
       }
     }
     &-description {
@@ -158,6 +163,17 @@
       &-section {
         + .modal-job-description-section {
           margin-top: 1.5rem;
+        }
+      }
+
+      ul {
+        padding-left: 1.25rem;
+        margin-top: 1.5rem;
+
+        li {
+          font-size: 1.125rem;
+          color: $darkgrey-color-2;
+          margin: 3px 0;
         }
       }
     }
@@ -172,6 +188,7 @@
           font-size: 0.9375rem;
           color: $blue-color-1;
           margin: 0 0 0.5rem 1rem;
+          display: inline-block;
         }
         &-badge {
           font-family: $heading-font;
@@ -193,17 +210,17 @@
         flex-basis: 50%;
         padding-right: 1rem;
       }
+    }
+  }
 
-      &-list {
-        padding-left: 1.25rem;
-        margin-top: 1.5rem;
-
-        li {
-          font-size: 1.125rem;
-          color: $darkgrey-color-2;
-          margin: 3px 0;
-        }
+  &-lesson {
+    &-top {
+      .job-list-item-type-badge {
+        background-color: $bg-color-1;
       }
+    }
+    &-info {
+      gap: 1.75rem;
     }
   }
 
