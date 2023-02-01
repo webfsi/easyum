@@ -642,6 +642,32 @@
     }
   }
 
+  &-home {
+    &-review {
+      max-width: 88%;
+
+      &-slide {
+        text-align: center;
+      }
+      &-bottom {
+        margin-top: 1rem;
+
+        p {
+          color: $darkgrey-color-1;
+          font-family: $heading-font;
+          font-size: 0.9375rem;
+          line-height: 1.375rem;
+        }
+      }
+    }
+  }
+  &-container {
+    position: relative;
+  }
+}
+
+.swiper,
+.swiper-container {
   .swiper-button-prev,
   .swiper-button-next {
     background-color: $bg-color-3;
@@ -796,6 +822,7 @@
 // all filters
 .filters {
   display: flex;
+  flex-wrap: wrap;
   margin: 2.75rem 0 3rem;
   gap: 10px;
 }
@@ -1654,8 +1681,9 @@
     background-image: url(../img/lesson/test-person-bg.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 20.625rem;
-    height: 20.625rem;
+    background-position: bottom;
+    width: 20rem;
+    height: 20rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -2222,6 +2250,61 @@
         }
       }
     }
+    &-container {
+      &.started {
+        .test-single {
+          display: none;
+          &-step {
+            display: flex;
+            flex-direction: column;
+            padding: 86px 93px;
+          }
+        }
+      }
+      .btn-big {
+        min-width: 18rem;
+        padding: 1.5rem;
+        font-size: 1.125rem;
+        font-weight: 700;
+      }
+    }
+    &-step {
+      background-color: white;
+      border-radius: 1.875rem;
+      display: none;
+      position: relative;
+
+      .h3 {
+        font-weight: 700;
+      }
+
+      .text {
+        margin: 2.5rem 0 2.75rem;
+      }
+      &-bottom {
+        display: flex;
+        .btn-big {
+          margin-left: auto;
+        }
+      }
+    }
+    &-choice {
+      display: flex;
+      flex-direction: column;
+      gap: 1.625rem;
+      margin: 0 0 4rem;
+    }
+    &-count {
+      position: absolute;
+      right: 1.5rem;
+      top: 1.875rem;
+      &-number {
+        font-size: 30px;
+        font-weight: 700;
+        color: $blue-color-1;
+        font-family: $heading-font;
+      }
+    }
   }
 }
 
@@ -2235,6 +2318,7 @@
       .h1 {
         font-size: 6.875rem;
         line-height: 1;
+        margin-bottom: 1rem;
       }
 
       .text {
@@ -2314,19 +2398,37 @@
       background-color: white;
       border-radius: 1rem;
       padding: 1.5rem 1.625rem 1.75rem;
+      display: flex;
+      position: relative;
+      overflow: hidden;
+      &-text {
+        padding-right: 40%;
+      }
       &-name {
         margin: 1rem 0;
         font-size: 0.9375rem;
         color: $darkgrey-color-1;
+        font-family: $heading-font;
+        line-height: 1.4;
       }
       &-date {
         font-weight: 700;
         font-size: 0.9375rem;
         color: $darkgrey-color-1;
         margin-bottom: 0.75rem;
+        font-family: $heading-font;
       }
       .btn {
         border-radius: 0.625rem;
+      }
+      .lesson-teacher {
+        width: 14.5rem;
+        height: 14.5rem;
+        position: absolute;
+        right: 2.5rem;
+        top: 50%;
+        border-radius: 50%;
+        transform: translate(50%, -50%);
       }
     }
     &-row {
@@ -2429,6 +2531,122 @@
     &-item {
       max-height: 3.125rem;
       max-width: 8.75rem;
+    }
+  }
+  &-review {
+    &-sect {
+      .swiper-button-prev,
+      .swiper-button-next {
+        background-color: $lightblue-color-5;
+        top: calc(50% - 10px);
+      }
+    }
+  }
+  &-course {
+    &-sect {
+      margin: 8.75rem 0 10rem;
+    }
+  }
+}
+
+.course {
+  &-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 2.375rem 2.125rem;
+    margin-bottom: 3rem;
+  }
+  &-item {
+    background-color: $blue-color-1;
+    border-radius: 0.625rem;
+    padding: 1.25rem 1.125rem;
+    min-height: 14.375rem;
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    &-text {
+      flex-basis: 64%;
+      display: flex;
+      flex-direction: column;
+    }
+    &-badge {
+      display: flex;
+      gap: 0.5rem;
+      &-single {
+        background-color: $bg-color-1;
+        font-size: 0.75rem;
+        font-family: $heading-font;
+        color: $darkgrey-color-3;
+        font-weight: 500;
+        border-radius: 2rem;
+        padding: 0.5rem 0.75rem;
+        &-hit {
+          font-weight: 700;
+          color: $red-color-1;
+          background-color: $lightred-color;
+          &:before {
+            content: "";
+            background-image: url(../img/icons/hit.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 0.875rem;
+            height: 0.875rem;
+            display: inline-block;
+            margin: -0.125rem 0.125rem 0 0;
+            vertical-align: middle;
+          }
+        }
+        &-new {
+          font-weight: 700;
+          color: $green-color;
+          background-color: $lightgreen-color;
+        }
+      }
+    }
+    &-name {
+      font-family: $heading-font;
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: white;
+      margin: 2rem 0 auto;
+    }
+    &-bottom {
+      &-length {
+        color: white;
+        font-size: 0.9375rem;
+        font-weight: 500;
+        font-family: $heading-font;
+        margin-right: 1.5rem;
+      }
+      &-start {
+        color: white;
+        font-size: 0.75rem;
+        font-family: $heading-font;
+      }
+    }
+    &-img {
+      position: absolute;
+      overflow: hidden;
+      background-color: $lightblue-color-4;
+      width: 12.9375rem;
+      height: 12.9375rem;
+      border-radius: 50%;
+      right: -3rem;
+      top: 50%;
+      transform: translateY(-50%);
+      .img {
+        position: absolute;
+        z-index: 1;
+        max-width: 50%;
+        right: 10%;
+        bottom: 0;
+      }
+      .logo {
+        position: absolute;
+        max-width: 35%;
+        top: 18%;
+        left: 8%;
+      }
     }
   }
 }

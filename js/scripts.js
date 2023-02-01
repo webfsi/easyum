@@ -196,7 +196,37 @@ showMoreProjectBtn?.addEventListener("click", () => {
   }
 });
 
+// show more courses
+const course = document.querySelectorAll(".course-item");
+const showMorecCourseBtn = document.querySelector(".btn-load-more-course");
+showMorecCourseBtn?.addEventListener("click", () => {
+  let hiddenElements = document.querySelectorAll(".course-item.d-none");
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  successList.forEach((item, index) => {
+    item.className = "course-item";
+    if (index === 0) {
+      item.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  });
+  if (hiddenElements.length === successList.length) {
+    showMorecCourseBtn.className = "d-none";
+  }
+});
+
 // slider, reviews
+const swiperHomeReviews = new Swiper(".swiper-home-review", {
+  slidesPerView: 3,
+  spaceBetween: 24,
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-home-review-next",
+    prevEl: ".swiper-button-home-review-prev",
+  },
+});
 const swiperReviews = new Swiper(".swiper-review", {
   slidesPerView: 1,
   loop: true,
@@ -397,6 +427,11 @@ filters.forEach((filter) => {
       el.classList.remove("d-none");
       document.querySelector(".btn-load-more-webinar").classList.add("d-none");
     });
+
+    course.forEach((el) => {
+      el.classList.remove("d-none");
+      document.querySelector(".btn-load-more-course").classList.add("d-none");
+    });
   });
 });
 filters.forEach((filter) => {
@@ -407,3 +442,8 @@ filters.forEach((filter) => {
     filter.classList.add("active");
   });
 });
+
+// test
+document.querySelector(".btn-test-start").addEventListener("click", function() {
+  document.querySelector(".test-single-container").classList.add("started");
+})

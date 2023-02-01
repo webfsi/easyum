@@ -85,7 +85,7 @@
         text-decoration: none;
         font-size: 0.9375rem;
         font-family: $heading-font;
-        color: $lightgrey-color;
+        color: $lightgrey-color-1;
         &:hover {
           color: $lightblue-color-3;
         }
@@ -115,7 +115,7 @@
       }
       &-text {
         font-size: 0.75rem;
-        color: $lightgrey-color;
+        color: $lightgrey-color-1;
       }
     }
   }

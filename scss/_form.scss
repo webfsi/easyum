@@ -89,4 +89,72 @@
     color: $grey-color-2;
     font-size: 12px;
   }
+
+  /* The container */
+  &-label-check {    
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding-left: 3.5rem;
+    cursor: pointer;
+    font-size: 1.375rem;
+    user-select: none;
+    input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    /* Create a custom checkbox */
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 1.875rem;
+      width: 1.875rem;
+      transition: 0.3s;
+      border: 1px solid $lightgrey-color-2;
+    }
+
+    input:checked ~ .checkmark {
+      background-color: $blue-color-1;
+      border-color: $blue-color-1;
+      &:after {
+        display: block;
+      }
+    }
+
+    input[type="radio"] ~ .checkmark {
+      border-radius: 50%;
+    }
+
+    &:hover input ~ .checkmark {
+      background-color: $blue-color-1;
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 0.625rem;
+      top: 0.375rem;
+      width: 0.3125rem;
+      height: 0.625rem;
+      border: solid white;
+      border-width: 0 0.1875rem 0.1875rem 0;
+      transform: rotate(45deg);
+    }
+
+    input[type="radio"] ~ .checkmark:after {
+      left: 0.55rem;
+      top: 0.55rem;
+      width: 0.3125rem;
+      height: 0.3125rem;
+      border-width: 0.1875rem;
+      background-color: white;
+      border-radius: 50%;
+    }
+  }
 }
