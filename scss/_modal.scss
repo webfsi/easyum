@@ -164,6 +164,9 @@
         + .modal-job-description-section {
           margin-top: 1.5rem;
         }
+        p {
+          @extend .text;
+        }
       }
 
       ul {
