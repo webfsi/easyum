@@ -1,6 +1,7 @@
 
 import commonScripts from './common.js';
 
+
 window.addEventListener('load', () => {
 	commonScripts();
 });

@@ -12,7 +12,7 @@
     <title>Аренда</title>
   </head>
   <body class="offline rent-page bg-top bg-top-down">
-    <header class="header">
+    <header class="header" data-anim-fadey>
       <div class="container header-container">
         <div class="header-left">
           <a href="/" class="logo">
@@ -662,7 +662,7 @@
               <div class="coworking-plan-col">
                 <h2 class="h2 js-first-word">Аудитории</h2>
                 <div class="coworking-plan-col-inner">
-                  <div class="coworking-plan-item">
+                  <div class="coworking-plan-item" data-anim-fadey="">
                     <p class="coworking-plan-name h3">Почасовой</p>
                     <p class="coworking-plan-price">250₽/час</p>
                     <div class="coworking-plan-action">
@@ -676,7 +676,7 @@
                       <li>Чай / кофе / вода</li>
                     </ul>
                   </div>
-                  <div class="coworking-plan-item">
+                  <div class="coworking-plan-item" data-anim-fadey="0.2">
                     <p class="coworking-plan-name h3">Пакетный</p>
                     <p class="coworking-plan-price">200₽/час</p>
                     <div class="coworking-plan-action">
@@ -696,7 +696,7 @@
               <div class="coworking-plan-col">
                 <h2 class="h2 js-first-word">Конференц-залы</h2>
                 <div class="coworking-plan-col-inner">
-                  <div class="coworking-plan-item">
+                  <div class="coworking-plan-item" data-anim-fadey="0.4">
                     <p class="coworking-plan-name h3">Почасовой</p>
                     <p class="coworking-plan-price">450₽/час</p>
                     <div class="coworking-plan-action">
@@ -711,7 +711,7 @@
                       <li>Чай / кофе / вода</li>
                     </ul>
                   </div>
-                  <div class="coworking-plan-item">
+                  <div class="coworking-plan-item" data-anim-fadey="0.6">
                     <p class="coworking-plan-name h3">Пакетный</p>
                     <p class="coworking-plan-price">400₽/час</p>
                     <div class="coworking-plan-action">
@@ -937,6 +937,9 @@
     </footer>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/venobox.min.js"></script>
+    <script src="js/libs/gsap.min.js"></script>
+    <script src="js/libs/ScrollTrigger.min.js"></script>
+    <script src="js/libs/ScrollToPlugin.min.js"></script>
     <script src="js/scripts.js?2" type="module"></script>
   </body>
 </html>
