@@ -1,0 +1,25 @@
+.nav-list-item .dropdown-content {
+  display: block;
+  // opacity: 0;
+  transition: max-height 1s ease;
+  max-height: 0;
+  overflow: hidden;
+  .dropdown-content-inner {
+    display: flex;
+  }
+  .dropdown-content-link {
+    display: block;
+  }
+}
+// .nav-list-item.hover .dropdown-content {
+//   opacity: 1;
+// }
+
+.nav-list-item:hover .dropdown-content {
+  // transform: translateX(-50%) rotateX(0deg);
+  display: block;
+  transition: max-height 1s ease-in;
+  max-height: 999px;
+  overflow: hidden;
+}
+

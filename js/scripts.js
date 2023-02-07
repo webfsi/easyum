@@ -1,3 +1,10 @@
+
+import commonScripts from './common.js';
+
+window.addEventListener('load', () => {
+	commonScripts();
+});
+
 // header location and courses
 const locationTrigger = document.querySelector(".location-dropdown-trigger");
 const locationContainer = document.querySelector(".location-dropdown-inner");
@@ -444,6 +451,6 @@ filters.forEach((filter) => {
 });
 
 // test
-document.querySelector(".btn-test-start").addEventListener("click", function() {
-  document.querySelector(".test-single-container").classList.add("started");
-})
+// document.querySelector(".btn-test-start").addEventListener("click", function() {
+//   document.querySelector(".test-single-container").classList.add("started");
+// })
