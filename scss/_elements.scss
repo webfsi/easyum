@@ -2747,9 +2747,19 @@
 .vbox-link {
   outline: none;
   transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  img {
+    object-fit: cover;
+    transition: .3s;
+  }
 
   &:hover {
-    transform: scale(1.05);
+    img {
+      transform: scale(1.05);
+    }
   }
 }
 
