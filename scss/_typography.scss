@@ -156,7 +156,7 @@ h6 {
   font-family: "Golos Text", sans-serif;
   font-size: 0.875rem;
   line-height: 1.0625rem;
-  padding: 0.75rem 1.3125rem;
+  padding: 0.7rem 1.3125rem;
   border-radius: 3.125rem;
   cursor: pointer;
   text-decoration: none;
@@ -250,6 +250,8 @@ h6 {
     color: $blue-color-1;
     display: flex;
     align-items: center;
+    font-size: 0.75rem;
+    padding: .5rem 1.25rem;
 
     &:hover {
       background-color: $bg-color-1;
