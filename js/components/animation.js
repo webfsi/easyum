@@ -30,6 +30,8 @@ export default () => {
 	const animStart = "top bottom";
 	const animEnd = "top bottom-=100px";
 
+  
+
 
 	animFadeY.forEach((animFY) => {
 			gsap
