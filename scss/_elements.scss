@@ -1,3 +1,60 @@
+// lightbox
+.vbox-backdrop {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+}
+
+.vbox-link {
+  outline: none;
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+
+  img {
+    object-fit: cover;
+    transition: .3s;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.vbox-container img {
+  max-height: 85vh;
+}
+
+.vbox-next,
+.vbox-prev {
+  background-color: $bg-color-3;
+  border-radius: 50%;
+
+  span {
+    width: 14px;
+    height: 14px;
+    border: 3px solid transparent;
+    border-top-color: #51545e;
+    border-right-color: #51545e;
+    right: auto;
+    left: 44%;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%) rotate(45deg);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg);
+    transform: translate(-50%, -50%) rotate(45deg);
+  }
+}
+
+.vbox-prev {
+  span {
+    left: 56%;
+    -ms-transform: translate(-50%, -50%) rotate(-135deg);
+    -webkit-transform: translate(-50%, -50%) rotate(-135deg);
+    transform: translate(-50%, -50%) rotate(-135deg);
+  }
+}
+
 .regular {
   &-sect {
     &:first-child {
@@ -2745,61 +2802,4 @@
 }
 .show {
   display: flex;
-}
-
-// lightbox
-.vbox-backdrop {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-}
-
-.vbox-link {
-  outline: none;
-  transition: 0.3s;
-  position: relative;
-  overflow: hidden;
-  border-radius: 1rem;
-
-  img {
-    object-fit: cover;
-    transition: .3s;
-  }
-
-  &:hover {
-    img {
-      transform: scale(1.05);
-    }
-  }
-}
-
-.vbox-container img {
-  max-height: 85vh;
-}
-
-.vbox-next,
-.vbox-prev {
-  background-color: $bg-color-3;
-  border-radius: 50%;
-
-  span {
-    width: 14px;
-    height: 14px;
-    border: 3px solid transparent;
-    border-top-color: #51545e;
-    border-right-color: #51545e;
-    right: auto;
-    left: 44%;
-    top: 50%;
-    -ms-transform: translate(-50%, -50%) rotate(45deg);
-    -webkit-transform: translate(-50%, -50%) rotate(45deg);
-    transform: translate(-50%, -50%) rotate(45deg);
-  }
-}
-
-.vbox-prev {
-  span {
-    left: 56%;
-    -ms-transform: translate(-50%, -50%) rotate(-135deg);
-    -webkit-transform: translate(-50%, -50%) rotate(-135deg);
-    transform: translate(-50%, -50%) rotate(-135deg);
-  }
 }
