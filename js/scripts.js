@@ -1,9 +1,24 @@
+import commonScripts from "./common.js";
 
-import commonScripts from './common.js';
+window.addEventListener("load", () => {
+  commonScripts();
+});
 
-
-window.addEventListener('load', () => {
-	commonScripts();
+// adding class to body on scroll
+let scrollpos = window.scrollY;
+function add_class_on_scroll() {
+  document.body.classList.add("fixed-header");
+}
+function remove_class_on_scroll() {
+  document.body.classList.remove("fixed-header");
+}
+window.addEventListener("scroll", function () {
+  scrollpos = window.scrollY;
+  if (scrollpos > 0) {
+    add_class_on_scroll();
+  } else {
+    remove_class_on_scroll();
+  }
 });
 
 // header location and courses
