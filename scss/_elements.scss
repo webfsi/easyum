@@ -470,7 +470,7 @@
   &-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2.125rem 1.25rem;
+    gap: 1.25rem;
     max-width: 40rem;
     @media (max-width: 992px) {
       grid-template-columns: repeat(2, 1fr);
@@ -478,8 +478,12 @@
     &-item {
       background-color: white;
       border-radius: 1rem;
-      padding: 0.5rem 1rem 1rem 1rem;
+      padding: .5rem 1.5rem 1rem 1.5rem;
       transition: 0.3s;
+      .btn {
+        padding: 0.25rem 1.3125rem;
+        font-size: .5rem;
+      }
       &:hover {
         transform: translateY(-0.5rem);
       }
@@ -508,10 +512,10 @@
   &-average {
     position: relative;
     display: flex;
-    margin-left: 4rem;
+    margin-left: 5rem;
     &-decor {
       position: relative;
-      max-height: 340px;
+      max-height: 300px;
       z-index: 1;
     }
     &-star {
@@ -545,7 +549,7 @@
         border-radius: 1rem;
       }
       &-name {
-        margin: 1rem 0 0;
+        margin: .75rem 0 0;
         text-align: center;
         font-size: 0.9375rem;
         color: $darkgrey-color-1;
