@@ -95,7 +95,7 @@
     &-simple {
       font-size: 1.25rem;
       line-height: 156%;
-      padding: 4.125rem 5.375rem;
+      padding: 4.125rem 4.375rem;
       background-image: url(../img/contact/note-bg.png);
       background-size: cover;
       background-position: center;
@@ -170,9 +170,10 @@
       &:before {
         content: "";
         position: absolute;
-        width: 1.3125rem;
-        height: 1.625rem;
+        width: 2rem;
+        height: 1.75rem;
         background-image: url(../img/icons/location.svg);
+        background-size: contain;
         background-position: center;
         background-repeat: no-repeat;
         left: 0;
@@ -215,7 +216,7 @@
   }
   &-social {
     justify-content: space-between;
-    margin-top: 3.75rem;
+    margin-top: 2rem;
     &-item {
       background: #ffffff;
       box-shadow: 0px 69.9464px 28.1394px rgba(130, 130, 130, 0.01), 0px 39.3951px 23.3155px rgba(130, 130, 130, 0.05),
