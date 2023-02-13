@@ -62,12 +62,20 @@
 
     &:not(:first-of-type) {
       padding-left: 1rem;
+
+      @media (max-width: 768px) {
+        padding: 0;
+      }
     }
   }
 
   .row {
     position: relative;
     z-index: 1;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+    }
   }
 
   &-social {

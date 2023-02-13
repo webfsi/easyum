@@ -10,6 +10,10 @@ html {
   @media (max-width: 1280px) {
     font-size: 14px;
   }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 }
 
 body {
@@ -54,6 +58,9 @@ a {
 
 .col {
   width: 50%;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 }
 
 .wrapper {
@@ -86,6 +93,10 @@ a {
 .regular-sect {
   + .regular-sect {
     padding-top: 7.5rem;
+
+    @media (max-width: 768px) {
+      padding-top: 3.75rem;
+    }
   }
 }
 
