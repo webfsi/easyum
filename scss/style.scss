@@ -1,7 +1,9 @@
 @import "variables";
+@import "fonts";
 @import "base";
 @import "typography";
 @import "header";
+@import "header-new";
 @import "tabs";
 @import "elements";
 @import "modal";
@@ -14,5 +16,7 @@
 
 @import "components/default";
 @import "components/modals";
+@import "components/modal-city";
+@import "components/modal-course";
 @import "components/animation";
 @import "components/edits";
