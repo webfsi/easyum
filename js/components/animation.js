@@ -55,4 +55,6 @@ export default () => {
 					delay: animFY.dataset.animFadey,
 			})
 	});
+
+	// const svgHeader = document.querySelectorAll('.main-map-modal__item')
 }

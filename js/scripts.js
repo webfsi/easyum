@@ -1,8 +1,27 @@
 import commonScripts from "./common.js";
-
-window.addEventListener("load", () => {
+$(function() {
+  console.log( "ready!" );
   commonScripts();
+
+  // $( ".main-map-modal__item" ).hover(function() {
+  //   // $( this ).fadeOut( 100 );
+  //   // $( this ).fadeIn( 500 );
+  //   console.log("object");
+  //   console.log("object1");
+
+  // });
+
+  // $( ".main-map-modal__item" ).each(function( index ) {
+  //   // console.log( index + ": " + $( this ).text() );
+  //   $( this ).toggleClass( "example" );
+  //   $( this ).hover(function() {
+      
+  //     console.log("object1");
+  //   })
+  // });
 });
+// window.addEventListener("load", () => {
+// });
 
 // adding class to body on scroll
 let scrollpos = window.scrollY;
