@@ -102,3 +102,24 @@
   transition-timing-function: cubic-bezier(0,1,0,1);
 }
 
+// var5
+.fancybox-fx-slide-burger.fancybox-slide--previous {
+  transform: translateY(0) translateX(100%);
+  opacity: 0;
+  // transition-timing-function: cubic-bezier(1,0,1,0);
+}
+
+// var5
+.fancybox-fx-slide-burger.fancybox-slide--next {
+  transform: translateY(0) translateX(100%);
+  opacity: 0;
+  // transition-timing-function: cubic-bezier(0,1,0,1);
+}
+
+// var5
+.fancybox-fx-slide-burger.fancybox-slide--current {
+  transform: translateY(0) translateX(0);
+  opacity: 1;
+  // transition-timing-function: cubic-bezier(0,1,0,1);
+}
+
