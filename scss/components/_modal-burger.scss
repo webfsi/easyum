@@ -97,6 +97,8 @@
       line-height: 0;
       max-width: 86px;
       margin-bottom: 13px;
+      outline: none;
+      
       img {
         max-width: 100%;
         display: inline-block;
@@ -205,7 +207,13 @@
       cursor: pointer;
       position: relative;
       font-family: $font1;
-      
+      box-shadow: none;
+      outline: none;
+      display: block;
+      background: none;
+      border-left: none;
+      border-top: none;
+      border-right: none;
       font-style: normal;
       font-weight: 400;
       font-size: 15px;
@@ -213,6 +221,9 @@
       padding: 10px 20px 10px 0;
       color: #252525;
       border-bottom: 1px solid #999999;
+      width: 100%;
+      text-align: left;
+      
 
       &:after {
         content: "";

@@ -97,7 +97,7 @@ export default () => {
       //     .parents('div.tabs-section').find('div.tabs-box').eq($(this).index()).slideDown(1000).addClass('active').siblings('div.tabs-box').slideUp(0).removeClass('active');
       // });
 
-      $('.js-acc__title').click(function(j) {
+      $('.js-acc__title').on('click', function(j) {
     
         var dropDown = $(this).closest('.js-acc__item').find('.js-acc__body');
         $(this).closest('.js-acc').find('.js-acc__body').not(dropDown).slideUp();
