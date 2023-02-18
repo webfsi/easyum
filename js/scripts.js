@@ -243,17 +243,23 @@ const course = document.querySelectorAll(".course-item");
 const showMorecCourseBtn = document.querySelector(".btn-load-more-course");
 showMorecCourseBtn?.addEventListener("click", () => {
   let hiddenElements = document.querySelectorAll(".course-item.d-none");
-  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 6);
   successList.forEach((item, index) => {
     item.className = "course-item";
     if (index === 0) {
       item.scrollIntoView({
         behavior: "smooth",
       });
+      setTimeout(() => {
+        ScrollTrigger.refresh();
+      }, 2000);
     }
   });
   if (hiddenElements.length === successList.length) {
     showMorecCourseBtn.className = "d-none";
+    setTimeout(() => {
+      ScrollTrigger.refresh();
+    }, 2000);
   }
 });
 

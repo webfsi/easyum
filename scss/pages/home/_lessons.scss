@@ -1,0 +1,1227 @@
+.les-items {
+  + .les-items {
+    margin-top: 72px;
+  }
+}
+
+.les-item {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background-color: #fff;
+  border-radius: 11px;
+  overflow: hidden;
+  &__info {
+    max-width: calc(100% - 269px);
+    padding: 37px 5px 37px 40px;
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+    
+  }
+  &__tt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    color: #337CFC;
+    margin-bottom: 13px;
+  }
+  &__txt {
+    font-family: $font1;
+    
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 143.49%;
+    color: #252525;
+    margin-bottom: 12px;
+  }
+  &__icon {
+    padding-left: 30px;
+    position: relative;
+    margin-bottom: 9px;
+    &-list {
+      margin-bottom: 16px;
+      margin-top: auto;
+      &.l-norm {
+        margin-bottom: 16px;
+        margin-top: auto;
+      }
+    }
+    &-img {
+      position: absolute;
+      left: 0;
+      top: 4px;
+      width: 30px;
+      text-align: center;
+      line-height: 0;
+      > svg, > img {
+        display: inline-block;
+      }
+    }
+    &-txt {
+      font-family: $font1;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 148.4%;
+      color: #252525;
+      span {
+        display: block;
+        font-size: 15.67px;
+        line-height: 19.58px;
+        color: #999999;
+        
+      }
+    }
+  }
+  &__btns {
+    margin-left: -10px;
+    margin-right: 17px;
+    > * + * {
+      margin-top: 13px;
+    }
+  }
+  &__picture {
+    width: 269px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 37px 15px 37px 10px;
+  }
+  &__circle {
+    width: 480px;
+    height: 480px;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    left: 0;
+    top: 50%;
+    margin-top: -240px;
+    &-point {
+      width: 100%;
+      height: 100%;
+      display: grid;
+    }
+    .pcrlc-img, .pcrlc-logo, .pcrlc-bg {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    .crlc-img, .crlc-bg, .crlc-logo {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__btn-down {
+    .btn {
+      min-width: 220px;
+    }
+  }
+}
+
+.les-items {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 42px;
+  &_three {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 37px;
+  }
+  &_four {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 42px;
+  }
+  &_five {
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 32px;
+  }
+}
+
+.les-item {
+  &_md {
+    .les-item__info {
+      max-width: calc(100% - 170px);
+    }
+    .les-item__info {
+      padding: 27px 5px 24px 24px;
+    }
+    .les-item__tt {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+    .les-item__txt {
+      font-size: 15px;
+      line-height: 143.49%;
+      margin-bottom: 15px;
+    }
+    .les-item__icon-img {
+      width: 23px;
+      img {
+        max-width: 50%;
+      }
+    }
+    .les-item__icon {
+      margin-bottom: 8px;
+      &:first-child {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 54%;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 70%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+    .les-item__icon {
+      padding-left: 23px;
+    }
+    .les-item__icon-txt {
+      font-size: 14px;
+      line-height: 148.4%;
+      > span {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+    .les-item__circle {
+      width: 351px;
+      height: 351px;
+      margin-top: -175px;
+    }
+    .les-item__picture {
+      width: 173px;
+    }
+    .les-item__btn-down {
+      .btn {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 17px;
+        padding: 2px 16px;
+        min-width: 100px;
+      }
+    }
+    .les-item__picture {
+      padding: 24px 3px;
+    }
+    .les-item__btns {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .les-item__btns>*+* {
+      margin-top: 9px;
+    }
+    .les-item__circle-point {
+      .crlc-img {
+        transform: translate(-27px, 13px);
+      }
+    }
+    .les-item__btn {
+      .btn_second {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 7px 20px;
+      }
+      .btn_second-border {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 6px 20px;
+      }
+      .btn_second-border.btn_icon {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 7px 10px;
+        vertical-align: middle;
+        .btn__icon {
+          width: 11px;
+          position: relative;
+          top: -1px;
+          &-text {
+            position: relative;
+            top: -2px;
+          }
+          svg, img {
+            max-width: 100%;
+          }
+        }
+      }
+      
+    }
+  }
+
+  
+
+  &_sm {
+    .les-item__tt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+    .les-item__txt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 143.49%;
+      margin-bottom: 15px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 21px 19px 205px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 17px;
+    }
+    .les-item__icon {
+      padding-left: 34px;
+      margin-bottom: 9px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 15px;
+      line-height: 148.4%;
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 288px;
+      height: 288px;
+      top: auto;
+      left: 50%;
+      margin-left: -144px;
+      bottom: -100px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -31px;
+          left: 93px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 15px;
+      }
+      .btn_second-border {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+
+  &_small {
+    
+    .les-item__tt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 11px;
+    }
+    .les-item__txt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 143.49%;
+      margin-bottom: 9px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 19px 14px 205px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 17px;
+    }
+    .les-item__icon {
+      padding-left: 34px;
+      margin-bottom: 9px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 15px;
+      line-height: 148.4%;
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 244px;
+      height: 244px;
+      top: auto;
+      left: 50%;
+      margin-left: -122px;
+      bottom: -60px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -17px;
+          left: 78px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btns>*+* {
+      margin-top: 7px;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 15px;
+      }
+      .btn_second-border {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+.les-item_lg {
+  .les-item__btn {
+    .btn_second-border {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 22px;
+      .btn__icon-text {
+        position: relative;
+        top: -1px;
+      }
+      .btn__icon {
+        position: relative;
+        top: -1px;
+      }
+    }
+  }
+}
+
+/* max width 1280 pixels */
+@media only screen and (max-width: 1280px) {
+  .les-item_lg {
+    .les-item__info {
+      max-width: calc(100% - 170px);
+    }
+    .les-item__info {
+      padding: 27px 5px 24px 24px;
+    }
+    .les-item__tt {
+      font-size: 20px;
+      line-height: 24px;
+      margin-bottom: 12px;
+    }
+    .les-item__txt {
+      font-size: 15px;
+      line-height: 143.49%;
+      margin-bottom: 15px;
+    }
+    .les-item__icon-img {
+      width: 23px;
+      img {
+        max-width: 50%;
+      }
+    }
+    .les-item__icon {
+      margin-bottom: 8px;
+      &:first-child {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 54%;
+          }
+        }
+      }
+      &:nth-child(2) {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 70%;
+          }
+        }
+      }
+      &:nth-child(3) {
+        .les-item__icon-img {
+          top: 1px;
+          img {
+            max-width: 70%;
+          }
+        }
+      }
+    }
+    .les-item__icon {
+      padding-left: 23px;
+    }
+    .les-item__icon-txt {
+      font-size: 14px;
+      line-height: 148.4%;
+      > span {
+        font-size: 11px;
+        line-height: 13px;
+      }
+    }
+    .les-item__circle {
+      width: 351px;
+      height: 351px;
+      margin-top: -175px;
+    }
+    .les-item__picture {
+      width: 173px;
+    }
+    .les-item__btn-down {
+      .btn {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 17px;
+        padding: 2px 16px;
+        min-width: 100px;
+      }
+    }
+    .les-item__picture {
+      padding: 24px 3px;
+    }
+    .les-item__btns {
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .les-item__btns>*+* {
+      margin-top: 9px;
+    }
+    .les-item__circle-point {
+      .crlc-img {
+        transform: translate(-27px, 13px);
+      }
+    }
+    .les-item__btn {
+      max-width: 200px;
+      .btn_second {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 7px 20px;
+      }
+      .btn_second-border {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        padding: 6px 20px;
+      }
+      .btn_second-border.btn_icon {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        padding: 7px 10px;
+        vertical-align: middle;
+        .btn__icon {
+          width: 11px;
+          position: relative;
+          top: -1px;
+          &-text {
+            position: relative;
+            top: -2px;
+          }
+          svg, img {
+            max-width: 100%;
+          }
+        }
+      }
+      
+    }
+  }
+
+  .les-item_md {
+    .les-item__tt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+    .les-item__txt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 143.49%;
+      margin-bottom: 15px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 21px 19px 205px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 17px;
+    }
+    .les-item__icon {
+      padding-left: 34px;
+      margin-bottom: 9px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 15px;
+      line-height: 148.4%;
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 288px;
+      height: 288px;
+      top: auto;
+      left: 50%;
+      margin-left: -144px;
+      bottom: -100px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -31px;
+          left: 93px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 15px;
+      }
+      .btn_second-border {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+  .les-item_sm {
+    
+    .les-item__tt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 20px;
+      margin-bottom: 11px;
+    }
+    .les-item__txt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 15px;
+      line-height: 143.49%;
+      margin-bottom: 9px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 19px 14px 205px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 17px;
+    }
+    .les-item__icon {
+      padding-left: 34px;
+      margin-bottom: 9px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 15px;
+      line-height: 148.4%;
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 244px;
+      height: 244px;
+      top: auto;
+      left: 50%;
+      margin-left: -122px;
+      bottom: -60px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -17px;
+          left: 78px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btns>*+* {
+      margin-top: 7px;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 15px;
+      }
+      .btn_second-border {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+
+
+
+  .les-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 42px;
+    + .les-items {
+      margin-top: 50px;
+    }
+    &_three {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 32px;
+    }
+    &_four {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 32px;
+    }
+    &_five {
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 32px;
+    }
+  }
+}
+/* end media max width 1280 pixels */
+
+/* max width 900 pixels */
+@media only screen and (max-width: 900px) {
+  
+
+  .les-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    + .les-items {
+      margin-top: 30px;
+    }
+    &_three {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+    }
+    &_four {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20;
+    }
+    &_five {
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20;
+    }
+  }
+
+
+
+  .les-item_small, .les-item_sm {
+    .les-item__tt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 12px;
+    }
+    .les-item__txt {
+      margin-left: -14px;
+      margin-right: -14px;
+      text-align: center;
+      font-size: 17px;
+      line-height: 143.49%;
+      margin-bottom: 15px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 21px 19px 205px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 17px;
+    }
+    .les-item__icon {
+      padding-left: 34px;
+      margin-bottom: 9px;
+      span {
+        font-size: 12px;
+        line-height: 14px;
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 15px;
+      line-height: 148.4%;
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 288px;
+      height: 288px;
+      top: auto;
+      left: 50%;
+      margin-left: -144px;
+      bottom: -100px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -31px;
+          left: 93px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 21px;
+        padding: 10px 15px;
+      }
+      .btn_second-border {
+        font-weight: 400;
+        font-size: 16px;
+        padding: 10px 15px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+/* end media max width 900 pixels */
+
+/* max width 750 pixels */
+@media only screen and (max-width: 750px) {
+  
+
+  .les-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 22px;
+    + .les-items {
+      margin-top: 30px;
+    }
+  }
+
+  .les-item {
+    .les-item__tt {
+      margin-left: -5px;
+      margin-right: -5px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 17px;
+      margin-bottom: 7px;
+    }
+    .les-item__txt {
+      margin-left: -5px;
+      margin-right: -5px;
+      text-align: center;
+      font-size: 12px;
+      line-height: 143.49%;
+      margin-bottom: 6px;
+    }
+    .les-item__info {
+      max-width: none;
+      width: 100%;
+      padding: 14px 11px 158px;
+    }
+    .les-item__icon-list {
+      margin-bottom: 12px;
+    }
+    .les-item__icon {
+      padding-left: 25px;
+      margin-bottom: 4px;
+      &-img {
+        width: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img {
+          max-width: 80%;
+        }
+      }
+    }
+    .les-item__icon-txt {
+      font-size: 12px;
+      line-height: 148.4%;
+      span {
+        font-size: 10px;
+        line-height: 12px;
+      }
+    }
+    .les-item__picture {
+      max-width: none;
+      top: auto;
+      max-width: none;
+      right: 0;
+      left: 0;
+      justify-content: center;
+      align-items: center;
+      padding: 0 10px;
+      width: auto;
+      
+    }
+    .les-item__circle {
+      width: 188px;
+      height: 188px;
+      top: auto;
+      left: 50%;
+      margin-left: -94px;
+      bottom: -46px;
+      &-point {
+        .crlc-img {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -17px;
+          left: 78px;
+        }
+        .crlc-logo {
+          max-width: 80%;
+          height: auto;
+          position: absolute;
+          top: -23px;
+          left: 33px;
+        }
+      }
+    }
+    .les-item__btns {
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .les-item__btns>*+* {
+      margin-top: 5px;
+    }
+    .les-item__btn {
+      .btn_second {
+        font-weight: 500;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px 10px;
+      }
+      .btn_second-border.btn_icon {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 20px;
+        padding: 5px 10px;
+      }
+    }
+    .les-item__btn-down {
+      .btn_name {
+        padding: 4px 15px;
+        min-width: 110px;
+        span {
+          &:not(:first-child) {
+            font-size: 13px;
+            line-height: 15px;
+          }
+          &:not(:nth-child(2)) {
+            font-size: 10px;
+            line-height: 12px;
+          }
+        }
+      }
+    }
+  }
+  .les-item .les-item__icon:nth-child(1) .les-item__icon-img {
+    top: 3px;
+  }
+  .les-item .les-item__icon:first-child .les-item__icon-img img {
+    max-width: 40%;
+  }
+  .les-item .les-item__icon:nth-child(2) .les-item__icon-img {
+    top: 3px;
+  }
+  .les-item .les-item__icon:nth-child(2) .les-item__icon-img img {
+    max-width: 50%;
+  }
+  .les-item .les-item__icon:nth-child(3) .les-item__icon-img img {
+    max-width: 50%;
+  }
+
+  .les-item .les-item__btn-down .btn_name {
+    padding: 4px 7px;
+  }
+
+  .les-item .les-item__btn-down .btn_name span:not(:nth-child(2)) {
+    font-size: 8px;
+    line-height: 9px;
+    color: #F1F1F1;
+  }
+  .les-item .les-item__btn-down .btn_name span:not(:first-child) {
+    font-size: 11px;
+    line-height: 12px;
+    color: #F1F1F1;
+  }
+
+  .les-item .les-item__circle-point .crlc-img {
+    max-width: 90%;
+    top: -25px;
+    left: 55px;
+    transform: none;
+  }
+
+  .les-item .les-item__circle-point .crlc-logo {
+    max-width: 90%;
+    top: -20px;
+    left: 23px;
+  }
+}
+/* end media max width 750 pixels */

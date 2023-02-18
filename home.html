@@ -103,14 +103,24 @@
       <section class="home-intro-sect">
         <div class="container">
           <div class="home-intro-row">
-            <div class="home-intro-col">
-              <h1 class="h1 blue">IT Курсы в&nbsp;Москве</h1>
+            <div class="home-intro-col home-intro-col_txt">
+              <h1 class="h1 blue">IT Школа <br> в Москве</h1>
               <h2 class="h2">с трудоустройством</h2>
-              <p class="text">Освой востребованную it-профессию всего за 5-7 месяцев! И найди работу своей мечты.</p>
+              <p class="text">Освой востребованную it-профессию всего 
+                 <br> за 5-7 месяцев!
+                И найди работу своей мечты.</p>
             </div>
-            <div class="home-intro-col">
+            <div class="home-intro-col home-intro-col_img">
               <div class="home-intro-img-container">
-                <img src="img/other/home-intro-top.png" class="home-intro-img" alt="" />
+                <picture>
+                  <source srcset="img/other/home-intro-top2-mob.png, img/other/home-intro-top2-mob@2x.png 2x" media="(max-width: 750px)">
+                  <!-- <source srcset="img/other/home-intro-top2-tabl.jpg" media="(max-width: 1054px)"> -->
+                  <img srcset="img/other/home-intro-top2.png, img/other/home-intro-top2@2x.png 2x" alt="image girl" class="home-intro-img">
+                </picture>
+                <!-- <img src="img/other/home-intro-top2.png" class="home-intro-img" alt="image girl" /> -->
+                <div class="home-intro-map">
+                  <img src="img/other/home-intro-map.svg" alt="map">
+                </div>
               </div>
             </div>
           </div>
@@ -134,7 +144,7 @@
                 <p class="text">лет опыта в IT образовании</p>
               </div>
               <div class="home-number-item">
-                <span>75%</span>
+                <span>75<span>%</span></span>
                 <p class="text">учеников были трудоустроены</p>
               </div>
             </div>
@@ -144,7 +154,7 @@
       <section class="home-course-sect">
         <div class="container">
           <h2 class="h2 js-first-word">Старт ближайших курсов</h2>
-          <div class="filters">
+          <!-- <div class="filters">
             <span class="filter filter-all active" data-filter="all">Все курсы</span>
             <span class="filter" data-filter="programming">Программирование</span>
             <span class="filter" data-filter="design">Дизайн</span>
@@ -157,12 +167,94 @@
             <span class="filter" data-filter="web">Веб-разработка</span>
             <span class="filter" data-filter="dev">Разработка сайтов</span>
             <span class="filter" data-filter="backend">Backend-разработка</span>
+          </div> -->
+          <div class="box-btns">
+            <div class="box-btns__left">
+              <div class="select-div select-div_dark select-div_mob" data-select-click>
+                <div class="select-div__cap">
+                  <button class="btn btn_select btn_select-blue">Все курсы</button>
+                </div>
+                <div class="select-div__body">
+                  <div class="select-div__body-inner">
+                    <ul class="select-div__items l-norm">
+                      <li class="select-div__item active">
+                        <a href="#" class="btn btn_white-fill">Все курсы</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Программирование</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Дизайн</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Маркетинг</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Управление</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Бизнес</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Разработка игр</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Мобильная разработка</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Тестирование</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Веб-разработка</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Разработка сайтов</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Backend-разработка</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="box-btns__right">
+              <div class="select-div select-div_desk" data-select-click>
+                <div class="select-div__cap">
+                  <button class="btn btn_select btn_select-blue">Популярные</button>
+                </div>
+                <div class="select-div__body">
+                  <div class="select-div__body-inner">
+                    <ul class="select-div__items l-norm">
+                      <li class="select-div__item active">
+                        <a href="#" class="btn btn_white-fill">delete point if active</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Все вакансии</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">В офисе</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Можно удалённо</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Начало карьеры, студенты</a>
+                      </li>
+                      <li class="select-div__item">
+                        <a href="#" class="btn btn_white-fill">Экспертам</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <div class="filter-list course-grid">
-            <div class="filter-list-item course-item" data-filter="web">
+            <a href="#" class="filter-list-item course-item" data-filter="web" data-hit-mobile>
               <div class="course-item-text">
-                <div class="course-item-badge">
-                  <span class="course-item-badge-single">Веб-разработка</span>
+                <div class="course-item-badge _hit">
+                  <span class="course-item-badge-single">Веб-разработка sadsas as as</span>
                   <span class="course-item-badge-single course-item-badge-single-hit">Хит</span>
                 </div>
                 <p class="course-item-name">Python (Django) - Веб-разработчик</p>
@@ -172,28 +264,30 @@
                 </div>
               </div>
               <div class="course-item-img">
-                <img src="img/course/card/1/img-1.png" class="img" alt="">
-                <img src="img/course/card/1/logo-1.png" class="logo" alt="">
+                <img src="img/course/card/1/img-1_full.png" class="img" alt="image">
+                <img src="img/course/card/1/logo-1_full.png" class="logo" alt="logo">
+                <img src="img/course/card/1/bg-1.jpg" class="bg" alt="bg">
               </div>
-            </div>
-            <div class="filter-list-item course-item" data-filter="programming">
+            </a>
+            <a href="#" class="filter-list-item course-item" data-filter="programming" data-hit-mobile>
               <div class="course-item-text">
-                <div class="course-item-badge">
+                <div class="course-item-badge _hit">
                   <span class="course-item-badge-single">Программирование</span>
                   <span class="course-item-badge-single course-item-badge-single-new">New</span>
                 </div>
-                <p class="course-item-name">Python Аналитика данных</p>
+                <p class="course-item-name">Python <br>Аналитика данных</p>
                 <div class="course-item-bottom">
                   <span class="course-item-bottom-length">4 месяца</span>
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/2/img-2.png" class="img" alt="">
-                  <img src="img/course/card/2/logo-2.png" class="logo" alt="">
+                  <img src="img/course/card/2/img-2_full.png" class="img" alt="image">
+                  <img src="img/course/card/2/logo-2_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/2/bg-2.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item" data-filter="web">
+            </a>
+            <a href="#" class="filter-list-item course-item" data-filter="web">
               <div class="course-item-text">
                 <div class="course-item-badge">
                   <span class="course-item-badge-single">Веб-разработка</span>
@@ -204,15 +298,17 @@
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/3/img-3.png" class="img" alt="">
-                  <img src="img/course/card/3/logo-3.png" class="logo" alt="">
+                  <img src="img/course/card/3/img-3_full.png" class="img" alt="image">
+                  <img src="img/course/card/3/logo-3_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/3/bg-3.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item" data-filter="app">
+            </a>
+            <a href="#" class="filter-list-item course-item" data-filter="app">
               <div class="course-item-text">
-                <div class="course-item-badge">
+                <div class="course-item-badge _hit">
                   <span class="course-item-badge-single">Мобильная разработка</span>
+                  <span class="course-item-badge-single course-item-badge-single-hit">Хит</span>
                 </div>
                 <p class="course-item-name">Android - Разработчик (Java&Kotlin)</p>
                 <div class="course-item-bottom">
@@ -220,12 +316,13 @@
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/4/img-4.png" class="img" alt="">
-                  <img src="img/course/card/4/logo-4.png" class="logo" alt="">
+                  <img src="img/course/card/4/img-4_full.png" class="img" alt="image">
+                  <img src="img/course/card/4/logo-4_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/4/bg-4.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item" data-filter="test">
+            </a>
+            <a href="#" class="filter-list-item course-item" data-filter="test">
               <div class="course-item-text">
                 <div class="course-item-badge">
                   <span class="course-item-badge-single">Тестирование</span>
@@ -236,15 +333,17 @@
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/5/img-5.png" class="img" alt="">
-                  <img src="img/course/card/5/logo-5.png" class="logo" alt="">
+                  <img src="img/course/card/5/img-5_full.png" class="img" alt="image">
+                  <img src="img/course/card/5/logo-5_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/5/bg-5.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item" data-filter="web">
+            </a>
+            <a href="#" class="filter-list-item course-item" data-filter="web">
               <div class="course-item-text">
-                <div class="course-item-badge">
+                <div class="course-item-badge _hit">
                   <span class="course-item-badge-single">Веб-разработка</span>
+                  <span class="course-item-badge-single course-item-badge-single-hit">Хит</span>
                 </div>
                 <p class="course-item-name">PHP Junior Программист</p>
                 <div class="course-item-bottom">
@@ -252,12 +351,13 @@
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/6/img-6.png" class="img" alt="">
-                  <img src="img/course/card/6/logo-6.png" class="logo" alt="">
+                  <img src="img/course/card/6/img-6_full.png" class="img" alt="image">
+                  <img src="img/course/card/6/logo-6_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/6/bg-6.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item d-none" data-filter="design">
+            </a>
+            <a href="#" class="filter-list-item course-item d-none" data-filter="design">
               <div class="course-item-text">
                 <div class="course-item-badge">
                   <span class="course-item-badge-single">Дизайн</span>
@@ -268,43 +368,342 @@
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/7/img.png" class="img" alt="">
-                  <img src="img/course/card/7/logo.png" class="logo" alt="">
+                  <img src="img/course/card/7/img-7_full.png" class="img" alt="image">
+                  <img src="img/course/card/7/logo-7_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/7/bg-7.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item d-none" data-filter="web">
+            </a>
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
               <div class="course-item-text">
-                <div class="course-item-badge">
-                  <span class="course-item-badge-single">Веб-разработка</span>
+                <div class="course-item-badge _hit">
+                  <span class="course-item-badge-single">Дизайн</span>
+                  <span class="course-item-badge-single course-item-badge-single-hit">Хит</span>
                 </div>
-                <p class="course-item-name">PHP Junior Программист</p>
+                <p class="course-item-name">Графический 
+                  дизайн</p>
                 <div class="course-item-bottom">
                   <span class="course-item-bottom-length">4 месяца</span>
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/8/img.png" class="img" alt="">
-                  <img src="img/course/card/8/logo.png" class="logo" alt="">
+                  <img src="img/course/card/8/img-8_full.png" class="img" alt="image">
+                  <img src="img/course/card/8/logo-8_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/8/bg-8.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
-            <div class="filter-list-item course-item d-none" data-filter="web">
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
               <div class="course-item-text">
                 <div class="course-item-badge">
-                  <span class="course-item-badge-single">Веб-разработка</span>
+                  <span class="course-item-badge-single">Дизайн</span>
                 </div>
-                <p class="course-item-name">PHP Junior Программист</p>
+                <p class="course-item-name">UX&UI Веб-дизайн</p>
                 <div class="course-item-bottom">
                   <span class="course-item-bottom-length">4 месяца</span>
                   <span class="course-item-bottom-start">Старт: 13 декабря</span>
                 </div>
                 <div class="course-item-img">
-                  <img src="img/course/card/9/img.png" class="img" alt="">
-                  <img src="img/course/card/9/logo.png" class="logo" alt="">
+                  <img src="img/course/card/9/img-9_full.png" class="img" alt="image">
+                  <img src="img/course/card/9/logo-9_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/9/bg-9.jpg" class="bg" alt="bg">
                 </div>
               </div>
-            </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Дизайн</span>
+                </div>
+                <p class="course-item-name">Javascript 
+                  (Front-end)</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/10/img-10_full.png" class="img" alt="image">
+                  <img src="img/course/card/10/logo-10_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/10/bg-10.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Тестирование</span>
+                </div>
+                <p class="course-item-name">Javascript 
+                  (Full-stack)</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/11/img-11_full.png" class="img" alt="image">
+                  <img src="img/course/card/11/logo-11_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/11/bg-11.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Разработка сайтов</span>
+                </div>
+                <p class="course-item-name">HTML&CSS 
+                  Вёрстка сайтов</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/12/img-12_full.png" class="img" alt="image">
+                  <img src="img/course/card/12/logo-12_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/12/bg-12.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Дизайн</span>
+                </div>
+                <p class="course-item-name">C++ Разработчик</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/13/img-13_full.png" class="img" alt="image">
+                  <img src="img/course/card/13/logo-13_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/13/bg-13.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Тестирование</span>
+                </div>
+                <p class="course-item-name">Java Middle Разработчик</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/14/img-14_full.png" class="img" alt="image">
+                  <img src="img/course/card/14/logo-14_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/14/bg-14.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Разработка сайтов</span>
+                </div>
+                <p class="course-item-name">Javascript 
+                  (без вёрстки)</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/15/img-15_full.png" class="img" alt="image">
+                  <img src="img/course/card/15/logo-15_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/15/bg-15.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Дизайн</span>
+                </div>
+                <p class="course-item-name">SEO Продвижение сайтов</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/16/img-16_full.png" class="img" alt="image">
+                  <img src="img/course/card/16/logo-16_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/16/bg-16.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Маркетинг</span>
+                </div>
+                <p class="course-item-name">Контекстная реклама</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/17/img-17_full.png" class="img" alt="image">
+                  <img src="img/course/card/17/logo-17_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/17/bg-17.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Разработка сайтов</span>
+                </div>
+                <p class="course-item-name">Таргетированная реклама</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/18/img-18_full.png" class="img" alt="image">
+                  <img src="img/course/card/18/logo-18_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/18/bg-18.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Дизайн</span>
+                </div>
+                <p class="course-item-name">Интернет - маркетинг</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/19/img-19_full.png" class="img" alt="image">
+                  <img src="img/course/card/19/logo-19_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/19/bg-19.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Тестирование</span>
+                </div>
+                <p class="course-item-name">QA Automation Тестирование (Java)</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/20/img-20_full.png" class="img" alt="image">
+                  <img src="img/course/card/20/logo-20_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/20/bg-20.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Разработка сайтов</span>
+                </div>
+                <p class="course-item-name">IOS Разработчик</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/21/img-21_full.png" class="img" alt="image">
+                  <img src="img/course/card/21/logo-21_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/21/bg-21.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Дизайн</span>
+                </div>
+                <p class="course-item-name">IT Project менеджер</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/22/img-22_full.png" class="img" alt="image">
+                  <img src="img/course/card/22/logo-22_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/22/bg-22.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Маркетинг</span>
+                </div>
+                <p class="course-item-name">3D Моделирование</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/23/img-23_full.png" class="img" alt="image">
+                  <img src="img/course/card/23/logo-23_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/23/bg-23.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Разработка сайтов</span>
+                </div>
+                <p class="course-item-name">SMM Продвижение в соц сетях</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/24/img-24_full.png" class="img" alt="image">
+                  <img src="img/course/card/24/logo-24_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/24/bg-24.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
+            <a href="#" class="filter-list-item course-item d-none" data-filter="web">
+              <div class="course-item-text">
+                <div class="course-item-badge">
+                  <span class="course-item-badge-single">Тестирование</span>
+                </div>
+                <p class="course-item-name">QA Automation Тестирование (Python)</p>
+                <div class="course-item-bottom">
+                  <span class="course-item-bottom-length">4 месяца</span>
+                  <span class="course-item-bottom-start">Старт: 13 декабря</span>
+                </div>
+                <div class="course-item-img">
+                  <img src="img/course/card/25/img-25_full.png" class="img" alt="image">
+                  <img src="img/course/card/25/logo-25_full.png" class="logo" alt="logo">
+                  <img src="img/course/card/25/bg-25.jpg" class="bg" alt="bg">
+                </div>
+              </div>
+            </a>
+
           </div>
           <div class="center">
             <button class="btn btn-load-more btn-load-more-course">
@@ -319,13 +718,13 @@
       <section class="home-lesson-sect">
         <div class="container">
           <h2 class="h2 js-first-word">Пробные уроки</h2>
-          <div class="home-lesson-row">
+          <!-- <div class="home-lesson-row">
             <div class="home-lesson-item">
               <div class="home-lesson-item-text">
                 <h4 class="h4 blue bold">Пробный урок</h4>
                 <p class="home-lesson-item-name">Курс «Графический дизайн», «UX&UI Веб дизайн»</p>
-                <p class="home-lesson-item-date">17 декабря в 19:30</p>
-                <a href="" class="btn">Подробнее</a>
+                <p class="home-lesson-item-date">17 декабря</p>
+                <p class="home-lesson-item-date">17 декабря</p>
               </div>
               <div class="lesson-teacher">
                 <img src="img/lesson/test-person-1.png" class="lesson-teacher-img" alt="" />
@@ -351,6 +750,772 @@
               </div>
               <div class="lesson-teacher">
                 <img src="img/lesson/test-person-5.png" class="lesson-teacher-img" alt="" />
+              </div>
+            </div>
+          </div> -->
+
+          <div class="les-items">
+            <div class="les-item les-item_lg">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_lg">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="les-items les-items_three">
+            <div class="les-item les-item_md">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_md">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_md">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="les-items les-items_four">
+            <div class="les-item les-item_sm">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_sm">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_sm">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_sm">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="les-items les-items_five">
+            <div class="les-item les-item_small">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_small">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_small">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-1.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-1.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="les-item les-item_small">
+              <div class="les-item__info">
+                <div class="les-item__tt">Пробный урок</div>
+                <div class="les-item__txt">Курс «Графический дизайн», «UX&UI Веб дизайн»</div>
+                <ul class="les-item__icon-list l-norm">
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-marker-card.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Москва/Онлайн</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-money.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">Бесплатно</div>
+                  </li>
+                  <li class="les-item__icon">
+                    <div class="les-item__icon-img">
+                      <img src="img/icons/ic-card-calendar.svg" alt="icons">
+                    </div>
+                    <div class="les-item__icon-txt">
+                      18 декабря 
+                      <span>начало в 19:30</span></div>
+                  </li>
+                </ul>
+                <div class="les-item__btns">
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second">Подробнее</a>
+                  </div>
+                  <div class="les-item__btn">
+                    <a href="#" class="btn btn_norm btn_second-border btn_icon">
+                      <span class="btn__icon btn__icon_left">
+                        <svg width="16" height="13" viewBox="0 0 16 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M14.147 0.191783L1.07254 5.49127C0.546701 5.7373 0.372516 6.22196 0.953928 6.47882L4.33025 7.54311L12.4225 2.31968C12.864 1.99237 13.3197 2.07441 12.9315 2.43358L6.00012 8.97641L5.80559 11.7203C6.01285 12.1418 6.38528 12.1403 6.62091 11.9278L8.53783 10.0368L11.8734 12.5455C12.647 13.0047 13.0629 12.7 13.2206 11.844L15.2969 1.29363C15.5129 0.239753 15.124 -0.220171 14.147 0.191783Z" fill="currentColor"/>
+                        </svg>
+                      </span>
+                      <span class="btn__icon-text">Вступить в чат</span>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="les-item__picture">
+                <div class="les-item__circle">
+                  <div class="les-item__circle-point">
+                    <img srcset="img/lesson/bg-1.jpg" alt="pesona" class="crlc-bg">
+                    <img srcset="img/lesson/logo-2.png" alt="pesona" class="crlc-logo">
+                    <img srcset="img/lesson/img-2.png" alt="pesona" class="crlc-img">
+                  </div>
+                </div>
+                <div class="les-item__btn-down">
+                  <span class="btn btn_norm btn_name btn_three">
+                    <span>Спикер</span>
+                    <span>Александр Коростылев</span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>

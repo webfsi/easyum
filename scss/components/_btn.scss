@@ -1,0 +1,90 @@
+.btn {
+  &_norm {
+    box-shadow: none;
+    border: none;
+    outline: none;
+    display: inline-block;
+    text-align: center;
+    white-space: nowrap;
+  }
+  &_second {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 13px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #337CFC;
+    border-radius: 50px;
+    border: none;
+    &:hover {
+      background: #004FD9;
+      border-color: #004FD9;
+    }
+  }
+  &_second-border {
+    background-color: transparent;
+    color: #337CFC;
+    padding: 13px 20px;
+    border: 1px solid #337CFC;
+    line-height: 22px;
+    &:hover {
+      background: #337CFC;
+      color: #fff;
+    }
+  }
+  &_three {
+    background: #F52525;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: #D20B0B;
+      color: #fff;
+      border-color: #D20B0B;
+    }
+  }
+  &_name {
+    line-height: 19px;
+    padding: 6px 22px;
+    span {
+      display: block;
+      text-align: left;
+    }
+  }
+  &_icon {
+    font-family: $font1;
+    font-weight: 400;
+    font-size: 15px;
+    span {
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 0;
+    }
+    .btn__icon {
+      line-height: 0;
+      display: inline-block;
+      &_left {
+        margin-right: 6px;
+      }
+    }
+    
+  }
+}
+
+.les-item__btn {
+  .btn {
+    width: 100%;
+  }
+}
+
+span.btn_name {
+  cursor: default;
+  &:hover {
+    background: #F52525;
+    color: #fff;
+    border: none;
+  }
+}
+

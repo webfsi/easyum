@@ -1,0 +1,216 @@
+.home-intro-row {
+  display: grid;
+  grid-template-columns: 516px 1fr;
+  gap: 0;
+  grid-gap: 40px;
+  min-height: 660px;
+}
+
+.home-intro-sect {
+  padding-top: 7px;
+  margin-bottom: 120px;
+  @media (max-width: 750px) {
+    margin-bottom: 112px;
+  }
+}
+
+.home-intro-col {
+  position: relative;
+  z-index: 1;
+  &_txt {
+    padding-bottom: 20px;
+    z-index: 2;
+    
+    .h1 {
+      // font-size: 111px;
+      line-height: 105%;
+      margin-bottom: 1px;
+    }
+    .h2 {
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 105%;
+    }
+    .text {
+      font-weight: 400;
+      font-size: 23.2996px;
+      line-height: 149.99%;
+      color: #252525;
+      max-width: 96%;
+      margin-top: 32px;
+    }
+  }
+  &_img {
+    height: 100%;
+  }
+  .home-intro-img-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    left: 0;
+    &:before {
+      width: 662px;
+      height: 662px;
+      left: auto;
+      right: -145px;
+      top: 7px;
+    }
+    picture {
+      display: block;
+    }
+    .home-intro-img {
+      max-width: 794px;
+      position: relative;
+      right: 60px;
+    }
+  }
+}
+
+.home-intro-map {
+  position: absolute;
+  bottom: -113px;
+  right: -291px;
+  img {
+    max-width: 430px;
+  }
+}
+
+/* max width 1440 pixels */
+@media only screen and (max-width: 1440px) {
+  .home-intro-col .home-intro-img-container .home-intro-img {
+    right: 130px;
+  }
+  .home-intro-col .home-intro-map {
+    right: -260px;
+  }
+  .home-intro-col .home-intro-img-container:before {
+    right: -65px;
+  }
+}
+/* end media max width 1440 pixels */
+
+/* max width 1280 pixels */
+@media only screen and (max-width: 1280px) {
+  .home-intro-col_txt .h1 {
+    font-size: 90px;
+  }
+  .home-intro-col_txt .h2 {
+    font-size: 40px;
+  }
+  .home-intro-col_txt .text {
+    font-size: 19px;
+  }
+  .home-intro-row {
+    grid-template-columns: 430px 1fr;
+  }
+  .home-intro-col .home-intro-img-container:before {
+    right: auto;
+    left: 20px;
+  }
+  .home-intro-col .home-intro-map {
+    right: -200px;
+  }
+}
+/* end media max width 1280 pixels */
+
+/* max width 1100 pixels */
+@media only screen and (max-width: 1100px) {
+  .home-intro-col .home-intro-map img {
+    max-width: 100%;
+  }
+  .home-intro-col .home-intro-map {
+    right: -200px;
+  }
+}
+/* end media max width 1100 pixels */
+
+/* max width 900 pixels */
+@media only screen and (max-width: 900px) {
+  
+  .home-intro-row {
+    min-height: 540px;
+  }
+  .home-intro-col .home-intro-img-container .home-intro-img {
+    max-width: 555px;
+  }
+  .home-intro-map {
+    max-width: 400px;
+    bottom: -53px;
+    right: -286px;
+  }
+  .home-intro-col .home-intro-img-container:before {
+    width: 460px;
+    height: 460px;
+    
+  }
+  .home-intro-col .home-intro-img-container .home-intro-img {
+    right: 90px;
+  }
+}
+/* end media max width 900 pixels */
+
+/* max width 750 pixels */
+@media only screen and (max-width: 750px) {
+  .home-intro-row {
+    grid-template-columns: 1fr;
+    min-height: 0;
+    grid-gap: 0;
+  }
+  .home-intro-sect {
+    padding-top: 18px;
+  }
+  .home-intro-col_txt {
+    text-align: center;
+  }
+  .home-intro-col_txt .h1 {
+    font-size: 67px;
+    line-height: 105%;
+  }
+  .home-intro-col_txt .h2 {
+    font-size: 30px;
+    line-height: 105%;
+  }
+  .home-intro-col_txt .text {
+    font-size: 15px;
+    line-height: 149.99%;
+    margin-top: 15px;
+    max-width: none;
+    
+  }
+  .home-intro-col_img {
+    text-align: center;
+  }
+  .home-intro-col .home-intro-img-container {
+    position: relative;
+    top: auto;
+    left: auto;
+    right: auto;
+    bottom: auto;
+    display: inline-block;
+    &:before {
+      width: 315px;
+      height: 315px;
+      left: 51px;
+    }
+  }
+  .home-intro-col .home-intro-img-container .home-intro-img {
+    right: 7px;
+    max-width: 356px;
+  }
+
+  .home-intro-map {
+    // display: none;
+    max-width: 228px;
+    bottom: -98px;
+    right: -61px;
+  }
+  .home-intro-col .home-intro-map {
+    right: -61px;
+  }
+  
+}
+/* end media max width 750 pixels */
+
+

@@ -10,16 +10,23 @@
 @import "form";
 @import "footer";
 
-// animation from Igor
-// @import "libs/fancybox";
+// style from Igor
 
 
 @import "components/default";
+@import "components/btn";
+// pages
+@import "pages/home/hero";
+@import "pages/home/value";
+@import "pages/home/filter";
+@import "pages/home/course";
+@import "pages/home/lessons";
 // modal
 @import "components/modals";
 @import "components/modal-city";
 @import "components/modal-course";
 @import "components/modal-burger";
 
+// animations
 @import "components/animation";
 @import "components/edits";
