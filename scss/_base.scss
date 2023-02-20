@@ -73,7 +73,7 @@ a {
 
 .wrapper {
   // padding: 1.875rem 0 3.75rem;
-  padding-top: 96px;
+  padding-top: 123px;
   overflow: hidden;
   @media (max-width: 1280px) {
     padding-top: 87px;
@@ -90,6 +90,10 @@ a {
 
     &-down {
       background-position: -200px 1000px;
+      background-repeat: no-repeat;
+    }
+
+    @media (max-width: 1280px) {
       background-repeat: no-repeat;
     }
 }
