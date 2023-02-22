@@ -205,6 +205,11 @@ h6 {
     .btn-icon {
       width: 1.5rem;
       margin-right: 0.5rem;
+    } 
+    @media (max-width: 768px) {
+      font-size: 0.9375rem;
+      font-weight: 700;
+      padding: 1rem 1.5rem;
     }
   }
   &-icon {
