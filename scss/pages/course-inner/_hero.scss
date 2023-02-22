@@ -1,0 +1,209 @@
+
+.c-hero {
+  &__tt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 72px;
+    line-height: 86px;
+    color: #252525;
+    margin-bottom: 30px;
+    span {
+      color: #337CFC;
+    }
+  }
+  &__txt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 129.99%;
+    color: #4F4F4F;
+    margin-bottom: 20px;
+    padding-right: 20px;
+  }
+  &__btns {
+    list-style-type: none;
+    margin: 45px 0 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 27px;
+    padding: 0;
+  }
+  &__btn {
+    .btn {
+      width: 100%;
+    }
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 627px 1fr;
+    grid-gap: 16px;
+  }
+  &__info-items {
+    display: flex;
+    justify-content: space-between;
+    margin: 43px 0 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  &__info-item {
+    list-style-type: none;
+    margin-right: 15px;
+    text-align: center;
+    // margin-left: auto;
+    display: block;
+    // max-width: min-content;
+    // &:first-child {
+    //   margin-left: 0;
+    // }
+    // &:last-child {
+    //   margin-right: 0;
+    // }
+  }
+  &__info {
+    &-tt {
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16.0047px;
+      line-height: 19px;
+      color: #252525;
+      white-space: nowrap;
+    }
+    &-txt {
+      font-weight: 400;
+      font-size: 16.0047px;
+      line-height: 18px;
+      text-align: center;
+      color: #4F4F4F;
+      margin-top: 5px;
+      &_plus {
+        span {
+          &:last-child {
+            &:after {
+              display: none;
+            }
+          }
+          &:after {
+            content: " +";
+            display: inline-block;
+            margin-left: 5px;
+          }
+        }
+      }
+    }
+  }
+
+  &__img {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+
+    &-inner {
+      &-circle {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+          width: 100%;
+          height: 100%;
+          display: block;
+          object-fit: cover;
+        }
+        picture {
+          display: block;
+          width: 100%;
+          height: 100%;
+        }
+      }
+      width: 523px;
+      height: 523px;
+      position: relative;
+      z-index: 1;
+      
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -30px;
+        left: 17px;
+        width: 545px;
+        height: 545px;
+        border-radius: 50%;
+        background-color: #9CC0FF;
+        overflow: hidden;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__stock {
+    margin-top: 75px;
+    border-radius: 50px;
+    overflow: hidden;
+    padding: 17px 100px 23px 103px;
+    background-color: #ccc;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    
+    &-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      border-radius: 50px;
+      overflow: hidden;
+      z-index: -1;
+      picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+      }
+    }
+    &-tt {
+      font-style: normal;
+      font-family: $font1;
+      font-weight: 700;
+      font-size: 37.6068px;
+      line-height: 45px;
+      color: #F4F7FF;
+    }
+    &-txt {
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 13.4815px;
+      line-height: 16px;
+      color: #F4F7FF;
+      margin-top: 4px;
+    }
+    &-price {
+      margin-right: 41px;
+      text-align: left;
+    }
+    &-info {
+      &-txt {
+        font-family: $font1;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21.1852px;
+        line-height: 25px;
+        color: #F4F7FF;
+        max-width: 285px;
+      }
+    }
+  }
+}
+

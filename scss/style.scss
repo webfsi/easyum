@@ -15,12 +15,23 @@
 
 @import "components/default";
 @import "components/btn";
+@import "components/select";
 // pages
+// home
 @import "pages/home/hero";
 @import "pages/home/value";
 @import "pages/home/filter";
 @import "pages/home/course";
 @import "pages/home/lessons";
+// course inner page
+@import "pages/course-inner/hero";
+@import "pages/course-inner/test-box";
+@import "pages/course-inner/cp-banner";
+@import "pages/course-inner/graph";
+@import "pages/course-inner/ol";
+@import "pages/course-inner/skills";
+@import "pages/course-inner/vista";
+
 // modal
 @import "components/modals";
 @import "components/modal-city";

@@ -71,6 +71,16 @@
     }
     
   }
+
+  &_btn-lg {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 23px 30px;
+    &_norm {
+      font-weight: 400;
+    }
+  }
 }
 
 .les-item__btn {

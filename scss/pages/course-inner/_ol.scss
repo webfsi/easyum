@@ -1,0 +1,44 @@
+.c-ol__tt {
+  font-family: $font1;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  color: #252525;
+  margin-bottom: 50px;
+}
+
+.c-ol__list {
+  counter-reset: my-counter;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 25px;
+}
+
+.c-ol__item {
+  display: flex;
+  align-items: center;
+  counter-increment: my-counter;
+}
+
+.c-ol__txt {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #252525;
+}
+
+.c-ol__value {
+  font-family: $font1;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 100px;
+  line-height: 1;
+  text-align: center;
+  color: rgba(51, 124, 252, 0.3);
+  margin-right: 10px;
+  &:before {
+    content: counter(my-counter);
+  }
+}
+

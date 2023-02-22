@@ -1,0 +1,173 @@
+
+.vista-card {
+  display: block;
+  text-decoration: none;
+  &__img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #D9D9D9;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    img, picture {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+  }
+  &__txt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #252525;
+  }
+  &__tt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 129.99%;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 11px;
+  }
+}
+
+.vista__slider {
+  overflow: hidden;
+  padding: 0 30px;
+  position: relative;
+  z-index: 1;
+  
+  .swiper {
+    position: static;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 75px;
+    margin-top: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+}
+
+.vista-card__icon {
+  position: absolute;
+  top: 100%;
+  right: -40px;
+  animation: vistaIcons 10s ease-in-out alternate-reverse infinite;
+}
+
+@keyframes vistaIcons {
+  from {
+    right: -40px;
+  }
+  to {
+    // transform: translate(-100%, 0);
+    right: calc(100% - 120px);
+  }
+}
+
+.vista__box {
+  counter-increment: my-counter2;
+  &es {
+    counter-reset: my-counter2;
+    padding-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 70px 5px;
+  }
+  position: relative;
+  z-index: 1;
+  
+  .vista-card__img {
+    width: 172px;
+    height: 172px;
+    margin-bottom: 20px;
+  }
+  
+  .vista-card__txt {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 129.99%;
+    max-width: 277px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .vista-card__value {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 120px;
+    line-height: 156px;
+    line-height: 1;
+    color: rgba(51, 124, 252, 0.11);
+    position: absolute;
+    left: -20px;
+    top: 0;
+    z-index: -1;
+    &:before {
+      content: "0" counter(my-counter2);
+      line-height: 156px;
+    }
+  }
+}
+
+.vista-card_lg {
+  .vista-card__img {
+    width: 100%;
+    height: 230px;
+    border-radius: 15px;
+    margin-bottom: 24px;
+  }
+  .vista-card__txt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #252525;
+  }
+}
+
+.vista__slider_three {
+  padding-left: 94px;
+  padding-right: 94px;
+  .swiper {
+    overflow: hidden;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    top: 100px;
+  }
+}
+
+.vista__boxes_four {
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px 30px;
+  .vista-card__img {
+    margin-bottom: 18px;
+  }
+  .vista-card__tt {
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .vista-card__txt {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    text-align: center;
+    color: #252525;
+  }
+}
