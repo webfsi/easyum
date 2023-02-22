@@ -143,6 +143,10 @@ h6 {
   position: relative;
   text-align: center;
 
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+
   &:hover {
     background-color: $blue-color-1;
     border-color: $blue-color-1;

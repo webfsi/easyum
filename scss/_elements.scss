@@ -442,6 +442,12 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.75rem 3rem;
     margin: 3rem 0 4.5rem;
+    @media (max-width: 992px) {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    @media (max-width: 768px) {
+      margin: 2.5rem 0;
+    }
   }
   &-item {
     background-color: white;
@@ -462,6 +468,10 @@
       height: 340px;
       margin: 0 auto 1rem;
       overflow: hidden;
+      @media (max-width: 576px) {
+        width: 290px;
+        height: 290px;
+      }
       &-bg {
         position: absolute;
         width: 100%;
@@ -476,6 +486,9 @@
         bottom: 0;
         max-width: 240px;
         transition: 0.3s;
+        @media (max-width: 576px) {
+          max-width: 200px;
+        }
       }
     }
     &-info {
