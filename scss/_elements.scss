@@ -1961,6 +1961,10 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 2.5rem;
       margin-bottom: 5rem;
+      @media (max-width: 992px) {
+        grid-template-columns: repeat(1, 1fr);
+        margin-bottom: 2.5rem;
+      }
     }
     &-item {
       display: flex;
@@ -1973,9 +1977,12 @@
       &-name {
         font-family: $heading-font;
         font-weight: 600;
-        font-size: 20px;
+        font-size: 1.25rem;
         color: $darkgrey-color-1;
         margin: 0.75rem 0 0.5rem;
+        @media (max-width: 768px) {
+          font-size: 1.125rem;
+        }
       }
       &-iframe {
         width: 100%;
@@ -2014,6 +2021,9 @@
           font-size: 0.75rem;
           color: $grey-color-3;
           cursor: default;
+          @media (max-width: 768px) {
+            font-size: 0.625rem;
+          }
         }
       }
       &-time {
@@ -2034,10 +2044,16 @@
       display: flex;
       align-items: flex-end;
       justify-content: space-between;
+      @media (max-width: 768px) {
+        align-items: center;
+      }
       &-count {
         font-size: 1.25rem;
         font-weight: 600;
         font-family: $heading-font;
+        @media (max-width: 768px) {
+          font-size: 0.9375rem;
+        }
       }
     }
   }
@@ -2045,6 +2061,10 @@
     display: flex;
     margin-bottom: 7rem;
     align-items: center;
+    @media (max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 2rem;
+    }
     .filters {
       margin: 0;
       align-items: center;
@@ -2058,6 +2078,17 @@
       font-family: $heading-font;
       max-width: 23.5rem;
       margin-right: 2.5rem;
+      @media (max-width: 768px) {
+        border: 0;
+        font-size: 0.9375rem;
+        padding: 0;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+  &-page {
+    .main-heading {
+      font-size: 1.25rem;
     }
   }
 }
@@ -2856,13 +2887,17 @@
 
   .select-btn {
     box-sizing: border-box;
-    border-radius: 3px;
-    padding: 14px 36px 14px 32px;
+    border-radius: 0.1875rem;
+    padding: 0.875rem 2.25rem 0.875rem 2rem;
     width: 100%;
     cursor: pointer;
     position: relative;
     user-select: none;
     color: $blue-color-1;
+    @media (max-width: 768px) {
+      font-size: 0.75rem;
+      padding: 0.75rem 2.25rem 0.75rem 1rem;
+    }
 
     &:after {
       content: "";
@@ -2875,6 +2910,9 @@
       border-right: 2px solid $blue-color-1;
       border-bottom: 2px solid $blue-color-1;
       transition: 0.3s;
+      @media (max-width: 768px) {
+        right: 1rem;
+      }
     }
   }
 
