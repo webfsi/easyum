@@ -1795,7 +1795,11 @@
     margin: 7.5rem 0;
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: 7.5rem;
+    @media (max-width: 992px) {
+      gap: 5rem;
+      padding: 4rem 0 0;
+    }
   }
   &-row {
     display: flex;
@@ -1818,15 +1822,38 @@
     }
     &:nth-of-type(even) {
       flex-direction: row-reverse;
+      @media (max-width: 992px) {
+        flex-direction: column;
+      }
+    }
+    @media (max-width: 992px) {
+      flex-direction: column;
+      gap: 2rem;
     }
   }
   &-col {
+    &-text {
+      @media (max-width: 992px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
     .text {
       font-size: 1.5625rem;
+      @media (max-width: 992px) {
+        font-size: 0.9375rem;
+      }
     }
     .h2 {
       + * {
         margin-top: 2rem;
+        @media (max-width: 992px) {
+          margin-top: 1rem;
+        }
+      }
+      @media (max-width: 992px) {
+        text-align: center;
       }
     }
     .btn {
@@ -1838,6 +1865,14 @@
       color: $red-color-1;
       font-family: $heading-font;
       white-space: nowrap;
+
+      @media (max-width: 992px) {
+        font-size: 8rem;
+      }
+
+      @media (max-width: 576px) {
+        font-size: 9rem;
+      }
 
       span {
         font-family: inherit;
@@ -1852,9 +1887,15 @@
       left: 50%;
       transform: translate(-50%, -50%);
       max-height: 18.75rem;
+      @media (max-width: 992px) {
+        max-height: 12.75rem;
+      }
       &-container {
         position: relative;
         min-width: 34.375rem;
+        @media (max-width: 992px) {
+          min-width: 100%;
+        }
       }
     }
   }
@@ -1863,6 +1904,10 @@
       font-size: 0.9375rem;
       color: $grey-color-1;
       margin: 0.5rem 0 1.875rem;
+      @media (max-width: 992px) {
+        font-size: 0.5rem;
+        margin-right: auto;
+      }
     }
   }
 }
