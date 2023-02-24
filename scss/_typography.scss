@@ -202,6 +202,11 @@ h6 {
   &-medium {
     font-size: 1.25rem;
     padding: 1.5rem 2.5rem;
+
+    @media (max-width: 992px) {
+      font-size: 1.125rem;
+      padding: 1rem;
+    }
   }
   &-big {
     font-size: 1.5rem;
