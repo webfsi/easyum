@@ -9,6 +9,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 1rem;
+  // fix
+  display: flex;
 
   img {
     object-fit: cover;
