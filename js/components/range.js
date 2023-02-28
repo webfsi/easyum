@@ -1,3 +1,4 @@
+var $ = jQuery.noConflict();
 export default () => {
   $('[data-range-cp] .input-type-range').on('input', function(){
     // console.log($(this).val());

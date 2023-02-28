@@ -1,3 +1,4 @@
+var $ = jQuery.noConflict();
 import commonScripts from "./common.js";
 $(function() {
   console.log( "ready!" );
