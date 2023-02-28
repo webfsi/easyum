@@ -7,7 +7,6 @@
   z-index: 1;
   display: grid;
 
-  
   .bg {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
@@ -75,7 +74,7 @@
   outline: none;
   border: none;
   border-radius: 50%;
-  background: #CFFCB9;
+  background: #cffcb9;
   border-radius: 30px;
   padding: 5px 13px 5px 26px;
 
@@ -88,7 +87,8 @@
     position: absolute;
     left: 9px;
 
-    background: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.2512 0.0679535C9.34907 0.124692 9.42481 0.212943 9.46604 0.318291C9.50727 0.423639 9.51156 0.539855 9.4782 0.647953L7.6772 6.49995H11.0002C11.0979 6.49991 11.1934 6.52847 11.275 6.5821C11.3566 6.63574 11.4207 6.71209 11.4594 6.80175C11.4981 6.8914 11.5098 6.99043 11.4928 7.08661C11.4759 7.18278 11.4312 7.2719 11.3642 7.34295L3.3642 15.843C3.28679 15.9253 3.18379 15.9789 3.07197 15.9952C2.96016 16.0115 2.84613 15.9894 2.74847 15.9326C2.65081 15.8757 2.57528 15.7875 2.53419 15.6822C2.4931 15.577 2.48887 15.4609 2.5222 15.353L4.3232 9.49995H1.0002C0.902544 9.49999 0.807016 9.47143 0.725405 9.4178C0.643795 9.36417 0.579677 9.28782 0.540965 9.19816C0.502253 9.10851 0.490642 9.00948 0.507566 8.9133C0.52449 8.81712 0.569208 8.72801 0.636199 8.65695L8.6362 0.156953C8.71351 0.0747526 8.81636 0.0211221 8.92802 0.00478201C9.03967 -0.011558 9.15357 0.0103533 9.2512 0.0669535V0.0679535Z' fill='%23339900'/%3E%3C/svg%3E%0A") center center no-repeat;
+    background: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9.2512 0.0679535C9.34907 0.124692 9.42481 0.212943 9.46604 0.318291C9.50727 0.423639 9.51156 0.539855 9.4782 0.647953L7.6772 6.49995H11.0002C11.0979 6.49991 11.1934 6.52847 11.275 6.5821C11.3566 6.63574 11.4207 6.71209 11.4594 6.80175C11.4981 6.8914 11.5098 6.99043 11.4928 7.08661C11.4759 7.18278 11.4312 7.2719 11.3642 7.34295L3.3642 15.843C3.28679 15.9253 3.18379 15.9789 3.07197 15.9952C2.96016 16.0115 2.84613 15.9894 2.74847 15.9326C2.65081 15.8757 2.57528 15.7875 2.53419 15.6822C2.4931 15.577 2.48887 15.4609 2.5222 15.353L4.3232 9.49995H1.0002C0.902544 9.49999 0.807016 9.47143 0.725405 9.4178C0.643795 9.36417 0.579677 9.28782 0.540965 9.19816C0.502253 9.10851 0.490642 9.00948 0.507566 8.9133C0.52449 8.81712 0.569208 8.72801 0.636199 8.65695L8.6362 0.156953C8.71351 0.0747526 8.81636 0.0211221 8.92802 0.00478201C9.03967 -0.011558 9.15357 0.0103533 9.2512 0.0669535V0.0679535Z' fill='%23339900'/%3E%3C/svg%3E%0A")
+      center center no-repeat;
     background-size: contain;
   }
 }
@@ -101,7 +101,7 @@
 }
 
 .btn-load-more {
-  border: 1px solid #337CFC;
+  border: 1px solid #337cfc;
   border-radius: 49px;
   font-family: $font1;
   font-style: normal;
@@ -109,14 +109,14 @@
   font-size: 17px;
   line-height: 20px;
   padding: 16px 28px 16px 26px;
-  color: #337CFC;
+  color: #337cfc;
   transition: all 0.2s ease-in-out;
   &:hover {
     .btn-icon {
       transform: rotate(360deg);
     }
   }
-  
+
   .btn-icon {
     width: 18px;
     height: 18px;
@@ -124,11 +124,10 @@
     line-height: 0;
     vertical-align: middle;
     margin-top: -3px;
-    
+
     path {
       fill: currentColor !important;
       transition: all 0s ease-in-out;
-      
     }
   }
 }
@@ -139,7 +138,6 @@
 
 .course-item-text {
   z-index: 2;
-  
 }
 
 .course-item-badge._hit {
@@ -152,6 +150,82 @@
   }
 }
 
+.faq {
+  &-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  &-block {
+  }
+  &-name {
+    background-color: white;
+    user-select: none;
+    cursor: pointer;
+    padding: 0.875rem 3.75rem;
+    border-radius: 1rem;
+    font-family: $heading-font;
+    font-size: 1.25rem;
+    color: $darkgrey-color-1;
+    display: flex;
+    align-items: center;
+    &:after {
+      content: "";
+      display: inline-block;
+      background-color: $bg-color-1;
+      width: 2.5rem;
+      height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin-left: auto;
+      background-image: url(../../../img/course-inner/faq-arrow.svg);
+      background-size: 1rem;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+    &::marker {
+      display: none;
+      font-size: 0;
+    }
+  }
+  &-text {
+    margin: 1rem 3.75rem;
+  }
+}
+
+.seo {
+  &-block {
+    background-color: white;
+    border-radius: 1.5rem;
+    padding: 1px;
+    &-inner {
+      max-height: 6.5rem;
+      font-size: 0.875rem;
+      overflow-y: auto;
+      margin: 1.25rem 2.5rem 1.25rem 2.1875rem;
+
+      /* Works on Firefox */
+      scrollbar-width: thin;
+      scrollbar-color: $blue-color-1 #F1F1F1;
+
+      /* Works on Chrome, Edge, and Safari */
+      &::-webkit-scrollbar {
+        width: 0.5rem;
+      }
+
+      &::-webkit-scrollbar-track {
+        background: #F1F1F1;
+      }
+
+      &::-webkit-scrollbar-thumb {
+        background-color: $blue-color-1;
+        border: 1px solid #F1F1F1;
+      }
+    }
+  }
+} 
 
 /* max width 1280 pixels */
 @media only screen and (max-width: 1280px) {
@@ -162,7 +236,6 @@
   }
 }
 /* end media max width 1280 pixels */
-
 
 /* max width 1100 pixels */
 @media only screen and (max-width: 1100px) {
@@ -251,7 +324,7 @@
     font-size: 9px;
     line-height: 20px;
     text-align: center;
-    color: #51545E;
+    color: #51545e;
     padding: 0px 9px;
     border: none;
     white-space: nowrap;
@@ -266,7 +339,8 @@
     }
   }
 
-  .course-item-badge-single-hit, .course-item-badge-single-new {
+  .course-item-badge-single-hit,
+  .course-item-badge-single-new {
     width: 28px;
     height: 20px;
     padding: 0;
@@ -303,19 +377,18 @@
       font-weight: 400;
       font-size: 9px;
       line-height: 10px;
-      color: #F1F1F1;
+      color: #f1f1f1;
       display: inline-block;
       margin-right: 0;
     }
   }
-
 
   .course-item-img {
     // display: none;
     width: 148px;
     height: 148px;
     right: auto;
-    
+
     left: 50%;
     top: auto;
     bottom: -43px;
@@ -333,7 +406,8 @@
 
   .course-item {
     &._active-scroll {
-      .course-item-badge-single-new, .course-item-badge-single-hit {
+      .course-item-badge-single-new,
+      .course-item-badge-single-hit {
         text-indent: 0px;
         flex-direction: row;
         width: auto;
@@ -346,7 +420,6 @@
         transition: all 0.2s ease-in-out;
         * {
           transition: all 0.2s ease-in-out;
-          
         }
         .course-item-badge-single {
           max-width: calc(100% - 50px);
@@ -364,7 +437,6 @@
           }
         }
       }
-      
     }
   }
 
@@ -377,7 +449,6 @@
   .btn-load-more .btn-icon {
     width: 15px;
     height: 15px;
-    
   }
 
   .home-course-sect {
@@ -391,7 +462,5 @@
   .box-btns {
     margin-bottom: 30px;
   }
-  
 }
 /* end media max width 750 pixels */
-
