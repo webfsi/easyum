@@ -45,6 +45,26 @@
       border-color: #D20B0B;
     }
   }
+  &_four {
+    background: #7EB563;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: darken(#7EB563, 15%);
+      color: #fff;
+      border: none;
+    }
+  }
+  &_five {
+    background: #9CC0FF;
+    color: #fff;
+    border: none;
+    &:hover {
+      background: darken(#9CC0FF, 15%);
+      color: #fff;
+      border: none;
+    }
+  }
   &_name {
     line-height: 19px;
     padding: 6px 22px;
@@ -70,6 +90,47 @@
       }
     }
     
+  }
+
+  &_md {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    padding: 13px 25px;
+  }
+
+  &_what {
+    padding: 13px 27px 13px 22px;
+    .btn__icon_left {
+      margin-right: 7px;
+    }
+    .btn__text-icon {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+    .btn__icon {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
+  }
+
+  &_telgr {
+    padding: 13px 35px 13px 18px;
+    .btn__icon_left {
+      margin-right: 13px;
+    }
+    .btn__text-icon {
+      position: relative;
+      top: -2px;
+      vertical-align: middle;
+    }
+    .btn__icon {
+      position: relative;
+      top: -1px;
+      vertical-align: middle;
+    }
   }
 
   &_btn-lg {
