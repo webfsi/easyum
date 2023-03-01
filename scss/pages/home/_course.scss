@@ -174,7 +174,7 @@
     color: $darkgrey-color-1;
     display: flex;
     align-items: center;
-    transition: .3s;
+    transition: 0.3s;
     &:hover {
       background-color: $bg-color-3;
     }
@@ -193,7 +193,7 @@
       background-size: 1rem;
       background-repeat: no-repeat;
       background-position: center;
-      transition: .3s;
+      transition: 0.3s;
     }
     &::marker {
       display: none;
@@ -218,7 +218,7 @@
 
       /* Works on Firefox */
       scrollbar-width: thin;
-      scrollbar-color: $blue-color-1 #F1F1F1;
+      scrollbar-color: $blue-color-1 #f1f1f1;
 
       /* Works on Chrome, Edge, and Safari */
       &::-webkit-scrollbar {
@@ -226,20 +226,66 @@
       }
 
       &::-webkit-scrollbar-track {
-        background: #F1F1F1;
+        background: #f1f1f1;
       }
 
       &::-webkit-scrollbar-thumb {
         background-color: $blue-color-1;
-        border: 1px solid #F1F1F1;
+        border: 1px solid #f1f1f1;
       }
     }
   }
-} 
+}
 
 .tariff {
+  &-row {
+    display: flex;
+    gap: 2.5rem;
+  }
   &-item {
     background-color: white;
+    border-radius: 1.875rem;
+    padding: 1.875rem 1.875rem 3.125rem;
+    flex-grow: 1;
+    flex-basis: 30%;
+    &-name {
+      font-size: 25px;
+      font-weight: 700;
+      font-family: $heading-font;
+    }
+    &-list {
+      margin: 1.875rem 0;
+      padding-left: 1.0625rem;
+      li {
+        font-size: 1.25rem;
+        margin: 0.75rem 0;
+      }
+    }
+  }
+  &-price {
+    &-main {
+      font-size: 2.375rem;
+      font-weight: 700;
+      font-family: $heading-font;
+      color: $darkgrey-color-1;
+      display: flex;
+      align-items: center;
+      &-sale {
+        font-weight: 700;
+        font-family: $heading-font;
+        color: $green-color;
+        background-color: $lightgreen-color;
+        border-radius: 30px;
+        font-size: 0.9375rem;
+        padding: 0.4375rem 0.6875rem;
+        margin-left: 0.75rem;
+      }
+    }
+    &-month {
+      color: $darkgrey-color-2;
+      font-size: 14px;
+      font-family: $heading-font;
+    }
   }
 }
 
