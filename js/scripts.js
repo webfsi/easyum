@@ -1,3 +1,4 @@
+var $ = jQuery.noConflict();
 import commonScripts from "./common.js";
 $(function() {
   console.log( "ready!" );
@@ -151,7 +152,7 @@ function openTab(event, tabName) {
 const showMoreSuccessBtn = document.querySelector(".btn-load-more-success");
 showMoreSuccessBtn?.addEventListener("click", () => {
   let hiddenElements = document.querySelectorAll(".success-item.d-none");
-  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 3);
+  let successList = Array.prototype.slice.call(hiddenElements).slice(0, 9);
   successList.forEach((item, index) => {
     item.className = "success-item";
     if (index === 0) {

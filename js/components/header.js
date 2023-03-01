@@ -1,3 +1,4 @@
+var $ = jQuery.noConflict();
 export default () => {
   $('.fancy-open-header').fancybox({
     type: 'ajax',

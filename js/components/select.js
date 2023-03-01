@@ -1,3 +1,4 @@
+var $ = jQuery.noConflict();
 export default () => {
   $('[data-select-click] .select-div__cap button').on('click', function() {
     if (!$(this).parents('[data-select-click]').hasClass('active')) {
