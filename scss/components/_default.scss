@@ -35,6 +35,26 @@
   > *+* {
     margin-top: 18px;
   }
+  &_full {
+    .cap-tt {
+      margin-bottom: 40px;
+    }
+    .h2 {
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 42px;
+      line-height: 50px;
+      color: #252525;
+    }
+    .txt-st {
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 1.5;
+      margin-top: 28px;
+      max-width: 1040px;
+    }
+  }
 }
 
 .cap-tt {
@@ -66,6 +86,15 @@
 
 .section-st {
   margin: 100px 0;
+  &_sm-bt {
+    margin-bottom: 70px;
+  }
+  &_sm-top {
+    margin-top: 70px;
+  }
+  &_sm {
+    margin: 70px 0;
+  }
   &_md-bt {
     margin-bottom: 115px;
   }

@@ -1,4 +1,5 @@
 // export default (gsap, ScrollTrigger, ScrollToPlugin) => {
+// var $ = jQuery.noConflict();
 export default () => {
   const $navListItems = document.querySelectorAll('.nav-list-item')
   $navListItems.forEach(item => {
@@ -57,4 +58,7 @@ export default () => {
 	});
 
 	// const svgHeader = document.querySelectorAll('.main-map-modal__item')
+
+
+
 }

@@ -9,6 +9,10 @@
   position: relative;
   z-index: 1;
   overflow: hidden;
+
+  &__mob-body {
+    display: none;
+  }
   
   &__icons {
     position: absolute;

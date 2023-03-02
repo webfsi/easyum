@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.min.css?3" />
     <title>Курс тестирования</title>
   </head>
-  <body class="offline home-page bg-top">
+  <body class="offline home-page">
     <header class="header">
       <div class="container header-container">
         <div class="header-left">
@@ -98,7 +98,36 @@
         </nav>
       </div>
     </header>
-    <main class="wrapper">
+    <main class="wrapper page-bg parallax-container">
+
+      <div class="page-bg__box">
+        <div class="parallax-top" data-speed-y="-5">
+          <span class="pbbc pbbc_1 parallax" data-speed-x="20"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-20">
+          <span class="pbbc pbbc_2 parallax" data-speed-x="-20"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-10">
+          <span class="pbbcbd pbbcbd_1 parallax" data-speed-x="10"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-10">
+          <span class="pbbcbd pbbcbd_2 parallax" data-speed-x="30"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-4">
+          <span class="pbbdots pbbdots_1 parallax" data-speed-x="-25"></span>
+          <span class="pbbdotline parallax" data-speed-x="-20"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-20">
+          <span class="pbbdots pbbdots_2 parallax" data-speed-x="80"></span>
+        </div>
+        <!-- <div class="parallax-top" data-speed-y="-80">
+          <span class="pbbdots pbbdots_2 parallay" data-speed-x="80"></span>
+        </div>
+        <div class="parallax-top" data-speed-y="-80">
+          <span class="pbbcbd pbbcbd_2 parallax" data-speed-x="30"></span>
+        </div> -->
+      </div>
+
       <section class="c-hero">
         <div class="c-hero__container container">
           <div class="c-hero__inner">
@@ -116,6 +145,20 @@
                   На практике освоите всё необходимое для должности Junior-тестировщика. Найдете первые баги и составите
                   баг-репорт прямо на занятиях.
                 </div>
+              </div>
+              <div class="c-hero__img">
+                <div class="c-hero__img-inner">
+                  <div class="c-hero__img-inner-circle">
+                    <picture>
+                      <!-- <source srcset="img/course-inner/stock-bg-mob.png" media="(max-width: 750px)">
+                      <source srcset="img/course-inner/stock-bg-tabl.png" media="(max-width: 1100px)"> -->
+                      <img src="img/course-inner/hero-img.jpg" alt="image" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="c-hero__content-second">
+
                 <ul class="c-hero__btns">
                   <li class="c-hero__btn">
                     <a href="#" class="btn btn_btn-lg btn_second">Записаться</a>
@@ -176,17 +219,7 @@
                     </div>
                   </li>
                 </ul>
-              </div>
-              <div class="c-hero__img">
-                <div class="c-hero__img-inner">
-                  <div class="c-hero__img-inner-circle">
-                    <picture>
-                      <!-- <source srcset="img/course-inner/stock-bg-mob.png" media="(max-width: 750px)">
-                      <source srcset="img/course-inner/stock-bg-tabl.png" media="(max-width: 1100px)"> -->
-                      <img src="img/course-inner/hero-img.jpg" alt="image" />
-                    </picture>
-                  </div>
-                </div>
+
               </div>
             </div>
           </div>
@@ -298,6 +331,30 @@
                     <div class="cp-banner__eq-price-desc">1-3 года опыта</div>
                     <div class="cp-banner__eq-price-tt">300 000-600 000 ₽</div>
                   </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cp-banner__mob-body">
+              <div class="cp-banner__lst">
+                <div class="cp-banner__lst-item">
+                  <div class="cp-banner__lst-price">45 000 - 60 000 ₽</div>
+                  <div class="cp-banner__lst-txt">Junior <br>
+                    с опытом до 1 года </div>
+                </div>
+                <div class="cp-banner__lst-item">
+                  <div class="cp-banner__lst-price">100 000 - 160 000 ₽</div>
+                  <div class="cp-banner__lst-txt">Middle <br> с опытом 1-3 года</div>
+                </div>
+                <div class="cp-banner__lst-item">
+                  <div class="cp-banner__lst-price">от 160 000 ₽</div>
+                  <div class="cp-banner__lst-txt">Senior <br>
+                    с пытом от 3х лет</div>
+                </div>
+                <div class="cp-banner__lst-item">
+                  <div class="cp-banner__lst-price">от 200 000 ₽</div>
+                  <div class="cp-banner__lst-txt">Lead <br>
+                    с опытом 3-5 лет </div>
                 </div>
               </div>
             </div>
@@ -922,16 +979,853 @@
           <div class="program">
             <div class="cap-tt-grid">
               <div class="cap-tt-grid__info">
-                <div class="cap-tt h2"><span>Программа</span> курса</div>
+                <h2 class="cap-tt h2"><span>Программа</span> курса</h2>
                 <div class="cap-txt">Занятия проходят два раза в неделю: по будням в вечернее время. После каждого занятия — практические задания на отработку новых навыков.</div>
               </div>
               <div class="cap-tt-grid__small">
+                <div class="cap-btns">
+                  <div class="cap-btns__item">
+                    <span class="btn btn_disable btn_min-width btn_mini btn_second">3 месяца</span>
+                  </div>
+                  <div class="cap-btns__item">
+                    <span class="btn btn_disable btn_min-width btn_mini btn_second">24 урока</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
+            <div class="cap-tt-grid">
+              <div class="cap-tt-grid__info">
+                <h2 class="cap-tt h2"><span>Программа</span> курса2</h2>
+                <div class="cap-txt">Занятия проходят два раза в неделю: по будням в вечернее время. После каждого занятия — практические задания на отработку новых навыков.</div>
+              </div>
+              <div class="cap-tt-grid__small">
+                <div class="cap-btns">
+                  <div class="cap-btns__item">
+                    <span class="btn btn_disable btn_minimal btn_second">40 часов</span>
+                    <span class="cap-btn__txt">Теории</span>
+                  </div>
+                  <div class="cap-btns__item">
+                    <span class="btn btn_disable btn_minimal btn_second">238 часов</span>
+                    <span class="cap-btn__txt">Практики</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="cap-tt-grid">
+              <div class="cap-tt-grid__info">
+                <h2 class="cap-tt h2"><span>Программа</span> курса3 Alone</h2>
+                <div class="cap-txt">Занятия проходят два раза в неделю: по будням в вечернее время. После каждого занятия — практические задания на отработку новых навыков.</div>
+              </div>
+            </div>
+
+            <div class="program-acc js-acc" data-accordion-st>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Введение в тестирование</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Что представляет собой тестирование. Цели тестирования и тестировщика. Цикл разработки , методы и виды тестирования. Методология тестирования. Цикл тестирования ПО. Планирование Тестирования и оценка результатов.</div>
+                        <div class="faq-text__list">
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки. Agile. Цикл Тестирования. Тестирование дизайна кода.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Виды тестирования: функциональное и нефункциональное тестирование. Тестирование производительности.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки программного обеспечения. Определение, этапы цикла. Модели разработки ПО: водопадная, V-модель, итеративная , AgileSCRUM, KANBAN.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки программного обеспечения. Определение, этапы цикла.Разработка тест-кейсов. Аксиомы тестирования
+                          </div>
+                        </div>
+                      </div>
+                      <div class="faq-text__grid-btns">
+                        <div class="faq-text__grid-btn">
+                          <span class="btn btn_disable btn_min-width btn_min btn_light">21 ак.час</span>
+                        </div>
+                        <div class="faq-text__grid-btn">
+                          <span class="btn btn_disable btn_min-width btn_min btn_light">16 уроков</span>
+                        </div>
+                        <div class="faq-text__grid-btn">
+                          <span class="btn btn_disable btn_min-width btn_min btn_light">≈ 1 месяц</span>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Погружаемся в циклы разработки</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Что представляет собой тестирование. Цели тестирования и тестировщика. Цикл разработки , методы и виды тестирования. Методология тестирования. Цикл тестирования ПО. Планирование Тестирования и оценка результатов.</div>
+                        <div class="faq-text__list">
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки. Agile. Цикл Тестирования. Тестирование дизайна кода.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Виды тестирования: функциональное и нефункциональное тестирование. Тестирование производительности.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки программного обеспечения. Определение, этапы цикла. Модели разработки ПО: водопадная, V-модель, итеративная , AgileSCRUM, KANBAN.
+                          </div>
+                          <div class="faq-text__list-item">
+                            <span class="faq-text__list-item-value"></span>
+                            Цикл разработки программного обеспечения. Определение, этапы цикла.Разработка тест-кейсов. Аксиомы тестирования
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Введение в теорию автоматизации</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Нагрузочное тестирование ПО</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Автоматизация тестирования мобильных приложений</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Практика тестирования в Jira</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="faq-block js-acc-item">
+                <button class="faq-name js-acc-btn">Управление онлайн-репутацией</button>
+                <div class="faq-text js-acc-body">
+                  <div class="faq-text__inner">
+                    <div class="faq-text__grid">
+                      <div class="faq-text__grid-content">
+                        <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="present-bl">
+                <div class="present-bl__inner">
+                  <div class="present-bl__tt">Подарочный модуль</div>
+                  <div class="present-bl__txt">Дополнительные три урока по 2 <br> часа в которых Вы:</div>
+                  <ul class="present-bl__list lst-dots-st">
+                    <li class="present-bl__item">Оформите <b>портфолио</b> в рамках курса</li>
+                    <li class="present-bl__item">Составите профессиональное <b>резюме</b></li>
+                    <li class="present-bl__item">Подготоветесь и пройдете тестовое <b>собеседование</b> вместе со специалистом</li>
+                  </ul>
+                  <div class="present-bl__bg">
+                    <img src="img/course-inner/present1.jpg" alt="bg">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st section-st_lg">
+        <div class="container">
+          <div class="vista">
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                <span>Опыт работы с</span>
+                передовыми инструментами
+              </h2>
+            </div>
+
+            <div class="vista__boxes vista__boxes_five">
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img1.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Jira</div>
+                  <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img2.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">SRS</div>
+                  <div class="vista-card__txt">Cпецификация требований программного обеспечения</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img3.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Redmine</div>
+                  <div class="vista-card__txt">Открытое серверное 
+                    веб-приложение для управления проектами 
+                    и задачами</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img4.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Scrum</div>
+                  <div class="vista-card__txt">Методология управления проектами, построенная на принципах тайм-менеджмента</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img5.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Kanban</div>
+                  <div class="vista-card__txt">Метод управления разработкой, реализующий принцип «точно в срок»</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img6.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">V - Model</div>
+                  <div class="vista-card__txt">V-модель — модель процесса разработки ПО</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img7.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Waterfall</div>
+                  <div class="vista-card__txt">Водопадная модель — процесс разработки ПО</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img8.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Selenium</div>
+                  <div class="vista-card__txt">Это инструмент для автоматизации действий веб-браузера. </div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img9.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">SQL</div>
+                  <div class="vista-card__txt">Язык, с помощью которого отправляются запросы в базу данных.</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/img10.jpg" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">JMeter</div>
+                  <div class="vista-card__txt">Инструмент для проведения нагрузочного тестирования,</div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="slider-card-vista slider-wrapper" data-slider-vista-two>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper">
+                <div class="swiper-wrapper">
+
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img1.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img2.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img3.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img4.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img5.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img2.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="vista-card">
+                      <div class="vista-card__img">
+                        <img src="img/course-inner/img2.jpg" alt="image" />
+                      </div>
+                      <div class="vista-card__tt">Jira</div>
+                      <div class="vista-card__txt">Коммерческая система управления проектами</div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st">
+        <div class="container">
+          <div class="sertificate-bl">
+
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                <span>Опыт работы с</span>
+                передовыми инструментами
+              </h2>
+            </div>
+
+            <div class="sertificate-bl__grid">
+              <div class="sertificate-bl__img">
+                <img src="img/course-inner/sertificate.png" alt="image">
+              </div>
+              <div class="sertificate-bl__info">
+                <h2 class="sertificate-bl__tt">Вы получите 
+                  <span>сертификат EasyUM</span></h2>
+                <div class="sertificate-bl__txt">Он подтвердит, что вы прошли курс, и станет дополнительным аргументом при устройстве на работу.</div>
+                <div class="sertificate-bl__btn">
+                  <a href="#" class="btn btn_light-second btn_min-width">Открыть пример сертификата</a>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st section-st_lg-bt">
+        <div class="container">
+          <div class="brf-wrapp">
+
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                <span>Профессиональное </span>
+                резюме
+              </h2>
+              <div class="cap-txt">Вот теперь-то Вы внушаете доверие!</div>
+            </div>
+
+            <div class="brf">
+              <div class="brf__box">
+                <div class="brf__cap">
+                  <div class="brf__cap-img">
+                    <img src="img/course-inner/brf-img1.png" alt="image">
+                  </div>
+                  <div class="brf__cap-info">
+                    <div class="brf__name">Александр Калюжный</div>
+                    <div class="brf__tt-set">
+                      <div class="brf__tt">Junior Тестировщик ПО</div>
+                      <div class="brf__tt">ОТ 60 000₽</div>
+                      <div class="brf-price">
+                        Расскажем, как определить уровень ваших знаний и указать правильную зарплату
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brf__item">
+                  <div class="brf__item-frst">
+                    <div class="brf__point">Образование:</div>
+                  </div>
+                  <div class="brf__item-body">
+                    <div class="brf__txt">EasyUM. Курс «Тестирование ПО» 
+                      <br>3 месяца. (01.23 - 03.23)</div>
+                  </div>
+                </div>
+                <div class="brf__item">
+                  <div class="brf__item-frst brf__item-frst_mih">
+                    <div class="brf__point">Ключевые навыки:</div>
+                    <div class="brf-skills">
+                      Поможем продать себя как специалиста
+                    </div>
+                  </div>
+                  <div class="brf__item-body">
+                    <ul class="brf__list brf__list_grid">
+                      <li class="brf__list-item">Теория тестирования</li>
+                      <li class="brf__list-item">Технии тест - дизайна</li>
+                      <li class="brf__list-item">Модульное тестирование</li>
+                      <li class="brf__list-item">Интеграционное тестирование</li>
+                      <li class="brf__list-item">Исследовательское тестирование</li>
+                      <li class="brf__list-item">Работа в Jira, Trello</li>
+                      <li class="brf__list-item">️Знание основ клиент-серверной архитектуры, сетевых технологий </li>
+                      <li class="brf__list-item">Знание SQL на базовом уровне</li>
+                      <li class="brf__list-item">Функциональное тестирование</li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="brf__item">
+                  <div class="brf__item-frst">
+                    <div class="brf__point">Владение инструментами:</div>
+                  </div>
+                  <div class="brf__item-body">
+                    <div class="brf__btns">
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">SQL</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Selenium</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">JMeter</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Jira</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Trello</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">SOAP UI</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Postman</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Select</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Join</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">HTTP</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">TCP/IP</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Test case</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Redmine</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">SRS</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Scrum</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Kanban</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">V-model</span>
+                      </div>
+                      <div class="brf__btn">
+                        <span class="btn btn_disable">Waterfall</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="brf__item">
+                  <div class="brf__item-frst">
+                    <div class="brf__point">Мои работы:</div>
+                    <div class="brf-skills2">
+                      Круто оформим портфолио
+                    </div>
+                  </div>
+                  <div class="brf__item-body">
+                    <ol class="brf__list brf__list_ol">
+                      <li class="brf__list-item">Тестирование онлайн-портала</li>
+                      <li class="brf__list-item">Тестирование мобильного приложения</li>
+                      <li class="brf__list-item">Тестирование веб-сайта</li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </section>
+
+
+
+      <section class="section-st section-st_lg-top section-st_sm-bt">
+        <div class="container">
+          <div class="vista">
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                Поможем 
+                <span>найти работу</span>
+                мечты
+              </h2>
+            </div>
+
+            <div class="vista__boxes vista__boxes_md vista__boxes_four">
+              
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/img11.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__txt">Оформим резюме и портфолио по правилам HeadHunter</div>
+                </div>
+              </div>
+              
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/img12.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__txt">Проведем тренинг по труд-оустройству с профессио-нальным рекрутером</div>
+                </div>
+              </div>
+              
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/img13.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__txt">Резюме лучших студентов отправим компаниям - партнерам</div>
+                </div>
+              </div>
+              
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/img14.jpg" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__txt">Научим искать вакансии и правильно вести себя на собеседовании</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st section-st_sm-top section-st_lg-bt">
+        <div class="container">
+          <div class="price-cl">
+            <div class="price-cl__item">
+              <div class="price-cl__value">75%</div>
+              <div class="price-cl__info">
+                <div class="price-cl__tt">Выпускников уже 
+                  нашли работу </div>
+                <div class="price-cl__txt">В течении 2х - месяцев с момента выпуска</div>
+              </div>
+            </div>
+            <div class="price-cl__item">
+              <div class="price-cl__value">200</div>
+              <div class="price-cl__info">
+                <div class="price-cl__tt">Компаний ждут 
+                  тестировщиков</div>
+                <div class="price-cl__txt">По данным собранным на hh.ru</div>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+      <section class="section-st section-st_lg">
+        <div class="container">
+          <div class="why-wrapper">
+            <div class="cap-tt-wrapp cap-tt-wrapp_md cap-tt-wrapp_full">
+              <div class="cap-tt h2">Почему ваш <span>курс 3 месяца</span>, а у других 1-2 года?</div>
+              <div class="cap-txt txt-st">В отличие от школ с программой на 1-2 года, мы даем те знания и навыки, которые помогут трудоустроиться.</div>
+              <div class="cap-txt txt-st">Всё остальное вы без проблем доучите в процессе работы, когда будете выполнять задачи. С курсами EasyUM вы экономите время и деньги, и освоиваете самое необходимое для конкретной цели на сегодня – работа на должности Java-разработчик в хорошей компании.</div>
+            </div>
+
+            <div class="why-box">
+              <div class="why-box__vector-anim">
+                <span class="whycrcl whycrcl_1"></span>
+                <span class="whycrcl whycrcl_2"></span>
+                <span class="whycrcl whycrcl_3"></span>
+                <span class="whycrclbd whycrclbd_1"></span>
+                <span class="whycrclbd whycrclbd_2"></span>
+                <span class="whydots whydots_1"></span>
+                <span class="whydots whydots_2"></span>
+              </div>
+              <div class="why-box__inner">
+                <div class="why-box__img">
+                  <img src="img/course-inner/skil-girl.png" alt="image">
+                </div>
+                <div class="why-box__info">
+                  <div class="why-box__txt">1-2 года – это так долго и далеко не у каждого хватит мотивации или возможности продолжать активно учиться. Результаты на лицо:</div>
+                  <div class="why-box__skills">
+                    <div class="why-box__skills-item">
+                      <div class="why-box__skills-tt">Длительность <br>1-2 года</div>
+                      <div class="why-box__skills-value">15% </div>
+                      <div class="why-box__skills-txt">студентов доходят до <br> конца курса</div>
+                    </div>
+                    <div class="why-box__skills-item">
+                      <div class="why-box__skills-tt">Длительность<br> 3-7 месяцев</div>
+                      <div class="why-box__skills-value">75% </div>
+                      <div class="why-box__skills-txt">наших студентов доходят до конца курса и находят работу </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st section-st_lg">
+        <div class="container">
+          <div class="vista">
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                Как посещать занятия 
+                <span>в EasyUM</span>
+              </h2>
+            </div>
+
+            <div class="vista__boxes vista-card-no-circle vista-card-why">
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/why-card1.png" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Очно</div>
+                  <div class="vista-card__txt">Очные занятия проходят в удобных аудиториях, по адресу: Москва, м. Павелецкая (7 минут от метро)</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/why-card2.png" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Телеграм трансляция</div>
+                  <div class="vista-card__txt">Если вы опаздываете на урок, или не получается прийти - вы можете подключиться к своему же занятию через онлайн-трансляцию</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img">
+                    <img src="img/course-inner/why-card3.png" alt="image" />
+                  </div>
+                  <div class="vista-card__tt">Видеозаписи</div>
+                  <div class="vista-card__txt">Пропустили урок? Мы записываем все занятия, и записи будут доступны бессрочно, во время курса и после</div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-st section-st_lg">
+        <div class="container">
+          <div class="vista">
+            <div class="cap-tt-wrapp">
+              <h2 class="cap-tt h2">
+                Студенты охотно 
+                <span>выбирают EasyUM</span> <br>
+                по этим причинам: 
+              </h2>
+            </div>
+
+            <div class="vista__boxes vista-card-no-circle vista-card-skills">
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil1.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Удобный график</div>
+                  <div class="vista-card__txt">График занятий всегда согласовывается в рамках каждой группы отдельно (после 1го занятия). Это могут быть 2 будних дня вечером с 19:00 до 21:00, или один день будний вечер, и второй - суббота днем.</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil2.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Быстрая коммуникация</div>
+                  <div class="vista-card__txt">Для каждой группы создается телеграм-чат, в который будет происходить общение между занятий с группой и преподавателем. Средний ответ преподавателя - 1 час. </div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil3.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Трудоустройство</div>
+                  <div class="vista-card__txt">Программа курса построена таким образом, что вы освоите новую профессию с нуля, и будете готовы проходить собеседование. </div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil4.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Маленькие группы</div>
+                  <div class="vista-card__txt">Каждая наша группа - это 4-8 учеников. Это позволит максимально качественно и комфортно обучаться.</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil5.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Длительность курса</div>
+                  <div class="vista-card__txt">Вам не придется учиться год и более для получения новой it-профессии. Мы разработали специальные программы курсов, позволяющие освоить профессию за самый короткий срок, и найти ту самую работу.</div>
+                </div>
+              </div>
+
+              <div class="vista__box">
+                <div class="vista-card">
+                  <div class="vista-card__img-wrapp">
+                    <div class="vista-card__value"></div>
+                    <div class="vista-card__img">
+                      <img src="img/course-inner/skil6.png" alt="image" />
+                    </div>
+                  </div>
+                  <div class="vista-card__tt">Четкая структура</div>
+                  <div class="vista-card__txt">Курс разделен на модули. Модули на уроки. Каждый урок - это теория, соединенная с практикой. Без длинных приветствий и воды.</div>
+                </div>
+              </div>
+              
+              
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- end my -->
 
       <section class="section-st section-st_lg">
         <div class="container">
@@ -1024,7 +1918,7 @@
       <section class="section-st section-st_lg">
         <div class="container">
           <h2 class="h2 js-first-word">Отвечаем на вопросы</h2>
-          <div class="faq-container">
+          <!-- <div class="faq-container">
             <details class="faq-block">
               <summary class="faq-name">Как проходит обучение?</summary>
               <div class="faq-text">
@@ -1084,6 +1978,137 @@
                 venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. 
               </div>
             </details>
+          </div> -->
+
+          <div class="program-acc faq-container js-acc" data-accordion-st>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">Как проходит обучение?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Что представляет собой тестирование. Цели тестирования и тестировщика. Цикл разработки , методы и виды тестирования. Методология тестирования. Цикл тестирования ПО. Планирование Тестирования и оценка результатов.</div>
+                      <div class="faq-text__list">
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки. Agile. Цикл Тестирования. Тестирование дизайна кода.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Виды тестирования: функциональное и нефункциональное тестирование. Тестирование производительности.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки программного обеспечения. Определение, этапы цикла. Модели разработки ПО: водопадная, V-модель, итеративная , AgileSCRUM, KANBAN.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки программного обеспечения. Определение, этапы цикла.Разработка тест-кейсов. Аксиомы тестирования
+                        </div>
+                      </div>
+                    </div>
+                    <div class="faq-text__grid-btns">
+                      <div class="faq-text__grid-btn">
+                        <span class="btn btn_disable btn_min-width btn_min btn_light">21 ак.час</span>
+                      </div>
+                      <div class="faq-text__grid-btn">
+                        <span class="btn btn_disable btn_min-width btn_min btn_light">16 уроков</span>
+                      </div>
+                      <div class="faq-text__grid-btn">
+                        <span class="btn btn_disable btn_min-width btn_min btn_light">≈ 1 месяц</span>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">Кто будет проверять мои домашние задания?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Что представляет собой тестирование. Цели тестирования и тестировщика. Цикл разработки , методы и виды тестирования. Методология тестирования. Цикл тестирования ПО. Планирование Тестирования и оценка результатов.</div>
+                      <div class="faq-text__list">
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки. Agile. Цикл Тестирования. Тестирование дизайна кода.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Виды тестирования: функциональное и нефункциональное тестирование. Тестирование производительности.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки программного обеспечения. Определение, этапы цикла. Модели разработки ПО: водопадная, V-модель, итеративная , AgileSCRUM, KANBAN.
+                        </div>
+                        <div class="faq-text__list-item">
+                          <span class="faq-text__list-item-value"></span>
+                          Цикл разработки программного обеспечения. Определение, этапы цикла.Разработка тест-кейсов. Аксиомы тестирования
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">Как вы помогаете найти работу после обучения?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">В чём заключается помощь с трудоустройством?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">Есть ли у EasyUM лицензия?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="faq-block js-acc-item">
+              <button class="faq-name js-acc-btn">Можно ли получить налоговый вычет за обучение?</button>
+              <div class="faq-text js-acc-body">
+                <div class="faq-text__inner">
+                  <div class="faq-text__grid">
+                    <div class="faq-text__grid-content">
+                      <div class="faq-text__txt">Нет, мы не предоставляем сертификаты государственного образца, так как мы не являемся ВУЗом в классическом понимании этого слова. Доктрина нашего учебного центра: «Нет» – скучной теории, «Да» – реальным навыкам!Наши курсы занимают намного меньше времени, чем стандартные программы ВУЗов и позволяют вам освоить востребованную профессию в максимально короткие сроки (3-6 месяцев).</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>

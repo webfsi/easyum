@@ -79,6 +79,45 @@ export default () => {
 
 	});
 
+	const $sliderVistaTwo = document.querySelectorAll('[data-slider-vista-two]');
+
+	$sliderVistaTwo.forEach((sliderEl) => {
+		const sInit = sliderEl.querySelector('.swiper'),
+			prev = sliderEl.querySelector('.swiper-button-prev'),
+			next = sliderEl.querySelector('.swiper-button-next');
+			// pag = sliderEl.querySelector('.swiper-pagination');
+		let sliderMy = new Swiper(sInit, {
+			speed: 500,
+			// loop: true,
+
+			// observeParents: true,
+			// observeSlideChildren: true,
+			// observer: true,
+			spaceBetween: 19,
+			slidesPerView: 2,
+
+			navigation: {
+				prevEl: prev,
+				nextEl: next,
+			},
+
+			breakpoints: {
+				1101: {
+					slidesPerView: 5,
+				},
+				768: {
+					slidesPerView: 3,
+				},
+				0: {
+					slidesPerView: 2,
+				},
+
+			},
+		});
+
+
+	});
+
 	const $slidersPersonal = document.querySelectorAll('[data-sliders-personal]');
 
 	$slidersPersonal.forEach((sliderEl) => {

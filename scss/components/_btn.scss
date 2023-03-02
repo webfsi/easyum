@@ -65,6 +65,34 @@
       border: none;
     }
   }
+  &_light {
+    background: #F4F7FF;
+    color: #337CFC;
+    border: none;
+    &:hover {
+      background: darken(#F4F7FF, 10%);
+      color: #337CFC;
+      border: none;
+    }
+  }
+  &_light-second {
+    border: none;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 25px;
+    padding: 10px 25px;
+    background: #E8F0FF;
+    border-radius: 64.532px;
+    color: #51545E;
+    &:hover {
+      background: darken(#E8F0FF, 10%);
+      color: #51545E;
+      border: none;
+    }
+    &.btn_min-width {
+      min-width: 262px;
+    }
+  }
   &_name {
     line-height: 19px;
     padding: 6px 22px;
@@ -141,6 +169,66 @@
     &_norm {
       font-weight: 400;
     }
+  }
+
+  &_mini {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: $font2;
+    padding: 7px 20px;
+    border-radius: 30px;
+    
+    &.btn_min-width {
+      min-width: 130px;
+    }
+    &.btn_min-width-md {
+      min-width: 142px;
+    }
+  }
+
+  &_minimal {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    font-family: $font2;
+    padding: 7px 7px;
+    border-radius: 30px;
+    
+    &.btn_min-width {
+      min-width: 130px;
+    }
+  }
+
+  &_min {
+    font-size: 15px;
+    line-height: 24px;
+    font-family: $font1;
+    font-weight: 700;
+    padding: 7px 7px;
+    border-radius: 30px;
+    
+    &.btn_min-width {
+      min-width: 142px;
+    }
+  }
+
+  &_disable {
+    &.btn_second {
+      cursor: default;
+      &:hover {
+        color: #fff;
+        background: #337CFC;
+      }
+    }
+    &.btn_light {
+      cursor: default;
+      &:hover {
+        background: #F4F7FF;
+        color: #337CFC;
+      }
+    }
+    
   }
 }
 

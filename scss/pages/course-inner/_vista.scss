@@ -171,3 +171,239 @@
     color: #252525;
   }
 }
+
+.vista__boxes_five {
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 40px 16px;
+  .vista-card__img {
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    
+  }
+  .vista-card__tt {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .vista-card__txt {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    color: #4F4F4F;
+  }
+}
+
+.vista__boxes_md {
+  grid-gap: 40px;
+  .vista-card__img {
+    margin-bottom: 27px;
+    width: 200px;
+    height: 200px;
+    
+  }
+  .vista-card__txt {
+    font-family: $font2;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    color: #252525;
+    text-align: left;
+  }
+  
+}
+
+.vista-card-no-circle {
+  .vista-card__img {
+    width: auto;
+    height: auto;
+    background: none;
+    border-radius: 0;
+    overflow: visible;
+    text-align: center;
+    img {
+      width: auto;
+      height: auto;
+      max-width: 100%;
+      display: inline-block;
+    }
+  }
+}
+
+.vista-card-why {
+  padding-left: 0;
+  .vista-card__img {
+    min-height: 255px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 0;
+    img {
+      max-height: 100%;
+    }
+  }
+  .vista-card__txt {
+    line-height: 1.5;
+  }
+  .vista-card__tt {
+    margin-bottom: 21px;
+  }
+  .vista__box {
+    &:first-child {
+      .vista-card__txt {
+        max-width: 282px;
+      }
+    }
+    &:nth-child(2) {
+      .vista-card__txt {
+        max-width: 365px;
+      }
+    }
+    &:nth-child(3) {
+      .vista-card__txt {
+        max-width: 290px;
+      }
+    }
+  }
+}
+
+.vista-card-skills {
+  padding-left: 0;
+  grid-gap: 60px 27px;
+  .vista-card__img-wrapp {
+    display: grid;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 5px;
+  }
+  .vista__box .vista-card__value {
+    position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    top: auto;
+    left: -45px;
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 190px;
+    line-height: 1;
+    text-align: center;
+    color: rgba(188, 212, 255, 0.45);
+    &:before {
+      content: counter(my-counter2);
+    }
+  }
+  .vista__box .vista-card__img {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -31px;
+    z-index: -1;
+    margin-bottom: 0;
+  }
+  .vista__box {
+    &:nth-child(2) {
+      .vista-card__img {
+        bottom: -2px;
+        margin-left: -47px;
+      }
+    }
+    &:nth-child(3) {
+      .vista-card__img {
+        bottom: -6px;
+        margin-left: -37px;
+      }
+    }
+    &:nth-child(4) {
+      .vista-card__img {
+        bottom: 9px;
+        margin-left: -34px;
+      }
+    }
+    &:nth-child(5) {
+      .vista-card__img {
+        bottom: 4px;
+        margin-left: -8px;
+      }
+    }
+    &:nth-child(6) {
+      .vista-card__img {
+        bottom: -19px;
+        margin-left: -28px;
+      }
+    }
+  }
+  .vista-card__tt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    color: #252525;
+    margin-bottom: 23px;
+  }
+  .vista-card__txt {
+    line-height: 1.5;
+    max-width: none;
+  }
+}
+
+.vista__boxes {
+  + .slider-card-vista {
+    margin-top: 60px;
+  }
+}
+
+.slider-card-vista {
+  position: relative;
+  overflow: hidden;
+  .swiper {
+    overflow: visible;
+  }
+  .vista-card__img {
+    margin-bottom: 8px;
+    width: 100px;
+    height: 100px;
+    
+  }
+  .vista-card__tt {
+    margin-bottom: 12px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .vista-card__txt {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: center;
+    color: #4F4F4F;
+  }
+  @media (max-width: 750px) {
+    
+    .vista-card__img {
+      margin-bottom: 6px;
+      width: 75px;
+      height: 75px;
+      
+    }
+    .vista-card__tt {
+      margin-bottom: 8px;
+      font-size: 15px;
+      line-height: 18px;
+    }
+    .vista-card__txt {
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+}
+
+

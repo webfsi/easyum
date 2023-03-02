@@ -161,3 +161,100 @@
   // transition-timing-function: cubic-bezier(0,1,0,1);
 }
 
+
+.page-bg {
+  position: relative;
+  &__box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    pointer-events: none;
+  }
+}
+
+.pbbc {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -2;
+  
+
+  &_1 {
+    width: 462px;
+    height: 462px;
+    background: rgba(188, 212, 255, 0.12);
+    top: 27px;
+    right: 50%;
+    margin-right: 665px;
+  }
+  &_2 {
+    width: 214px;
+    height: 214px;
+    background: rgba(156, 192, 255, 0.15);
+    top: 108px;
+    left: 50%;
+    margin-left: 385px;
+  }
+
+  &bd {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    border: 1px solid #9CC0FF;
+    &_1 {
+      width: 101px;
+      height: 101px;
+      top: 294px;
+      left: 50%;
+      margin-left: 773px;
+    }
+    &_2 {
+      position: absolute;
+      width: 278px;
+      height: 278px;
+      right: 50%;
+      margin-right: 611px;
+      top: 533px;
+
+    }
+  }
+}
+
+.pbbdots {
+  position: absolute;
+  z-index: -1;
+  &_1 {
+    background: url(../img/course-inner/dots-page-inner1.png) center center no-repeat;
+    background-size: contain;
+    width: 94px;
+    height: 94px;
+    top: 112px;
+    right: 50%;
+    margin-right: 572px;
+  }
+  &_2 {
+    background: url(../img/course-inner/dots-page-inner2.png) center center no-repeat;
+    background-size: contain;
+    width: 115px;
+    height: 115px;
+    top: 646px;
+    left: 50%;
+    margin-left: 620px;
+  }
+}
+
+.pbbdotline {
+  width: 68.73px;
+  border: 3px solid #9CC0FF;
+  position: absolute;
+  top: 110px;
+  right: 50%;
+  margin-right: 620px;
+  border-radius: 5px;
+  z-index: -1;
+  
+  
+}
+

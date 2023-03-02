@@ -1,0 +1,156 @@
+.why-wrapper {
+  max-width: 1040px;
+}
+
+.why-box {
+  position: relative;
+  z-index: 1;
+  .why-box__vector-anim {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0;
+    background: #337CFC;
+    border-radius: 30px;
+    overflow: hidden;
+    pointer-events: none;
+    display: none;
+    @media (max-width: 750px) {
+      opacity: 1;
+      display: block;
+    }
+  }
+  &__inner {
+    padding-left: 410px;
+    position: relative;
+    z-index: 1;
+  }
+  &__img {
+    width: 370px;
+    position: absolute;
+    top: -27px;
+    left: 0;
+    z-index: -1;
+    img {
+      max-width: 100%;
+    }
+  }
+  &__txt {
+    font-family: $font1;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 1.5;
+    color: #252525;
+    margin-bottom: 59px;
+  }
+  &__skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    max-width: 560px;
+    &-tt {
+      max-width: 176px;
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      color: #252525;
+    }
+    &-value {
+      font-family: $font1;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 100px;
+      line-height: 1;
+      color: rgba(245, 37, 37, 0.3);
+      margin-bottom: 15px;
+    }
+    &-txt {
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1;
+      color: #252525;
+      max-width: 215px;
+    }
+  }
+}
+
+.whycrcl {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(188, 212, 255, 0.51);
+  z-index: -2;
+  &_1 {
+    width: 59px;
+    height: 59px;
+    left: 9px;
+    top: -29px;
+    animation: cpright 10s linear alternate-reverse infinite;
+  }
+  &_2 {
+    left: 13px;
+    top: 240px;
+    width: 25px;
+    height: 25px;
+    background: rgba(255, 255, 255, 0.46);
+    animation: cptop 10s linear alternate-reverse infinite;
+  }
+  &_3 {
+    width: 87px;
+    height: 87px;
+    bottom: -12px;
+    right: -21px;
+    animation: cpbottom 10s linear alternate-reverse infinite;
+  }
+}
+
+.whycrclbd {
+  position: absolute;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #F4F7FF;
+  z-index: -1;
+  
+  &_1 {
+    width: 35px;
+    height: 35px;
+    top: 58px;
+    left: -5px;
+    animation: cpbottom 10s linear alternate-reverse infinite;
+  }
+  &_2 {
+    width: 35px;
+    height: 35px;
+    bottom: 17px;
+    right: 62px;
+    animation: cpleft 10s linear alternate-reverse infinite;
+  }
+}
+
+.whydots {
+  background: url(../img/course-inner/dots-why1.png) center center no-repeat;
+  width: 48px;
+  height: 48px;
+  background-size: contain;
+  position: absolute;
+  z-index: -1;
+  
+  &_1 {
+    right: 0;
+    top: 115px;
+    animation: cpright 10s linear alternate-reverse infinite;
+  }
+  &_2 {
+    left: -3px;
+    bottom: -3px;
+    animation: cpleft 10s linear alternate-reverse infinite;
+  }
+}
+
+
+
