@@ -287,6 +287,14 @@
       font-family: $heading-font;
     }
   }
+  &-btn {
+    &-container {
+      display: flex;
+      flex-direction: column;
+      gap: 0.875rem;
+      margin-top: 1.375rem;
+    }
+  }
 }
 
 /* max width 1280 pixels */
