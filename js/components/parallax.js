@@ -1,6 +1,7 @@
 var $ = jQuery.noConflict();
 export default () => {
-
+  if (document.querySelectorAll('.parallax-container')[0]) {
+    
   // mouse MOVE
   var rect = $('.parallax-container')[0].getBoundingClientRect();
   var mouse = {x: 0, y: 0, moved: false};
@@ -40,6 +41,7 @@ export default () => {
   $(window).on('resize scroll', function(){
     rect = $('.parallax-container')[0].getBoundingClientRect();
   })
+  }
 
   // 
 

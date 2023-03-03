@@ -257,4 +257,21 @@
   
   
 }
+@mixin absolute-top($top: 0) {
+  position: absolute;
+  top: $top;
+}
+@mixin absolute-top-left($top: 0, $left: 0) {
+  position: absolute;
+  top: $top;
+  left: $left;
+}
+
+.text3 {
+  overflow: hidden;
+  display: block;
+  span, i {
+    display: inline-block;
+  }
+}
 

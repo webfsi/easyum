@@ -5,6 +5,9 @@ $(function() {
   commonScripts();
 
 
+  //tag select
+
+
 
 // (function() {
     
@@ -538,3 +541,6 @@ filters.forEach((filter) => {
 // document.querySelector(".btn-test-start").addEventListener("click", function() {
 //   document.querySelector(".test-single-container").classList.add("started");
 // })
+
+
+

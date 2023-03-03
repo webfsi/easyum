@@ -213,6 +213,21 @@
     }
   }
 
+  &_big {
+    padding: 29px 40px;
+    font-family: $font1;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 24px;
+    border-radius: 94px;
+    font-weight: 700;
+
+    &.btn_second-border {
+      font-weight: 400;
+      line-height: 22px;
+    }
+  }
+
   &_disable {
     &.btn_second {
       cursor: default;

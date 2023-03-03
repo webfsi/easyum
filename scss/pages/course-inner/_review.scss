@@ -1,0 +1,89 @@
+.c-review {
+  display: grid;
+  grid-template-columns: minmax(300px, 462px) minmax(250px, 1fr);
+  grid-gap: 43px;
+  &__tt {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.27;
+    color: #252525;
+    margin-bottom: 30px;
+    b {
+      display: block;
+      font-weight: 700;
+    }
+  }
+  &__txt {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.3;
+    color: #252525;
+    margin-bottom: 25px;
+  }
+  &__img {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 282px;
+    &_video-icon {
+      box-shadow: 0 0 0 #000;
+      transition: all 0.3s ease-in-out;
+      
+      &:before {
+        content: "";
+        width: 79px;
+        height: 61px;
+        position: absolute;
+        background: url(../img/course-inner/ic-youtube.svg) center center no-repeat;
+        background-size: contain;
+        bottom: 21px;
+        left: 30px;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        transition: all 0.3s ease-in-out;
+        
+        box-shadow: inset 2px 2px 20px rgba(#000, 0);
+      }
+      &:hover {
+        &:before {
+          transform: scale(1.1);
+        }
+        &:after {
+          box-shadow: inset 2px 2px 20px rgba(#000, 0.7);
+        }
+        img {
+          transform: scale(1);
+        }
+      }
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      transition: all 0.3s ease-in-out;
+      transform: scale(1.01);
+      
+    }
+    
+  }
+}
+
+.c-slider-review {
+  position: relative;
+  padding-left: 96px;
+  padding-right: 109px;
+}
+

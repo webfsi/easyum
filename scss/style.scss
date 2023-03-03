@@ -16,6 +16,7 @@
 @import "components/default";
 @import "components/btn";
 @import "components/select";
+
 // pages
 // home
 @import "pages/home/hero";
@@ -38,13 +39,18 @@
 @import "pages/course-inner/brif";
 @import "pages/course-inner/value";
 @import "pages/course-inner/why";
+@import "pages/course-inner/review";
 
 // modal
 @import "components/modals";
 @import "components/modal-city";
 @import "components/modal-course";
 @import "components/modal-burger";
+@import "components/modal-price";
 
 // animations
 @import "components/animation";
 @import "components/edits";
+
+// plugins
+@import "plugins/jcf-component/select"
