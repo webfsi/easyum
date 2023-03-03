@@ -59,18 +59,4 @@ export default () => {
 
 	// const svgHeader = document.querySelectorAll('.main-map-modal__item')
 
-
-	//effect3
-	$('.text3').each(function(){
-		$(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<i class='_text3'>$&</i>"));
-	});
-	var $text3 = $(".text3 i"),
-			tl_3 = new TimelineMax({repeat:-1});
-
-	tl_3
-		.staggerFrom($text3, 0.5, {y:100, z: 0, ease: Elastic.easeOut.config(1, 0.7)}, 0.08)
-		.to($text3, 0.5, {alpha: 0, ease: Power1.easeOut},'+=1.2');
-
-
-
 }

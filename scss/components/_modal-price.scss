@@ -10,15 +10,9 @@
 
   .fancybox-button {
     padding: 0;
-    right: 360px;
+    right: 9px;
     top: 9px;
     transition: all 0.2s ease-in-out;
-    @media (max-width: 1600px) {
-      right: 100px;
-    }
-    @media (max-width: 1440px) {
-      right: 9px;
-    }
     
     &:hover {
       transform: rotate(180deg);

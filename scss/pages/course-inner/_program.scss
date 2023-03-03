@@ -189,9 +189,15 @@
   }
   &__bg {
     position: absolute;
-    top: 3px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 10px;
     z-index: -1;
+    max-width: 366px;
+    img {
+      max-width: 100%;
+      display: inline-block;
+    }
   }
   &__list {
     max-width: 420px;
