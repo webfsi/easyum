@@ -85,6 +85,10 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 70px 5px;
+    @media (max-width: 750px) {
+      grid-template-columns: repeat(1, 1fr);
+      grid-gap: 40px 0;
+    }
   }
   position: relative;
   z-index: 1;
@@ -274,6 +278,10 @@
 .vista-card-skills {
   padding-left: 0;
   grid-gap: 60px 27px;
+  @media (max-width: 750px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
   .vista-card__img-wrapp {
     display: grid;
     position: relative;
@@ -348,10 +356,17 @@
     text-align: center;
     color: #252525;
     margin-bottom: 23px;
+    @media (max-width: 750px) {
+      font-size: 15px;
+      margin-bottom: 10px;
+    }
   }
   .vista-card__txt {
     line-height: 1.5;
     max-width: none;
+    @media (max-width: 750px) {
+      font-size: 12px;
+    }
   }
 }
 
