@@ -69,6 +69,20 @@ $(function() {
 // window.addEventListener("load", () => {
 // });
 
+
+// scroll to top button
+var scrollToTopBtn = document.getElementById("scrollToTopBtn");
+var rootElement = document.documentElement;
+
+function scrollToTop() {
+  rootElement.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  });
+}
+scrollToTopBtn.addEventListener("click", scrollToTop);
+
+
 // adding class to body on scroll
 let scrollpos = window.scrollY;
 function add_class_on_scroll() {
