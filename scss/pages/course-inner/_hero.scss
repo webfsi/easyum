@@ -11,14 +11,25 @@
     span {
       color: #337cfc;
     }
+    @include tabletMaxi {
+      font-size: 44px;
+      line-height: 1.3;
+    }
+    // @include mobile {
+      
+    // }
   }
   &__txt {
     font-weight: 400;
     font-size: 20px;
-    line-height: 129.99%;
+    line-height: 1.3;
     color: #4f4f4f;
     margin-bottom: 20px;
     padding-right: 20px;
+    @include tabletMaxi {
+      font-size: 16px;
+      line-height: 1.3;
+    }
   }
   &__btns {
     list-style-type: none;
@@ -27,25 +38,64 @@
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 27px;
     padding: 0;
+    @include tabletMaxi {
+      grid-gap: 10px;
+    }
   }
   &__btn {
     .btn {
       width: 100%;
+      @include tabletMaxi {
+        font-size: 12px;
+        font-weight: 500;
+        padding: 10px 15px;
+        &:not(.btn_second), &:not(.btn_three), &:not(.btn_four) {
+          line-height: 22px;
+        }
+      }
     }
+
   }
   &__grid {
     display: grid;
     grid-template-columns: 627px 1fr;
     grid-template-rows: auto 1fr;
     grid-gap: 0 16px;
+    @include tabletMaxi {
+      grid-template-columns: 500px 1fr;
+    }
+    @include tablet {
+      grid-template-columns: 400px 1fr;
+    }
+    @include mobile {
+      grid-template-columns: 1fr;
+    }
   }
   &__content {
     grid-column: 1 / 2;
     grid-row: 1 / 2;
+    @include mobile {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+      text-align: center;
+    }
     &-second {
       grid-column: 1 / 2;
       grid-row: 2 / 3;
       margin-top: 25px;
+      @include tabletMaxi {
+        margin-top: 18px;
+      }
+      @include mobile {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+        display: flex;
+        flex-direction: column;
+        .c-hero__btns {
+          order: 1;
+          margin-top: 30px;
+        }
+      }
     }
   }
   &__info-items {
@@ -54,6 +104,10 @@
     margin: 43px 0 0;
     padding: 0;
     list-style-type: none;
+    @include tabletMaxi {
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
   }
   &__info-item {
     list-style-type: none;
@@ -68,6 +122,14 @@
     // &:last-child {
     //   margin-right: 0;
     // }
+    @include tabletMaxi {
+      &:nth-child(3) {
+        order: 1;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 12px;
+      }
+    }
   }
   &__info {
     &-tt {
@@ -78,6 +140,10 @@
       line-height: 19px;
       color: #252525;
       white-space: nowrap;
+      @include tabletMaxi {
+        font-size: 15px;
+        line-height: 18px;
+      }
     }
     &-txt {
       font-weight: 400;
@@ -86,6 +152,11 @@
       text-align: center;
       color: #4f4f4f;
       margin-top: 5px;
+      @include tabletMaxi {
+        font-size: 15px;
+        line-height: 17px;
+        margin-top: 7px;
+      }
       &_plus {
         span {
           &:last-child {
@@ -112,6 +183,10 @@
     z-index: 1;
     grid-column: 2 / 3;
     grid-row: 1 / 3;
+    @include mobile {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
 
     &-inner {
       &-circle {
@@ -135,6 +210,18 @@
       height: 523px;
       position: relative;
       z-index: 1;
+      @include tabletMaxi {
+        width: 100%;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        img {
+          max-width: 100%;
+        }
+      }
+      @include mobile {
+        max-width: 300px;
+      }
 
       &:after {
         content: "";
@@ -147,9 +234,17 @@
         background-color: #9cc0ff;
         overflow: hidden;
         z-index: -1;
+        @include tabletMaxi {
+          width: 100%;
+          height: 100%;
+          bottom: -10px;
+          left: 5px;
+        }
       }
     }
   }
+
+
 
   &__stock {
     margin-top: 75px;
